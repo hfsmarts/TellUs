@@ -21,9 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjE-kf-Thr">
-                                <rect key="frame" x="85" y="375" width="223" height="102"/>
-                                <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TELL US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjE-kf-Thr">
+                                <rect key="frame" x="77.000000000000014" y="149" width="239.33333333333337" height="87"/>
+                                <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,8 +31,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.11372549019607843" green="0.51764705882352935" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sjE-kf-Thr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R7g-Mb-1AH"/>
-                            <constraint firstItem="sjE-kf-Thr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vGy-jz-ZXe"/>
+                            <constraint firstItem="sjE-kf-Thr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTg-51-vTg"/>
+                            <constraint firstItem="sjE-kf-Thr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="w3H-SJ-6qL"/>
                         </constraints>
                     </view>
                 </viewController>
