@@ -72,6 +72,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="5nt-Lp-dFb"/>
                                                             <constraint firstAttribute="height" constant="40" id="8YZ-km-gnn"/>
                                                         </constraints>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="KleeOne-Regular" family="Klee One" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
