@@ -160,6 +160,7 @@
                     <connections>
                         <outlet property="emailLabel" destination="XYF-Ky-yhA" id="YHq-9U-s4D"/>
                         <outlet property="passwordLabel" destination="B2N-at-aY9" id="v5w-nm-2sO"/>
+                        <outlet property="signInLabel" destination="ykg-yB-UuZ" id="RPO-eq-0Sx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
