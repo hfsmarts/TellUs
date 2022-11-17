@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     
     @IBOutlet var emailLabel: UITextField!
     @IBOutlet var passwordLabel: UITextField!
-    @IBOutlet var signInLabel: UIButton!    
+    @IBOutlet var signInLabel: UIButton!
+    @IBOutlet var signUpButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
