@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         emailLabel.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
         passwordLabel.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
                 
-        signInButton.layer.cornerRadius = 10
+        signInButton.layer.cornerRadius = 10 /*34*/
+        signUpButton.layer.cornerRadius = 10 /*35*/
 
         
         
