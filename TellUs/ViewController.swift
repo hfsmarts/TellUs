@@ -14,25 +14,19 @@ class ViewController: UIViewController {
     
     @IBOutlet var emailLabel: UITextField!
     @IBOutlet var passwordLabel: UITextField!
-    @IBOutlet var signInLabel: UIButton!
+    @IBOutlet var signInButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view
-     
-        emailLabel.attributedPlaceholder = NSAttributedString(
-            string: "Email",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]
-        )
+
         
-        passwordLabel.attributedPlaceholder = NSAttributedString(
-            string: "Password",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]
-        )
-        
-        
+        emailLabel.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
+        passwordLabel.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
+                
+        signInButton.layer.cornerRadius = 10
+
         
         
         
@@ -40,7 +34,5 @@ class ViewController: UIViewController {
         
         
     }
-    
-    
 }
 
