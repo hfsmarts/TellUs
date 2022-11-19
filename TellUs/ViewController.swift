@@ -28,10 +28,11 @@ class ViewController: UIViewController {
         signInButton.layer.cornerRadius = 10 /*34*/
         signUpButton.layer.cornerRadius = 10 /*35*/
 
+        signInButton.setTitle("Sign In", for: .normal)
+        signInButton.titleLabel?.font = UIFont(name: "KleeOne-Regular", size: 18)
         
         
-        
-        
+        print(signInButton.titleLabel?.font! as Any)
         
         
     }
