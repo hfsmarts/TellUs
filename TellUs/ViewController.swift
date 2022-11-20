@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         passwordLabel.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
                 
         signInButton.layer.cornerRadius = 12 /*TEL-34*/
+        signInButton.clipsToBounds = true /*TEL-41*/
         signUpButton.layer.cornerRadius = 12 /*TEL-35*/
         
         signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
