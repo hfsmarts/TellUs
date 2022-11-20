@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         signUpButton.layer.cornerRadius = 12 /*TEL-35*/
         
         signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
-        
-   
+        signUpButton.setTitle("Sign Up", for: .normal) /*TEL-38*/
+ 
 
 
         
