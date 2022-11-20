@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
         signUpButton.setTitle("Sign Up", for: .normal) /*TEL-38*/
  
-
+        signInButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20)
 
         
     }
