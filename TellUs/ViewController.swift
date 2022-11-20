@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         signInButton.layer.cornerRadius = 12 /*TEL-34*/
         signInButton.clipsToBounds = true /*TEL-41*/
         signUpButton.layer.cornerRadius = 12 /*TEL-35*/
+        signUpButton.clipsToBounds = true /*TEL-42*/
+
         
         signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
         signUpButton.setTitle("Sign Up", for: .normal) /*TEL-38*/
