@@ -25,15 +25,14 @@ class ViewController: UIViewController {
         emailLabel.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
         passwordLabel.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
                 
-        signInButton.layer.cornerRadius = 10 /*34*/
-        signUpButton.layer.cornerRadius = 10 /*35*/
+        signInButton.layer.cornerRadius = 12 /*TEL-34*/
+        signUpButton.layer.cornerRadius = 12 /*TEL-35*/
+        
+        signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
+        
+   
 
-        signInButton.setTitle("Sign In", for: .normal)
-        signInButton.titleLabel?.font = UIFont(name: "KleeOne-Regular", size: 18)
-        
-        
-        print(signInButton.titleLabel?.font! as Any)
-        
+
         
     }
 }
