@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
         
         emailTextField.delegate = self /*TEL-32*/
-
+        passwordTextField.delegate = self /*TEL-33*/
         
         signInButton.layer.cornerRadius = 12 /*TEL-34*/
         signUpButton.layer.cornerRadius = 12 /*TEL-35*/
@@ -35,8 +35,6 @@ class ViewController: UIViewController {
         
         signInButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-39*/
         signUpButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-40*/
-        
-        
         
     }
 }
