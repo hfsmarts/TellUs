@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signInButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
+    @IBOutlet var about: UILabel!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,5 +38,6 @@ class ViewController: UIViewController {
         signUpButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-40*/
         
     }
+    
 }
 
