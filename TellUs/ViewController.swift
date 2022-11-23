@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
         
@@ -37,7 +38,16 @@ class ViewController: UIViewController {
         signInButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-39*/
         signUpButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-40*/
         
+        
+        
+       
+        
     }
+    
+    @IBAction func signInButtonTapped(_ sender: Any) {
+    }
+    
+    
     
 }
 

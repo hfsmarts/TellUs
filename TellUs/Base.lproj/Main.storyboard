@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="151.66666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzC-UC-5db">
-                                                <rect key="frame" x="323.66666666666669" y="1.3333333333333339" width="46" height="29.333333333333329"/>
+                                                <rect key="frame" x="323.33333333333331" y="-2.3333333333333357" width="46.666666666666686" height="36.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="25"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="151.66666666666666" width="393" height="151.99999999999997"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TELL US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjE-kf-Thr">
-                                                <rect key="frame" x="78" y="41" width="237" height="70"/>
+                                                <rect key="frame" x="77.000000000000014" y="32.666666666666686" width="239.33333333333337" height="87"/>
                                                 <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="60"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -110,6 +110,9 @@
                                                         <state key="normal" title="Sign In">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gxu-RD-6uu"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-0j-UAB">
                                                         <rect key="frame" x="0.0" y="48" width="300" height="40"/>
@@ -139,7 +142,7 @@
                                         <rect key="frame" x="0.0" y="607.33333333333337" width="393" height="151.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdJ-dR-zBR">
-                                                <rect key="frame" x="320.66666666666669" y="91.666666666666629" width="42" height="58.333333333333343"/>
+                                                <rect key="frame" x="315.33333333333331" y="84.333333333333258" width="52.666666666666686" height="72.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
