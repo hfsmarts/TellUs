@@ -38,14 +38,19 @@ class ViewController: UIViewController {
         signInButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-39*/
         signUpButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-40*/
         
-        
-        
-       
-        
     }
     
     @IBAction func signInButtonTapped(_ sender: Any) {
+        
+        
     }
+    
+    
+    @IBAction func signUpButtonTapped(_ sender: Any) {
+        
+        
+    }
+    
     
     
     
