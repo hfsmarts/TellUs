@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var signInButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
     @IBOutlet var about: UILabel!
+    @IBOutlet var skipButtonLabel: UIButton!
     
 
     override func viewDidLoad() {

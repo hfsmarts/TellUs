@@ -177,6 +177,7 @@
                         <outlet property="passwordTextField" destination="B2N-at-aY9" id="v5w-nm-2sO"/>
                         <outlet property="signInButton" destination="ykg-yB-UuZ" id="xig-Ha-juv"/>
                         <outlet property="signUpButton" destination="IY7-0j-UAB" id="IeW-aQ-ada"/>
+                        <outlet property="skipButtonLabel" destination="cft-zN-osV" id="zTd-aE-Jn3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
