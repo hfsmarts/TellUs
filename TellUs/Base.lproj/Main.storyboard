@@ -30,17 +30,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-4G-vxl" userLabel="HeaderView">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="151.66666666666666"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzC-UC-5db">
-                                                <rect key="frame" x="323.33333333333331" y="-2.3333333333333357" width="46.666666666666686" height="36.333333333333336"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cft-zN-osV">
+                                                <rect key="frame" x="323" y="-8.6666666666666572" width="47" height="49"/>
                                                 <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="25"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="skip">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="tintColor" red="0.11372549019607843" green="0.51764705882352935" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="yzC-UC-5db" secondAttribute="centerX" constant="-150" id="4aJ-kF-sqQ"/>
-                                            <constraint firstAttribute="centerY" secondItem="yzC-UC-5db" secondAttribute="centerY" constant="60" id="5tC-Gu-VQJ"/>
+                                            <constraint firstItem="cft-zN-osV" firstAttribute="centerX" secondItem="cpI-4G-vxl" secondAttribute="centerX" constant="150" id="Lvm-CH-Vbi"/>
+                                            <constraint firstItem="cft-zN-osV" firstAttribute="centerY" secondItem="cpI-4G-vxl" secondAttribute="centerY" constant="-60" id="R2k-DR-rp1"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ra2-aE-SYC" userLabel="TitleView">
