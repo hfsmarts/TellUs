@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signInButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
-    @IBOutlet var about: UILabel!
-    @IBOutlet var skipButtonLabel: UIButton!
     
 
     override func viewDidLoad() {
@@ -41,16 +39,34 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func signInButtonTapped(_ sender: Any) {
+    @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         
+        print("skipButtonLabel is clicked ")
+        
+    }
+        
+    @IBAction func signInButtonTapped(_ sender: Any) {/*TEL-51*/
+        
+        print("signInButtonTapped is clicked ")
         
     }
     
     
-    @IBAction func signUpButtonTapped(_ sender: Any) {
+    @IBAction func signUpButtonTapped(_ sender: Any) { /*TEL-52*/
         
+        print("signUpButtonTapped is clicked ")
         
     }
+    
+    
+    //forget your password
+    
+    @IBAction func about(_ sender: UIButton) {
+        
+        print("about is clicked ")
+        
+    }
+    
     
     
     
