@@ -40,34 +40,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
-        
         print("skipButtonLabel is clicked ")
-        
     }
         
     @IBAction func signInButtonTapped(_ sender: Any) {/*TEL-51*/
-        
         print("signInButtonTapped is clicked ")
-        
     }
-    
     
     @IBAction func signUpButtonTapped(_ sender: Any) { /*TEL-52*/
-        
         print("signUpButtonTapped is clicked ")
-        
     }
-    
     
     //forget your password
     
-    @IBAction func about(_ sender: UIButton) {
-        
-        print("about is clicked ")
-        
+    
+    @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
+        print("aboutButton is clicked ")
     }
-    
-    
     
     
     
