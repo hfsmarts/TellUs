@@ -16,6 +16,7 @@
 		59702E12291A12C700821CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59702E11291A12C700821CFD /* Assets.xcassets */; };
 		59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59702E13291A12C700821CFD /* LaunchScreen.storyboard */; };
 		59A7FF94292A9A3F00D26971 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A7FF93292A9A3F00D26971 /* Helpers.swift */; };
+		59D01F912932156F00AA6505 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D01F902932156F00AA6505 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		59702E14291A12C700821CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59702E16291A12C700821CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A7FF93292A9A3F00D26971 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		59D01F902932156F00AA6505 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				59702E0A291A12C500821CFD /* SceneDelegate.swift */,
 				59702E0C291A12C500821CFD /* ViewController.swift */,
 				59A7FF93292A9A3F00D26971 /* Helpers.swift */,
+				59D01F902932156F00AA6505 /* CustomButton.swift */,
 				59702E0E291A12C500821CFD /* Main.storyboard */,
 				59702E11291A12C700821CFD /* Assets.xcassets */,
 				59702E13291A12C700821CFD /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 				59702E09291A12C500821CFD /* AppDelegate.swift in Sources */,
 				59702E0B291A12C500821CFD /* SceneDelegate.swift in Sources */,
 				59A7FF94292A9A3F00D26971 /* Helpers.swift in Sources */,
+				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

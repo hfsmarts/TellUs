@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signInButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
+       
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,17 +25,8 @@ class ViewController: UIViewController {
         emailTextField.delegate = self /*TEL-32*/
         passwordTextField.delegate = self /*TEL-33*/
         
-        signInButton.layer.cornerRadius = 12 /*TEL-34*/
-        signUpButton.layer.cornerRadius = 12 /*TEL-35*/
-        
-        signInButton.clipsToBounds = true /*TEL-41*/
-        signUpButton.clipsToBounds = true /*TEL-42*/
-        
         signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
         signUpButton.setTitle("Sign Up", for: .normal) /*TEL-38*/
-        
-        signInButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-39*/
-        signUpButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 20) /*TEL-40*/
         
     }
     
@@ -65,8 +57,9 @@ class ViewController: UIViewController {
         alert.addAction(doneWithAlert)
         present(alert, animated: true, completion: nil)
     }
-    
-    
-    
 }
+
+
+
+
 
