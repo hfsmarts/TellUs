@@ -25,9 +25,6 @@ class ViewController: UIViewController {
         emailTextField.delegate = self /*TEL-32*/
         passwordTextField.delegate = self /*TEL-33*/
         
-        signInButton.setTitle("Sign In", for: .normal) /*TEL-37*/
-        signUpButton.setTitle("Sign Up", for: .normal) /*TEL-38*/
-        
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
