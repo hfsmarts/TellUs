@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     /*TEL62*/
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    
+    //outlets may be delted DOUBLE check
     @IBOutlet var signInButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
        
@@ -21,9 +23,6 @@ class ViewController: UIViewController {
         
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
-        
-        emailTextField.delegate = self /*TEL-32*/
-        passwordTextField.delegate = self /*TEL-33*/
         
     }
     
