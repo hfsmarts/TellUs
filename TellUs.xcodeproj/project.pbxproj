@@ -76,8 +76,7 @@
 				59702E08291A12C500821CFD /* AppDelegate.swift */,
 				59702E0A291A12C500821CFD /* SceneDelegate.swift */,
 				59702E0C291A12C500821CFD /* ViewController.swift */,
-				59D01F902932156F00AA6505 /* CustomButton.swift */,
-				59D01F942933716000AA6505 /* CustomTextField.swift */,
+				59F188AC29337BD100677518 /* Model */,
 				59702E0E291A12C500821CFD /* Main.storyboard */,
 				59702E11291A12C700821CFD /* Assets.xcassets */,
 				59702E13291A12C700821CFD /* LaunchScreen.storyboard */,
@@ -85,6 +84,15 @@
 				59702E16291A12C700821CFD /* Info.plist */,
 			);
 			path = TellUs;
+			sourceTree = "<group>";
+		};
+		59F188AC29337BD100677518 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59D01F902932156F00AA6505 /* CustomButton.swift */,
+				59D01F942933716000AA6505 /* CustomTextField.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
