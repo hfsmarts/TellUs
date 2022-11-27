@@ -12,11 +12,7 @@ class ViewController: UIViewController {
     /*TEL62*/
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    
-    //outlets may be delted DOUBLE check
-    @IBOutlet var signInButton: UIButton!
-    @IBOutlet var signUpButton: UIButton!
-       
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
