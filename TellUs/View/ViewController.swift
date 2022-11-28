@@ -7,6 +7,10 @@
 
 import UIKit
 
+let passwordForgetMessage = UILabel()/*TEL-71*/
+
+let passwordForgetTitle = UILabel()
+
 class ViewController: UIViewController {
     
     /*TEL62*/
