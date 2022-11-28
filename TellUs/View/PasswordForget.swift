@@ -10,10 +10,15 @@ import UIKit
 /*TEL-10*/
 class PasswordForget: UIViewController{
     override func viewDidLoad() {
-        view.backgroundColor = .orange .withAlphaComponent(0.2)
+        view.backgroundColor = .orange .withAlphaComponent(0.9)
         
-        
-        
+        /*TEL-72*/
+        passwordForgetTitle.text = "TELL US"
+        view.addSubview(passwordForgetTitle)
+        passwordForgetTitle.textColor = .black
+        passwordForgetTitle.font = UIFont(name: "KleeOne-SemiBold", size: 60)
+        passwordForgetTitle.frame = CGRect(x: 75, y: 185, width: 300, height: 60)
+
         /*TEL-71*/
         passwordForgetMessage.text = "Please enter your email address"
         view.addSubview(passwordForgetMessage)
