@@ -20,6 +20,10 @@ class CustomTextField: UITextField{
         self.delegate = self
     }
     
+    /*TEL-76*/
+    func setPlaceHolder(text: String){
+        self.attributedPlaceholder = NSAttributedString(string: text, attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/ /*TEL-6*/
+    }
 }
 
 extension CustomTextField: UITextFieldDelegate{ /*TEL-44*/ /*TEL-32*/ /*TEL-33*/

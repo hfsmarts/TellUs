@@ -18,8 +18,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
+        
+ 
+        
+        
+    
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
