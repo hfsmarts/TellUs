@@ -19,10 +19,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
- 
+        /*TEL-77*/
+        let newEmailLabel = emailTextField as? CustomTextField; if let finalEmailLabel = newEmailLabel{
+            finalEmailLabel.setPlaceHolder(text: "Email")
+        }
         
         
-    
+        
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
