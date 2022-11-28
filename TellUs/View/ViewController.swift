@@ -24,6 +24,10 @@ class ViewController: UIViewController {
             finalEmailLabel.setPlaceHolder(text: "Email")
         }
         
+        /*TEL-78*/
+        let newPasswordLabel = passwordTextField as? CustomTextField; if let finalPasswordLabel = newPasswordLabel{
+            finalPasswordLabel.setPlaceHolder(text: "Password")
+        }
         
         
     }
