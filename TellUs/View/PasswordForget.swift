@@ -7,10 +7,13 @@
 
 import UIKit
 
+let passwordForgetMessage = UILabel()/*TEL-71*/
+let passwordForgetTitle = UILabel()/*TEL-72*/
+
 /*TEL-10*/
 class PasswordForget: UIViewController{
     override func viewDidLoad() {
-        view.backgroundColor = .orange .withAlphaComponent(0.9)
+        view.backgroundColor = .orange .withAlphaComponent(0.95)
         
         /*TEL-72*/
         passwordForgetTitle.text = "TELL US"
