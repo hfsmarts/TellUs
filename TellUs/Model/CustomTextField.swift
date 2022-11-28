@@ -19,6 +19,7 @@ class CustomTextField: UITextField{
         self.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         self.delegate = self
     }
+    
 }
 
 extension CustomTextField: UITextFieldDelegate{ /*TEL-44*/ /*TEL-32*/ /*TEL-33*/

@@ -12,20 +12,17 @@ class ViewController: UIViewController {
     /*TEL62*/
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
- 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])/*TEL-6*/
-        
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         print("skipButtonLabel is clicked")
     }
-      
+    
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
         print("signInButtonTapped is clicked")
@@ -38,9 +35,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
-        print("forgetPasswordButton is clicked")
+        /*TEL-10*/
+        let rootVC = PasswordForget()
+        let navVc = UINavigationController(rootViewController: rootVC)
+        present(navVc, animated: true)
     }
-    
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
         /*TEL-58*/
