@@ -20,15 +20,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         /*TEL-77*/
-        let newEmailLabel = emailTextField as? CustomTextField; if let finalEmailLabel = newEmailLabel{
-            finalEmailLabel.setPlaceHolder(text: "Email")
+        let newEmailTextField = emailTextField as? CustomTextField; if let finalEmailTextField = newEmailTextField{
+            finalEmailTextField.setPlaceHolder(text: "Email")
         }
         
         /*TEL-78*/
-        let newPasswordLabel = passwordTextField as? CustomTextField; if let finalPasswordLabel = newPasswordLabel{
-            finalPasswordLabel.setPlaceHolder(text: "Password")
+        let newPasswordTextField = passwordTextField as? CustomTextField; if let finalPasswordTextField = newPasswordTextField{
+            finalPasswordTextField.setPlaceHolder(text: "Password")
         }
-        
         
     }
     
