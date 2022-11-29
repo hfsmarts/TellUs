@@ -9,12 +9,18 @@ import UIKit
 
 /*TEL-65*/
 class CustomTextField: UITextField{
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setUPButton()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUpTextField()
     }
     
-    func setUPButton(){
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setUpTextField()
+    }
+    
+    func setUpTextField(){
         self.textColor = .black
         self.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         self.delegate = self

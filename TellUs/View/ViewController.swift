@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let newPasswordTextField = passwordTextField as? CustomTextField; if let finalPasswordTextField = newPasswordTextField{
             finalPasswordTextField.setPlaceHolder(text: "Password")
         }
-        
+
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
