@@ -47,8 +47,13 @@ class ViewController: UIViewController {
         
         /*TEL-10*/        
         let passwordForgetVC = PasswordForget()
+        /*TEL-81*/
+        if emailTextField.text != "" {
+            passwordForgetVC.passedEmailValue = emailTextField.text
+        } else {
+            passwordForgetVC.passedEmailValue = emailTextField.placeholder
+        }
         present(passwordForgetVC, animated: true)
-        
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/

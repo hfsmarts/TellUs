@@ -7,15 +7,17 @@
 
 import UIKit
 
-let passwordForgetMessage = UILabel()/*TEL-71*/
-let passwordForgetTitle = UILabel()/*TEL-72*/
-let passwordForgetTextField = UITextField() /*TEL-74*/
+private let passwordForgetMessage = UILabel()/*TEL-71*/
+private let passwordForgetTitle = UILabel()/*TEL-72*/
+private let passwordForgetTextField = UITextField() /*TEL-74*/
 
 /*TEL-10*/
 class PasswordForget: UIViewController{
+    
+    var passedEmailValue: String? = nil /*TEL-81*/
             
     override func viewDidLoad() {
-        view.backgroundColor = .orange .withAlphaComponent(0.8)
+        view.backgroundColor = .orange .withAlphaComponent(1)
                 
         /*TEL-72*/
         passwordForgetTitle.text = "TELL US"
@@ -32,7 +34,7 @@ class PasswordForget: UIViewController{
         view.addSubview(passwordForgetMessage)
         
         /*TEL-74*/
-        passwordForgetTextField.attributedPlaceholder = NSAttributedString(string: " Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        passwordForgetTextField.attributedPlaceholder = NSAttributedString(string: "\(passedEmailValue ?? "Email")" /*TEL-81*/, attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         passwordForgetTextField.backgroundColor = .white //D9D9D9
         passwordForgetTextField.borderStyle = .roundedRect
         passwordForgetTextField.textColor = .black
