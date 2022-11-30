@@ -20,8 +20,11 @@ class CustomTextField: UITextField{
         setUpTextField()
     }
     
+    /*TEL-91*/
     func setUpTextField(){
         self.textColor = .black
+        self.backgroundColor = .white //D9D9D9
+        self.borderStyle = .roundedRect
         self.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         self.delegate = self
     }

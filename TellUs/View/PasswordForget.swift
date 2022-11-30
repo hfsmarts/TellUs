@@ -39,15 +39,11 @@ class PasswordForget: UIViewController{
         } else {
             passwordForgetTextField.text = passedEmailValue
         }
-        passwordForgetTextField.backgroundColor = .white //D9D9D9
-        passwordForgetTextField.borderStyle = .roundedRect
-       // passwordForgetTextField.textColor = .black
-       // passwordForgetTextField.font = UIFont(name: "KleeOne-Regular", size: 18)
         passwordForgetTextField.frame = CGRect(x: 45, y: 375, width: 300, height: 40)
         view.addSubview(passwordForgetTextField)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         /*TEL-85*/
         passwordForgetTextField.text = ""
     }
