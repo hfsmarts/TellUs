@@ -23,7 +23,7 @@ class CustomTextField: UITextField{
     /*TEL-91*/
     func setUpTextField(){
         self.textColor = .black
-        self.backgroundColor = UIColor(rgb: 0xD9D9D9)
+        self.backgroundColor = UIColor(rgb: 0xD9D9D9) /*TEL-82*/
         self.borderStyle = .roundedRect
         self.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         self.delegate = self
