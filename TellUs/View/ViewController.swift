@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let newPasswordTextField = passwordTextField as? CustomTextField; if let finalPasswordTextField = newPasswordTextField{
             finalPasswordTextField.setPlaceHolder(text: "Password")
         }
-
+        
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
@@ -45,14 +45,10 @@ class ViewController: UIViewController {
     
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
         
-        /*TEL-10*/        
+        /*TEL-10*/
         let passwordForgetVC = PasswordForget()
         /*TEL-81*/
-        if emailTextField.text != "" {
-            passwordForgetVC.passedEmailValue = emailTextField.text
-        } else {
-            passwordForgetVC.passedEmailValue = emailTextField.placeholder
-        }
+        passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
         present(passwordForgetVC, animated: true)
     }
     
