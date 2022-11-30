@@ -15,17 +15,17 @@ private let passwordForgetTextField = UITextField() /*TEL-74*/
 class PasswordForget: UIViewController{
     
     var passedEmailValue = "" /*TEL-81*/
-            
+    
     override func viewDidLoad() {
         view.backgroundColor = .orange .withAlphaComponent(1)
-                
+        
         /*TEL-72*/
         passwordForgetTitle.text = "TELL US"
         passwordForgetTitle.textColor = .black
         passwordForgetTitle.font = UIFont(name: "KleeOne-SemiBold", size: 60)
         passwordForgetTitle.frame = CGRect(x: 75, y: 185, width: 300, height: 60)
         view.addSubview(passwordForgetTitle)
-
+        
         /*TEL-71*/
         passwordForgetMessage.text = "Please enter your email address"        
         passwordForgetMessage.textColor = .white
@@ -45,7 +45,6 @@ class PasswordForget: UIViewController{
         passwordForgetTextField.font = UIFont(name: "KleeOne-Regular", size: 18)
         passwordForgetTextField.frame = CGRect(x: 45, y: 375, width: 300, height: 40)
         view.addSubview(passwordForgetTextField)
-    
     }
     
     override func viewWillDisappear(_ animated: Bool) {

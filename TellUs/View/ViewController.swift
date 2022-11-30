@@ -16,15 +16,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*TEL-77*/
-        let newEmailTextField = emailTextField as? CustomTextField; if let finalEmailTextField = newEmailTextField{
-            finalEmailTextField.setPlaceHolder(text: "Email")
-        }
+        /*TEL-77*/ /*TEL-89*/
+        let newEmailTextField = emailTextField as? CustomTextField
+        newEmailTextField?.setPlaceHolder(text: "Email")
         
-        /*TEL-78*/
-        let newPasswordTextField = passwordTextField as? CustomTextField; if let finalPasswordTextField = newPasswordTextField{
-            finalPasswordTextField.setPlaceHolder(text: "Password")
-        }
+        /*TEL-78*/ /*TEL-89*/
+        let newPasswordTextField = passwordTextField as? CustomTextField;
+        newPasswordTextField?.setPlaceHolder(text: "Password")
         
     }
     
