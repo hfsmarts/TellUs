@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         let passwordForgetVC = PasswordForget()
         /*TEL-81*/
         passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
+        //passwordForgetVC.modalPresentationStyle = .fullScreen /*Can be added in order to have full screen UIViewController*/
         present(passwordForgetVC, animated: true)
     }
     
