@@ -17,7 +17,7 @@ class PasswordForget: UIViewController{
     var passedEmailValue = "" /*TEL-81*/
     
     override func viewDidLoad() {
-        view.backgroundColor = .orange .withAlphaComponent(1)
+        view.backgroundColor = .orange.withAlphaComponent(1) /*TEL-94*/
         
         /*TEL-72*/
         passwordForgetTitle.text = "TELL US"
