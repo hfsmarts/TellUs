@@ -43,8 +43,14 @@ class PasswordForget: UIViewController{
         }
         passwordForgetTextField.frame = CGRect(x: 45, y: 375, width: 300, height: 40)
         view.addSubview(passwordForgetTextField)
+        
+        /*TEL-104*/
+        passwordForgetButton.setTitle("Submit", for: .normal)
+        passwordForgetButton.backgroundColor = .link.withAlphaComponent(0.8)
+        passwordForgetButton.frame = CGRect(x: 45, y: 430, width: 300, height: 40)
+        view.addSubview(passwordForgetButton)
+        
     }
-    
     
     override func viewDidDisappear(_ animated: Bool) {
         /*TEL-85*/
