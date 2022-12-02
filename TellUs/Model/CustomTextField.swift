@@ -24,8 +24,6 @@ class CustomTextField: UITextField{
     func setUpTextField(){
         self.textColor = .black
         self.backgroundColor = .white /*TEL-94*/
-        
- /*TEL-82*/
         self.borderStyle = .roundedRect
         self.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         self.delegate = self
@@ -35,6 +33,7 @@ class CustomTextField: UITextField{
     func setPlaceHolder(text: String){
         self.attributedPlaceholder = NSAttributedString(string: text, attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]) /*TEL-5*/ /*TEL-6*/
     }
+    
 }
 
 extension CustomTextField: UITextFieldDelegate{ /*TEL-44*/ /*TEL-32*/ /*TEL-33*/

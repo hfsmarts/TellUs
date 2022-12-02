@@ -7,9 +7,10 @@
 
 import UIKit
 
-let passwordForgetMessage = UILabel()/*TEL-71*/
-let passwordForgetTitle = UILabel()/*TEL-72*/
+let passwordForgetMessage = UILabel() /*TEL-71*/
+let passwordForgetTitle = UILabel() /*TEL-72*/
 let passwordForgetTextField = CustomTextField() /*TEL-74*/
+let passwordForgetButton = CustomButton() /*TEL-75*/
 
 /*TEL-10*/
 class PasswordForget: UIViewController{
@@ -17,6 +18,7 @@ class PasswordForget: UIViewController{
     var passedEmailValue = "" /*TEL-81*/
     
     override func viewDidLoad() {
+        
         view.backgroundColor = .orange.withAlphaComponent(1) /*TEL-94*/
         
         /*TEL-72*/
@@ -42,6 +44,7 @@ class PasswordForget: UIViewController{
         passwordForgetTextField.frame = CGRect(x: 45, y: 375, width: 300, height: 40)
         view.addSubview(passwordForgetTextField)
     }
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         /*TEL-85*/

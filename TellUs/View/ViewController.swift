@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         /*TEL-77*/ /*TEL-89*/
         let newEmailTextField = emailTextField as? CustomTextField
         newEmailTextField?.setPlaceHolder(text: "Email")
-        
         /*TEL-78*/ /*TEL-89*/
         let newPasswordTextField = passwordTextField as? CustomTextField;
         newPasswordTextField?.setPlaceHolder(text: "Password")
@@ -30,19 +29,15 @@ class ViewController: UIViewController {
         print("skipButtonLabel is clicked")
     }
     
-    
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
         print("signInButtonTapped is clicked")
     }
-    
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) { /*TEL-52*/
         print("signUpButtonTapped is clicked")
     }
     
-    
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
-        
         /*TEL-10*/
         let passwordForgetVC = PasswordForget()
         /*TEL-81*/
