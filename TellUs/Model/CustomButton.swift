@@ -22,7 +22,8 @@ class CustomButton: UIButton{
     
     func setUPButton(){
         setTitleColor(.black, for: .normal)
-        titleLabel?.font = UIFont(name: "KleeOne-Regular", size: 18)
+        backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.00)
+        titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         layer.cornerRadius = 12
         clipsToBounds = true
     }

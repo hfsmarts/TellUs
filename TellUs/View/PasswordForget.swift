@@ -46,7 +46,7 @@ class PasswordForget: UIViewController{
         
         /*TEL-104*/
         passwordForgetButton.setTitle("Submit", for: .normal)
-        passwordForgetButton.backgroundColor = .link.withAlphaComponent(0.8)
+        passwordForgetButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         passwordForgetButton.frame = CGRect(x: 45, y: 430, width: 300, height: 40)
         view.addSubview(passwordForgetButton)
         

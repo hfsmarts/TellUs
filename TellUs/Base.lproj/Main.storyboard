@@ -59,7 +59,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.11372549019607843" green="0.51764705882352935" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="sjE-kf-Thr" firstAttribute="centerX" secondItem="ra2-aE-SYC" secondAttribute="centerX" id="gC2-85-sVg"/>
                                             <constraint firstItem="sjE-kf-Thr" firstAttribute="centerY" secondItem="ra2-aE-SYC" secondAttribute="centerY" id="hfJ-A4-xNF"/>
@@ -92,7 +91,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.11372549019607843" green="0.51764705882352935" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="nKg-Ig-fOU" firstAttribute="centerX" secondItem="vy9-JT-njJ" secondAttribute="centerX" id="R05-8q-znh"/>
                                             <constraint firstItem="nKg-Ig-fOU" firstAttribute="centerY" secondItem="vy9-JT-njJ" secondAttribute="centerY" id="VdI-V5-K4J"/>
@@ -106,7 +104,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykg-yB-UuZ" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
-                                                        <color key="backgroundColor" red="0.9137254901960784" green="0.50980392156862742" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="300" id="52T-5q-WrZ"/>
                                                             <constraint firstAttribute="height" constant="40" id="jhy-2D-CHs"/>
@@ -122,7 +120,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-0j-UAB" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="48" width="300" height="40"/>
-                                                        <color key="backgroundColor" red="0.91372549020000005" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Sign Up">
@@ -146,7 +144,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.11372549019607843" green="0.51764705882352935" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="aAL-By-yj2" firstAttribute="centerY" secondItem="Y17-g7-NnO" secondAttribute="centerY" id="CXD-h0-PkD"/>
                                             <constraint firstItem="aAL-By-yj2" firstAttribute="centerX" secondItem="Y17-g7-NnO" secondAttribute="centerX" id="hVr-AL-fB7"/>
@@ -167,7 +164,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.11372549019607843" green="0.51764705882352935" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="5uC-PL-vr0" firstAttribute="centerX" secondItem="5na-Oo-Mjs" secondAttribute="centerX" constant="145" id="5hB-fj-Evj"/>
                                             <constraint firstItem="5uC-PL-vr0" firstAttribute="centerY" secondItem="5na-Oo-Mjs" secondAttribute="centerY" constant="45" id="jKb-5l-tIB"/>
@@ -198,6 +194,9 @@
     <resources>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
