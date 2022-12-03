@@ -19,7 +19,7 @@ class PasswordForget: UIViewController{
     
     override func viewDidLoad() {
         
-        view.backgroundColor = .orange.withAlphaComponent(1) /*TEL-94*/
+        view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.00) /*TEL-94*/ /*TEL-106*/
         
         /*TEL-72*/
         passwordForgetTitle.text = "TELL US"

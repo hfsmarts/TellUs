@@ -104,7 +104,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykg-yB-UuZ" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
-                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.50196078431372548" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="300" id="52T-5q-WrZ"/>
                                                             <constraint firstAttribute="height" constant="40" id="jhy-2D-CHs"/>
