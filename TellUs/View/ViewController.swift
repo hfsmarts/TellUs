@@ -28,6 +28,11 @@ class ViewController: UIViewController {
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         print("skipButtonLabel is clicked")
+        
+        /*TEL-108*/
+        let skipLoginVC = SkipLogin()
+        present(skipLoginVC, animated: true)
+        
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
