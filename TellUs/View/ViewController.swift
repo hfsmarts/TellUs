@@ -27,10 +27,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
-        print("skipButtonLabel is clicked")
         
         /*TEL-108*/
         let skipLoginVC = SkipLogin()
+        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         present(skipLoginVC, animated: true)
         
     }
@@ -44,12 +44,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
+        
         /*TEL-10*/
         let passwordForgetVC = PasswordForget()
         /*TEL-81*/
         passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
-        //passwordForgetVC.modalPresentationStyle = .fullScreen /*Can be added in order to have full screen UIViewController*/
         present(passwordForgetVC, animated: true)
+
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
