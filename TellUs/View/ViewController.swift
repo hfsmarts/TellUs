@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         
+
+        
         /*TEL-77*/ /*TEL-89*/
         let newEmailTextField = emailTextField as? CustomTextField
         newEmailTextField?.setPlaceHolder(text: "Email")
@@ -61,7 +63,6 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 }
-
 
 
 
