@@ -47,12 +47,17 @@ class ViewController: UIViewController {
     
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
         
-        /*TEL-10*/
-        let passwordForgetVC = PasswordForget()
-        /*TEL-81*/
-        passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
-        present(passwordForgetVC, animated: true)
-
+        
+        let passwordForgetViewVC = PasswordForgetView()
+        present(passwordForgetViewVC, animated: true)
+        
+        
+//        /*TEL-10*/
+//        let passwordForgetVC = PasswordForget()
+//        /*TEL-81*/
+//        passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
+//        present(passwordForgetVC, animated: true)
+//
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/

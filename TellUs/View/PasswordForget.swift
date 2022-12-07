@@ -15,6 +15,8 @@ let passwordForgetButton = CustomButton() /*TEL-75*/
 /*TEL-10*/
 class PasswordForget: UIViewController{
     
+    
+    
     var passedEmailValue = "" /*TEL-81*/
     
     override func viewDidLoad() {
@@ -29,7 +31,7 @@ class PasswordForget: UIViewController{
         view.addSubview(passwordForgetTitle)
         
         /*TEL-71*/
-        passwordForgetMessage.text = "Please enter your email address"        
+        passwordForgetMessage.text = "Please enter your email address"
         passwordForgetMessage.textColor = .white
         passwordForgetMessage.font = UIFont(name: "KleeOne-Regular", size: 18)
         passwordForgetMessage.frame = CGRect(x: 60, y: 320, width: 300, height: 52)
