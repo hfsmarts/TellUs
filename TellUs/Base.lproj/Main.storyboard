@@ -71,7 +71,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="200" horizontalCompressionResistancePriority="300" verticalCompressionResistancePriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-Ky-yhA" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
-                                                        <rect key="frame" x="39" y="26" width="312" height="48"/>
+                                                        <rect key="frame" x="39" y="24" width="312" height="48"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="KleeOne-Regular" family="Klee One" pointSize="18"/>
@@ -80,14 +80,14 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="XYF-Ky-yhA" firstAttribute="centerX" secondItem="7kU-hq-hvn" secondAttribute="centerX" id="dUG-HE-Zle"/>
-                                                    <constraint firstItem="XYF-Ky-yhA" firstAttribute="centerY" secondItem="7kU-hq-hvn" secondAttribute="centerY" constant="10" id="kFX-zH-8W5"/>
+                                                    <constraint firstItem="XYF-Ky-yhA" firstAttribute="centerY" secondItem="7kU-hq-hvn" secondAttribute="centerY" multiplier="1.2" id="kFX-zH-8W5"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c41-nI-XNH">
                                                 <rect key="frame" x="0.0" y="80" width="390" height="80"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="200" horizontalCompressionResistancePriority="300" verticalCompressionResistancePriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2N-at-aY9" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
-                                                        <rect key="frame" x="39" y="6" width="312" height="48"/>
+                                                        <rect key="frame" x="39" y="0.0" width="312" height="48"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="KleeOne-Regular" family="Klee One" pointSize="18"/>
@@ -95,7 +95,7 @@
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="B2N-at-aY9" firstAttribute="centerY" secondItem="c41-nI-XNH" secondAttribute="centerY" constant="-10" id="gHh-UX-o56"/>
+                                                    <constraint firstItem="B2N-at-aY9" firstAttribute="centerY" secondItem="c41-nI-XNH" secondAttribute="centerY" multiplier="0.6" id="gHh-UX-o56"/>
                                                     <constraint firstItem="B2N-at-aY9" firstAttribute="centerX" secondItem="c41-nI-XNH" secondAttribute="centerX" id="xy9-LP-cCe"/>
                                                 </constraints>
                                             </view>
