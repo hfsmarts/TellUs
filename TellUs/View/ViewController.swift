@@ -17,8 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         
-
-        
         /*TEL-77*/ /*TEL-89*/
         let newEmailTextField = emailTextField as? CustomTextField
         newEmailTextField?.setPlaceHolder(text: "Email")
@@ -47,18 +45,12 @@ class ViewController: UIViewController {
     
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
         
-        
-//        let passwordForgetViewVC = PasswordForgetView()
-//        present(passwordForgetViewVC, animated: true)
-        
-
         /*TEL-10*/
         let passwordForgetVC = PasswordForget()
         /*TEL-81*/
         passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
         present(passwordForgetVC, animated: true)
 
-        
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
