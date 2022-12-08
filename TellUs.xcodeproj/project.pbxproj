@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		590C9859291FE30C002A5FB7 /* KleeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 590C9857291FE30C002A5FB7 /* KleeOne-Regular.ttf */; };
 		590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 590C9858291FE30C002A5FB7 /* KleeOne-SemiBold.ttf */; };
-		5915910929405841004EEF6D /* PasswordForgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915910829405841004EEF6D /* PasswordForgetView.swift */; };
 		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
 		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
 		59702E09291A12C500821CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59702E08291A12C500821CFD /* AppDelegate.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		590C9857291FE30C002A5FB7 /* KleeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KleeOne-Regular.ttf"; sourceTree = "<group>"; };
 		590C9858291FE30C002A5FB7 /* KleeOne-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KleeOne-SemiBold.ttf"; sourceTree = "<group>"; };
-		5915910829405841004EEF6D /* PasswordForgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordForgetView.swift; sourceTree = "<group>"; };
 		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
 		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
 		59702E05291A12C500821CFD /* TellUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 			children = (
 				59702E0C291A12C500821CFD /* ViewController.swift */,
 				59F188AD29347AC200677518 /* PasswordForget.swift */,
-				5915910829405841004EEF6D /* PasswordForgetView.swift */,
 				592899AD293C9B31003D104B /* SkipLogin.swift */,
 				592899AE293C9B31003D104B /* SkipLogin.xib */,
 			);
@@ -189,7 +186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5915910929405841004EEF6D /* PasswordForgetView.swift in Sources */,
 				59702E0D291A12C500821CFD /* ViewController.swift in Sources */,
 				59702E09291A12C500821CFD /* AppDelegate.swift in Sources */,
 				59D01F952933716000AA6505 /* CustomTextField.swift in Sources */,

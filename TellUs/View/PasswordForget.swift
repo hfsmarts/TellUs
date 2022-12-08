@@ -15,12 +15,32 @@ let passwordForgetButton = CustomButton() /*TEL-75*/
 /*TEL-10*/
 class PasswordForget: UIViewController{
     
-    
+    //test one /*TEL-113*/
+    private let myView: UIView = {
+        let myView = UIView()
+        myView.translatesAutoresizingMaskIntoConstraints = false
+        myView.backgroundColor = .clear
+        return myView
+    }()
+    let titleLabel: UILabel = {
+       let passwordForgetTitle = UILabel()
+        passwordForgetTitle.translatesAutoresizingMaskIntoConstraints = false
+        passwordForgetTitle.text = "TELL US"
+        passwordForgetTitle.textColor = .red
+        passwordForgetTitle.font = UIFont(name: "KleeOne-SemiBold", size: 60)
+        return passwordForgetTitle
+    }()
+    //test one end
     
     var passedEmailValue = "" /*TEL-81*/
     
     override func viewDidLoad() {
-        
+        //test one
+        view.addSubview(myView)
+        view.addSubview(titleLabel)
+        addConstraints()
+        //test one end
+
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.00) /*TEL-94*/ /*TEL-106*/
         
         /*TEL-72*/
@@ -53,6 +73,32 @@ class PasswordForget: UIViewController{
         view.addSubview(passwordForgetButton)
         
     }
+    
+    //test one
+    private func addConstraints(){
+        var constraints = [NSLayoutConstraint]()
+        //Add
+        constraints.append(myView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor))
+        constraints.append(myView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor))
+        constraints.append(myView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor))
+        constraints.append(myView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor))
+        
+        //Step three add constraints to the view
+        constraints.append(titleLabel.widthAnchor.constraint(equalTo: myView.widthAnchor, multiplier: 0.5))
+        constraints.append(titleLabel.heightAnchor.constraint(equalTo: myView.heightAnchor, multiplier: 0.5))
+        constraints.append(titleLabel.centerYAnchor.constraint(equalTo: myView.centerYAnchor))
+        constraints.append(titleLabel.centerXAnchor.constraint(equalTo: myView.centerXAnchor))
+
+        //Activate(Applying)
+        NSLayoutConstraint.activate(constraints)
+    }
+    //test one end
+    
+    
+    
+    
+    
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         /*TEL-85*/
