@@ -7,7 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+/*TELL-116*/
+protocol PassingEmailTextFieldData {
+    func emailToPass(email: String)
+}
+
+class ViewController: UIViewController, PassingEmailTextFieldData{
+
     
     /*TEL62*/
     @IBOutlet var emailTextField: UITextField!
@@ -25,6 +31,12 @@ class ViewController: UIViewController {
         newPasswordTextField?.setPlaceHolder(text: "Password")
         
     }
+    
+    /*TELL-116*/
+    func emailToPass(email: String) {
+        emailTextField.text = email
+    }
+    
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         
@@ -50,7 +62,7 @@ class ViewController: UIViewController {
         /*TEL-81*/
         passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
         present(passwordForgetVC, animated: true)
-
+        
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
