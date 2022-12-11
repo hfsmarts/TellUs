@@ -7,12 +7,7 @@
 
 import UIKit
 
-/*TELL-116*/
-protocol PassingEmailTextFieldData {
-    func emailToPass(email: String)
-}
-
-class ViewController: UIViewController, PassingEmailTextFieldData{
+class ViewController: UIViewController{
 
     
     /*TEL62*/
@@ -31,12 +26,6 @@ class ViewController: UIViewController, PassingEmailTextFieldData{
         newPasswordTextField?.setPlaceHolder(text: "Password")
         
     }
-    
-    /*TELL-116*/
-    func emailToPass(email: String) {
-        emailTextField.text = email
-    }
-    
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         

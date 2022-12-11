@@ -44,11 +44,6 @@ class PasswordForget: UIViewController{
     /*TEL-74*/
     let passwordForgetTextField: CustomTextField = {
         
-
-        var delegate: PassingEmailTextFieldData? /*TELL-116*/
-
-
-        
        let passwordForgetTextField = CustomTextField()
         passwordForgetTextField.translatesAutoresizingMaskIntoConstraints = false
         
@@ -59,8 +54,6 @@ class PasswordForget: UIViewController{
         //                    passwordForgetTextField.text = passedEmailValue
         //                }
         
-
-
         
         return passwordForgetTextField
     }()
