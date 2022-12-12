@@ -27,6 +27,11 @@ class ViewController: UIViewController{
         
     }
     
+    
+    var delegate: DataDelegate? /*STEP-4*/
+    
+    
+    
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         
         /*TEL-108*/
@@ -49,6 +54,11 @@ class ViewController: UIViewController{
         /*TEL-10*/
         let passwordForgetVC = PasswordForget()
         /*TEL-81*/
+        
+        delegate?.dataForPassing(email: emailTextField.text ?? "") /*STEP-5*/
+        
+        
+        
         passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
         present(passwordForgetVC, animated: true)
         
