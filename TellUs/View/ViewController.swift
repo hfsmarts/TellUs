@@ -6,10 +6,8 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController{
 
-    
     /*TEL62*/
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -27,9 +25,8 @@ class ViewController: UIViewController{
         
     }
     
-    
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
-        
+
         /*TEL-108*/
         let skipLoginVC = SkipLogin()
         skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
@@ -49,10 +46,13 @@ class ViewController: UIViewController{
         
         /*TEL-10*/
         let passwordForgetVC = PasswordForget()
-        /*TEL-81*/
-        passwordForgetVC.passedEmailValue = emailTextField.text ?? ""
+        /*TEL-81*/ /*TEL-115*/
+        if emailTextField.text == ""{
+            passwordForgetVC.passwordForgetTextField.setPlaceHolder(text: "Email")
+        } else {
+            passwordForgetVC.passwordForgetTextField.text = emailTextField.text ?? ""
+        }
         present(passwordForgetVC, animated: true)
-        
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/

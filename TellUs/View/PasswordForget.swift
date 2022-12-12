@@ -10,15 +10,12 @@ import UIKit
 /*TEL-10*/
 class PasswordForget: UIViewController {
     
-    var passedEmailValue = "" /*TEL-81*/
-        
     /*TEL-113*/
     private let passwordForgetBackground: UIView = {
         let passwordForgetBackground = UIView()
         passwordForgetBackground.translatesAutoresizingMaskIntoConstraints = false
         passwordForgetBackground.backgroundColor = .clear
         return passwordForgetBackground
-
     }()
     
     /*TEL-72*/
@@ -41,28 +38,13 @@ class PasswordForget: UIViewController {
         return passwordForgetMessage
     }()
     
-   
-    
-    
-    
-    
     /*TEL-74*/
     let passwordForgetTextField: CustomTextField = {
-        
-       let passwordForgetTextField = CustomTextField()
+        let passwordForgetTextField = CustomTextField()
         passwordForgetTextField.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        //        if passedEmailValue == ""{
-        //            passwordForgetTextField.setPlaceHolder(text: "Email")
-        //                } else {
-        //                    passwordForgetTextField.text = passedEmailValue
-        //                }
-        
-        
         return passwordForgetTextField
     }()
-
+    
     /*TEL-75*/
     let passwordForgetButton: CustomButton = {
         let passwordForgetButton = CustomButton()
@@ -71,9 +53,9 @@ class PasswordForget: UIViewController {
         passwordForgetButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00) /*TEL-104*/
         return passwordForgetButton
     }()
-        
+    
     override func viewDidLoad() {
-                
+        
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1) /*TEL-94*/ /*TEL-106*/
         view.addSubview(passwordForgetBackground)
         view.addSubview(passwordForgetTitle)

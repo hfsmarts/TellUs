@@ -10,9 +10,6 @@ import UIKit
 /*TEL-65*/
 class CustomTextField: UITextField{
     
-
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpTextField()
@@ -31,12 +28,6 @@ class CustomTextField: UITextField{
         self.font = UIFont(name: "KleeOne-SemiBold", size: 18)
         self.delegate = self
     }
-    
-    
-    
-
-    
-    
     
     /*TEL-76*/
     func setPlaceHolder(text: String){
