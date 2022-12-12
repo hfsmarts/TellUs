@@ -7,19 +7,8 @@
 
 import UIKit
 
-//STEP-1
-protocol DataDelegate {
-    func dataForPassing(email: String)
-}
-
-
 /*TEL-10*/
-class PasswordForget: UIViewController, DataDelegate /*STEP-2*/ {
-
-    func dataForPassing(email: String) { /*STEP-3*/
-        print(email)
-    }
-    
+class PasswordForget: UIViewController {
     
     var passedEmailValue = "" /*TEL-81*/
         
@@ -84,10 +73,7 @@ class PasswordForget: UIViewController, DataDelegate /*STEP-2*/ {
     }()
         
     override func viewDidLoad() {
-        
-        var vc = ViewController()
-        vc.delegate = self /*STEP-6*/
-        
+                
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1) /*TEL-94*/ /*TEL-106*/
         view.addSubview(passwordForgetBackground)
         view.addSubview(passwordForgetTitle)
