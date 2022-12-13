@@ -39,7 +39,10 @@ class ViewController: UIViewController{
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) { /*TEL-52*/
-        print("signUpButtonTapped is clicked")
+
+        /*TEL-122*/
+        let signUpVC = SignUp()
+        present(signUpVC, animated: true)
     }
     
     @IBAction func forgetPasswordButton(_ sender: UIButton) { /*TEL-60*/
