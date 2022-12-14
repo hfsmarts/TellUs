@@ -22,6 +22,7 @@ class CustomTextField: UITextField{
     
     /*TEL-91*/
     func setUpTextField(){
+        self.text = ""
         self.textColor = .black
         self.backgroundColor = .white /*TEL-94*/
         self.borderStyle = .roundedRect
