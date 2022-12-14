@@ -8,8 +8,9 @@
 import UIKit
 
 /*TEL-121*/
-
 class SignUp: UIViewController {
+    
+    var emailPassedValue = "" /*TEL-131*/
 
     /*TEL-127*/
     @IBOutlet var nameTextField: CustomTextField!
@@ -24,6 +25,14 @@ class SignUp: UIViewController {
         
         nameTextField.setPlaceHolder(text: "Name") /*TEL-129*/
         surnameTextField.setPlaceHolder(text: "Surname") /*TEL-130*/
+        
+        /*TEL-131*/
+        if emailPassedValue == ""{
+            emailTextField.setPlaceHolder(text: "Email")
+        } else {
+            emailTextField.text = emailPassedValue
+        }
+
         
         SignUpButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         SignUpButton.setTitle("Sign Up", for: .normal)

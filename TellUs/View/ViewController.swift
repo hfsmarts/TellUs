@@ -42,6 +42,7 @@ class ViewController: UIViewController{
 
         /*TEL-122*/
         let signUpVC = SignUp()
+        signUpVC.emailPassedValue = emailTextField.text ?? ""
         present(signUpVC, animated: true)
     }
     
