@@ -11,12 +11,27 @@ import UIKit
 
 class SignUp: UIViewController {
 
+    /*TEL-127*/
+    @IBOutlet var nameTextField: CustomTextField!
+    @IBOutlet var surnameTextField: CustomTextField!
+    @IBOutlet var emailTextField: CustomTextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 0.8) /*TEL-124*/
+        view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1) /*TEL-124*/
 
         
 
     }
+    
+    
+    @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/
+
+  
+        
+    }
+    
 }

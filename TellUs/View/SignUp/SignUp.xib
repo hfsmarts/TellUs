@@ -16,6 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUp" customModule="TellUs" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="6vr-TK-zEt" id="wAd-G6-HzI"/>
+                <outlet property="nameTextField" destination="08T-Ta-Glb" id="Cay-dZ-JC5"/>
+                <outlet property="surnameTextField" destination="c1m-rB-mFr" id="q26-yD-TDy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -50,6 +53,9 @@
                     <color key="backgroundColor" red="0.43921568630000002" green="0.45882352939999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                    <connections>
+                        <action selector="signUpButtonPressed:" destination="-1" eventType="touchUpInside" id="fSe-9Z-Saj"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-jC-Xir">
                     <rect key="frame" x="310" y="750" width="53" height="73"/>
