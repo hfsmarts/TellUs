@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUp" customModule="TellUs" customModuleProvider="target">
             <connections>
+                <outlet property="SignUpButton" destination="B36-ko-DfI" id="M9C-r4-2BZ"/>
                 <outlet property="emailTextField" destination="6vr-TK-zEt" id="wAd-G6-HzI"/>
                 <outlet property="nameTextField" destination="08T-Ta-Glb" id="Cay-dZ-JC5"/>
                 <outlet property="surnameTextField" destination="c1m-rB-mFr" id="q26-yD-TDy"/>
@@ -50,9 +51,12 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B36-ko-DfI" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                     <rect key="frame" x="39.333333333333343" y="530.33333333333337" width="314.33333333333326" height="51.333333333333371"/>
-                    <color key="backgroundColor" red="0.43921568630000002" green="0.45882352939999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="signUpButtonPressed:" destination="-1" eventType="touchUpInside" id="fSe-9Z-Saj"/>
                     </connections>
@@ -60,8 +64,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-jC-Xir">
                     <rect key="frame" x="310" y="750" width="53" height="73"/>
                     <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -94,6 +97,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
