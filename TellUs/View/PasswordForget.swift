@@ -94,10 +94,10 @@ class PasswordForget: UIViewController {
         NSLayoutConstraint.activate(constraints)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        /*TEL-85*/
-        passwordForgetTextField.text = ""
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        /*TEL-85*/
+//        passwordForgetTextField.text = ""
+//    }
 }
 
 
