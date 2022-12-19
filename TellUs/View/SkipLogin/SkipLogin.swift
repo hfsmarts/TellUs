@@ -9,7 +9,9 @@ import UIKit
 
 class SkipLogin: UIViewController {
 
-    @IBOutlet var mainLabel: UILabel!
+    @IBOutlet var skipLoginPostText: UITextView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

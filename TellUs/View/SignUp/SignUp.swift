@@ -37,9 +37,12 @@ class SignUp: UIViewController {
         SignUpButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         SignUpButton.setTitle("Sign Up", for: .normal)
 
-        
+
 
     }
+    
+    
+
     
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/
