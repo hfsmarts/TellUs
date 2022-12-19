@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7jl-4G-q25">
-                    <rect key="frame" x="76" y="338.33333333333331" width="241" height="175.33333333333331"/>
+                    <rect key="frame" x="40" y="358" width="313" height="136"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor"/>
@@ -32,8 +32,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FaL-tf-13p"/>
-                <constraint firstItem="7jl-4G-q25" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="0.6" constant="303" id="TD9-Ua-5Qy"/>
-                <constraint firstItem="7jl-4G-q25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="76" id="Xg5-WV-6yy"/>
+                <constraint firstItem="7jl-4G-q25" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="240" id="TD9-Ua-5Qy"/>
+                <constraint firstItem="7jl-4G-q25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="Xg5-WV-6yy"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kAU-J6-bfh"/>
             </constraints>
             <point key="canvasLocation" x="113.74045801526717" y="20.422535211267608"/>
