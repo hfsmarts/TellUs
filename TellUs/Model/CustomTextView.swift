@@ -7,7 +7,13 @@
 
 import UIKit
 
+/*TEL-147*/
 class CustomTextView: UITextView{
+    
+    
+    
+
+  
     
     
     
