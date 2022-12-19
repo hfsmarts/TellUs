@@ -19,6 +19,8 @@ class SkipLogin: UIViewController {
         skipLoginPostText.text = "Consider one more time signing up to Tell US!"
         skipLoginPostText.backgroundColor = .clear /*TEL-145*/
         skipLoginPostText.textAlignment = .center /*TEL-146*/
+        skipLoginPostText.font = UIFont(name: "KleeOne-SemiBold", size: 23) /*TEL-149*/
+        
 
     }
     
