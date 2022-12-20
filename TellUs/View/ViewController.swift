@@ -35,7 +35,17 @@ class ViewController: UIViewController{
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
-        print("signInButtonTapped is clicked")
+        /*TEL-171*/
+        if emailTextField.text == "123@abc.com"{
+            let skipLoginVC = SkipLogin()
+            present(skipLoginVC, animated: true)
+        } else {
+            let alert = UIAlertController(title: "Wrong Crdentials", message: "Please check your email or password!", preferredStyle: .alert)
+            let doneWithAlert = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(doneWithAlert)
+            present(alert, animated: true, completion: nil)
+        }
+
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) { /*TEL-52*/

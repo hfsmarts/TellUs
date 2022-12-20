@@ -17,7 +17,7 @@ class CustomTextView: UITextView{
     
     func setUpTextView() {
         
-        self.text = "Consider one more time signing up to Tell US!" /*TEL-142*/
+        self.text = "Consider one more time signing up to Tell Us!" /*TEL-142*/
         self.backgroundColor = .clear /*TEL-145*/
         self.textAlignment = .center /*TEL-146*/
         self.font = UIFont(name: "KleeOne-SemiBold", size: 23) /*TEL-149*/ /*TEL-148*/
