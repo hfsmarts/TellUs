@@ -7,7 +7,7 @@
 
 import UIKit
 class ViewController: UIViewController{
-
+    
     /*TEL62*/
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -26,10 +26,10 @@ class ViewController: UIViewController{
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
-
+        
         /*TEL-108*/
         let skipLoginVC = SkipLogin()
-     //skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
+        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         present(skipLoginVC, animated: true)
         
     }
@@ -39,7 +39,7 @@ class ViewController: UIViewController{
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) { /*TEL-52*/
-
+        
         /*TEL-122*/
         let signUpVC = SignUp()
         signUpVC.emailPassedValue = emailTextField.text ?? ""

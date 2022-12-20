@@ -17,8 +17,10 @@ class SkipLogin: UIViewController {
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00) /*TEL-140*/
 
         
-        
-
+    }
+    
+    override func viewDidLayoutSubviews() {
+        skipLoginPostText.centerVertically() /*TEL-163*/
     }
     
 }

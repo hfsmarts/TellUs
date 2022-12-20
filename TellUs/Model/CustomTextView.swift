@@ -25,9 +25,20 @@ class CustomTextView: UITextView{
         self.autocorrectionType = UITextAutocorrectionType.no /*TEL-151*/
         self.spellCheckingType = UITextSpellCheckingType.no   /*TEL-151*/
         self.autocapitalizationType = UITextAutocapitalizationType.none /*TEL-151*/
-        //        skipLoginPostText.isEditable = true
-        //        skipLoginPostText.isSelectable = true
+              
+      
       
         
+    }
+}
+
+/*TEL-163*/
+extension CustomTextView {
+    func centerVertically() {
+        let fittingSize = CGSize(width: bounds.width, height: CGFloat.greatestFiniteMagnitude)
+        let size = sizeThatFits(fittingSize)
+        let topOffset = (bounds.size.height - size.height * zoomScale) / 2
+        let positiveTopOffset = max(1, topOffset)
+        contentOffset.y = -positiveTopOffset
     }
 }
