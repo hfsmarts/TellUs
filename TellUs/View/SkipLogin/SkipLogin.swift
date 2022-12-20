@@ -9,17 +9,14 @@ import UIKit
 
 class SkipLogin: UIViewController {
 
-    @IBOutlet var skipLoginPostText: UITextView!
+    @IBOutlet var skipLoginPostText: CustomTextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00) /*TEL-140*/
 
-        skipLoginPostText.text = "Consider one more time signing up to Tell US!"
-        skipLoginPostText.backgroundColor = .clear /*TEL-145*/
-        skipLoginPostText.textAlignment = .center /*TEL-146*/
-        skipLoginPostText.font = UIFont(name: "KleeOne-SemiBold", size: 23) /*TEL-149*/
+        
         
 
     }
