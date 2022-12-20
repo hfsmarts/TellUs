@@ -36,9 +36,9 @@ class ViewController: UIViewController{
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
         /*TEL-171*/
-        if emailTextField.text == "123@abc.com"{
-            let skipLoginVC = SkipLogin()
-            present(skipLoginVC, animated: true)
+        if emailTextField.text == "123@abc.com" && passwordTextField.text!.count > 6  {
+            let successfulLoginVC = SuccessfulLogin()
+            present(successfulLoginVC, animated: true)
         } else {
             let alert = UIAlertController(title: "Wrong Crdentials", message: "Please check your email or password!", preferredStyle: .alert)
             let doneWithAlert = UIAlertAction(title: "Ok", style: .default)

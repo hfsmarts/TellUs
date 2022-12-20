@@ -11,6 +11,8 @@
 		590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 590C9858291FE30C002A5FB7 /* KleeOne-SemiBold.ttf */; };
 		5915915229483C48004EEF6D /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915915029483C48004EEF6D /* SignUp.swift */; };
 		5915915329483C48004EEF6D /* SignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5915915129483C48004EEF6D /* SignUp.xib */; };
+		5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919967D295230B30009DA9F /* SuccessfulLogin.swift */; };
+		59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5919967E295230B30009DA9F /* SuccessfulLogin.xib */; };
 		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
 		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
 		59677D19295041B600CE80BF /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59677D18295041B600CE80BF /* CustomTextView.swift */; };
@@ -30,6 +32,8 @@
 		590C9858291FE30C002A5FB7 /* KleeOne-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KleeOne-SemiBold.ttf"; sourceTree = "<group>"; };
 		5915915029483C48004EEF6D /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		5915915129483C48004EEF6D /* SignUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUp.xib; sourceTree = "<group>"; };
+		5919967D295230B30009DA9F /* SuccessfulLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulLogin.swift; sourceTree = "<group>"; };
+		5919967E295230B30009DA9F /* SuccessfulLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulLogin.xib; sourceTree = "<group>"; };
 		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
 		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
 		59677D18295041B600CE80BF /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
@@ -84,6 +88,15 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		59199681295230BC0009DA9F /* SuccessfulLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5919967D295230B30009DA9F /* SuccessfulLogin.swift */,
+				5919967E295230B30009DA9F /* SuccessfulLogin.xib */,
+			);
+			path = SuccessfulLogin;
+			sourceTree = "<group>";
+		};
 		59702DFC291A12C500821CFD = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 				59F188AD29347AC200677518 /* PasswordForget.swift */,
 				5915915429483C58004EEF6D /* SignUp */,
 				5915914A29483B6C004EEF6D /* SkipLogin */,
+				59199681295230BC0009DA9F /* SuccessfulLogin */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +214,7 @@
 				592899B0293C9B31003D104B /* SkipLogin.xib in Resources */,
 				590C9859291FE30C002A5FB7 /* KleeOne-Regular.ttf in Resources */,
 				5915915329483C48004EEF6D /* SignUp.xib in Resources */,
+				59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */,
 				59702E12291A12C700821CFD /* Assets.xcassets in Resources */,
 				59702E10291A12C500821CFD /* Main.storyboard in Resources */,
 			);
@@ -221,6 +236,7 @@
 				5915915229483C48004EEF6D /* SignUp.swift in Sources */,
 				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
 				592899AF293C9B31003D104B /* SkipLogin.swift in Sources */,
+				5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
