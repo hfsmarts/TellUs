@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KleeOne-SemiBold.ttf">
+            <string>KleeOne-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SkipLogin" customModule="TellUs" customModuleProvider="target">
             <connections>
@@ -28,13 +33,20 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U8-sy-29g">
+                    <rect key="frame" x="310" y="750" width="53" height="73"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4U8-sy-29g" secondAttribute="trailing" constant="30" id="98f-wR-A9W"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FaL-tf-13p"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="TD9-Ua-5Qy"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="Xg5-WV-6yy"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kAU-J6-bfh"/>
+                <constraint firstAttribute="bottom" secondItem="4U8-sy-29g" secondAttribute="bottom" constant="29" id="u5K-Eh-nAX"/>
             </constraints>
             <point key="canvasLocation" x="113.74045801526717" y="20.422535211267608"/>
         </view>
