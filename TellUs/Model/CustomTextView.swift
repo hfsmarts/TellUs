@@ -25,10 +25,9 @@ class CustomTextView: UITextView{
         self.autocorrectionType = UITextAutocorrectionType.no /*TEL-151*/
         self.spellCheckingType = UITextSpellCheckingType.no   /*TEL-151*/
         self.autocapitalizationType = UITextAutocapitalizationType.none /*TEL-151*/
+        self.isEditable = false /*TEL-167*/
+        self.isSelectable = false /*TEL-167*/
               
-      
-      
-        
     }
 }
 
