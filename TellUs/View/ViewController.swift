@@ -69,11 +69,7 @@ class ViewController: UIViewController{
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
         /*TEL-58*/
-        UtilityFunction().alertFunction(vc: self, title: "HFSS", message: "copyright © 2022 all rights reserved")
-//        let alert = UIAlertController(title: "HFSS", message: "copyright © 2022 all rights reserved", preferredStyle: .alert)
-//        let doneWithAlert = UIAlertAction(title: "Ok", style: .default)
-//        alert.addAction(doneWithAlert)
-//        present(alert, animated: true, completion: nil)
+        UtilityFunction().alertFunction(vc: self, title: "HFSS", message: "copyright © 2022 all rights reserved") /*TEL-179*/
     }
 }
 
