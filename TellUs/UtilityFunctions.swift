@@ -26,6 +26,8 @@ class UtilityFunction: NSObject {
         return emailPred.evaluate(with: email)
     }
     
+   
+   
     
     
     

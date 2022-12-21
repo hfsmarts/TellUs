@@ -32,21 +32,22 @@ class SignUp: UIViewController {
         } else {
             emailTextField.text = emailPassedValue
         }
-
         
         SignUpButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         SignUpButton.setTitle("Sign Up", for: .normal)
 
-
-
     }
     
-    
-
-    
-    
     @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/
-            
+    
+        if emailTextField.text == ""{ /*TEL-184*/
+            UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your!")
+        } else if UtilityFunction().isValidEmail(emailTextField.text ?? "") && nameTextField.text != "" && surnameTextField.text != ""{
+            //backend part, if name and password satisfied user should be saved to the database. Think of implementing email verification!
+        } else {
+            UtilityFunction().alertFunction(vc: self, title: "Something is wrong", message: "Please enter proper email address!")
+        }
+        
     }
     
 }
