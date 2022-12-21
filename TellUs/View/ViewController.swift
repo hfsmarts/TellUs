@@ -22,7 +22,6 @@ class ViewController: UIViewController{
         /*TEL-78*/ /*TEL-89*/
         let newPasswordTextField = passwordTextField as? CustomTextField;
         newPasswordTextField?.setPlaceHolder(text: "Password")
-        
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
@@ -31,17 +30,30 @@ class ViewController: UIViewController{
         let skipLoginVC = SkipLogin()
 //        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         present(skipLoginVC, animated: true)
-        
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
         /*TEL-171*/
-        if emailTextField.text == "123@abc.com" && passwordTextField.text!.count > 6  {
-            let successfulLoginVC = SuccessfulLogin()
-            present(successfulLoginVC, animated: true)
-        }else if emailTextField.text == "" || passwordTextField.text == "" {
+        
+         if emailTextField.text == "" || passwordTextField.text == "" {
             UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your email and password!") /*TEL-180*/
-        } else {
+         }
+        
+        
+        
+        
+//        if emailTextField.text == "123@abc.com" && passwordTextField.text!.count > 6  {
+//            let successfulLoginVC = SuccessfulLogin()
+//            present(successfulLoginVC, animated: true)
+//        }
+//
+//
+//        else if emailTextField.text == "" || passwordTextField.text == "" {
+//            UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your email and password!") /*TEL-180*/
+//        }
+        
+        
+        else {
             UtilityFunction().alertFunction(vc: self, title: "Wrong Crdentials", message: "Please check your email or password!") /*TEL-178*/
         }
     }
@@ -68,8 +80,7 @@ class ViewController: UIViewController{
     }
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
-        /*TEL-58*/
-        UtilityFunction().alertFunction(vc: self, title: "HFSS", message: "copyright © 2022 all rights reserved") /*TEL-179*/
+        UtilityFunction().alertFunction(vc: self, title: "HFSS", message: "copyright © 2022 all rights reserved") /*TEL-58*/ /*TEL-179*/
     }
 }
 
