@@ -36,7 +36,7 @@ class ViewController: UIViewController{
         /*TEL-171*/
          if emailTextField.text == "" || passwordTextField.text == "" {
             UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your email and password!") /*TEL-180*/
-         } else if UtilityFunction().isValidEmail(emailTextField.text ?? "") { /*TEl-182*/
+         } else if UtilityFunction().isValidEmail(emailTextField.text ?? "") { /*TEL-182*/
             let successfulLoginVC = SuccessfulLogin()
             present(successfulLoginVC, animated: true)
        } else {
