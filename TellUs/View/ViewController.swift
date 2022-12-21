@@ -40,7 +40,7 @@ class ViewController: UIViewController{
             let successfulLoginVC = SuccessfulLogin()
             present(successfulLoginVC, animated: true)
         } else {
-            /*TEL-178*/
+            UtilityFunction().alertFunction(vc: self, title: "Wrong Crdentials", message: "Please check your email or password!") /*TEL-178*/
         }
     }
     
