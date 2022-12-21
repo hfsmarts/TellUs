@@ -39,6 +39,8 @@ class ViewController: UIViewController{
         if emailTextField.text == "123@abc.com" && passwordTextField.text!.count > 6  {
             let successfulLoginVC = SuccessfulLogin()
             present(successfulLoginVC, animated: true)
+        }else if emailTextField.text == "" || passwordTextField.text == "" {
+            UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your email and password!") /*TEL-180*/
         } else {
             UtilityFunction().alertFunction(vc: self, title: "Wrong Crdentials", message: "Please check your email or password!") /*TEL-178*/
         }
@@ -67,10 +69,11 @@ class ViewController: UIViewController{
     
     @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
         /*TEL-58*/
-        let alert = UIAlertController(title: "HFSS", message: "copyright © 2022 all rights reserved", preferredStyle: .alert)
-        let doneWithAlert = UIAlertAction(title: "Ok", style: .default)
-        alert.addAction(doneWithAlert)
-        present(alert, animated: true, completion: nil)
+        UtilityFunction().alertFunction(vc: self, title: "HFSS", message: "copyright © 2022 all rights reserved")
+//        let alert = UIAlertController(title: "HFSS", message: "copyright © 2022 all rights reserved", preferredStyle: .alert)
+//        let doneWithAlert = UIAlertAction(title: "Ok", style: .default)
+//        alert.addAction(doneWithAlert)
+//        present(alert, animated: true, completion: nil)
     }
 }
 
