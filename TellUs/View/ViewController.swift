@@ -40,12 +40,8 @@ class ViewController: UIViewController{
             let successfulLoginVC = SuccessfulLogin()
             present(successfulLoginVC, animated: true)
         } else {
-            let alert = UIAlertController(title: "Wrong Crdentials", message: "Please check your email or password!", preferredStyle: .alert)
-            let doneWithAlert = UIAlertAction(title: "Ok", style: .default)
-            alert.addAction(doneWithAlert)
-            present(alert, animated: true, completion: nil)
+            /*TEL-178*/
         }
-
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) { /*TEL-52*/

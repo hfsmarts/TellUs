@@ -13,7 +13,7 @@
 		5915915329483C48004EEF6D /* SignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5915915129483C48004EEF6D /* SignUp.xib */; };
 		5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919967D295230B30009DA9F /* SuccessfulLogin.swift */; };
 		59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5919967E295230B30009DA9F /* SuccessfulLogin.xib */; };
-		591996832952C2700009DA9F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591996822952C2700009DA9F /* File.swift */; };
+		591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591996822952C2700009DA9F /* UtilityFunctions.swift */; };
 		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
 		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
 		59677D19295041B600CE80BF /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59677D18295041B600CE80BF /* CustomTextView.swift */; };
@@ -35,7 +35,7 @@
 		5915915129483C48004EEF6D /* SignUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUp.xib; sourceTree = "<group>"; };
 		5919967D295230B30009DA9F /* SuccessfulLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulLogin.swift; sourceTree = "<group>"; };
 		5919967E295230B30009DA9F /* SuccessfulLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulLogin.xib; sourceTree = "<group>"; };
-		591996822952C2700009DA9F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		591996822952C2700009DA9F /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
 		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
 		59677D18295041B600CE80BF /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 			children = (
 				59702E08291A12C500821CFD /* AppDelegate.swift */,
 				59702E0A291A12C500821CFD /* SceneDelegate.swift */,
-				591996822952C2700009DA9F /* File.swift */,
+				591996822952C2700009DA9F /* UtilityFunctions.swift */,
 				59F188AF29347AD200677518 /* View */,
 				59F188AC29337BD100677518 /* Model */,
 				59702E0E291A12C500821CFD /* Main.storyboard */,
@@ -239,7 +239,7 @@
 				5915915229483C48004EEF6D /* SignUp.swift in Sources */,
 				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
 				592899AF293C9B31003D104B /* SkipLogin.swift in Sources */,
-				591996832952C2700009DA9F /* File.swift in Sources */,
+				591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */,
 				5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
