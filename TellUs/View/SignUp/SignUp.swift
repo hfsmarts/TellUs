@@ -26,6 +26,7 @@ class SignUp: UIViewController {
         nameTextField.setPlaceHolder(text: "Name") /*TEL-129*/
         nameTextField.autocapitalizationType = .sentences /*TEL-203*/
         surnameTextField.setPlaceHolder(text: "Surname") /*TEL-130*/
+        surnameTextField.autocapitalizationType = .sentences /*TEL-204*/
         
         /*TEL-131*/
         if emailPassedValue == ""{
