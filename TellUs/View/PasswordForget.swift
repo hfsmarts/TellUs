@@ -57,16 +57,14 @@ class PasswordForget: UIViewController {
         return passwordForgetButton
     }()
     
-    /*TEL-189*/
+    /*TEL-189*/ /*TEL-206*/
     @objc func buttonAction(sender: UIButton!) {
         /*TEL-197*/
-        if passwordForgetTextField.text == ""  {
-            UtilityFunction().alertFunction(vc: self, title: "Enter your email", message: "Please enter proper email address!")
-        } else if UtilityFunction().isValidEmail(passwordForgetTextField.text ?? ""){
+       if UtilityFunction().isValidEmail(passwordForgetTextField.text ?? ""){
             //backend part, if email satisfied user should recive new password on the email!
-            UtilityFunction().alertFunction(vc: self, title: "Email sent", message: "New password is send to your address!")
+            UtilityFunction().alertFunction(vc: self, title: "Email sent", message: "New password is send to your email.")
         } else {
-            UtilityFunction().alertFunction(vc: self, title: "Something is wrong", message: "Please enter proper email address!")
+            UtilityFunction().alertFunction(vc: self, title: "Error", message: "Your email is incorrect.")
         }
     }
     

@@ -33,14 +33,12 @@ class ViewController: UIViewController{
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
-        /*TEL-171*/
-         if emailTextField.text == "" || passwordTextField.text == "" {
-            UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your email and password!") /*TEL-180*/
-         } else if UtilityFunction().isValidEmail(emailTextField.text ?? "") { /*TEL-182*/
+        /*TEL-171*/ /*TEL-206*/
+          if UtilityFunction().isValidEmail(emailTextField.text ?? "") { /*TEL-182*/
             let successfulLoginVC = SuccessfulLogin()
             present(successfulLoginVC, animated: true)
        } else {
-            UtilityFunction().alertFunction(vc: self, title: "Wrong Crdentials", message: "Please check your email or password!") /*TEL-178*/
+            UtilityFunction().alertFunction(vc: self, title: "Error logging in", message: "Your email or password is incorrect.") /*TEL-178*/
         }
     }
     
