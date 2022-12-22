@@ -49,7 +49,7 @@ class PasswordForget: UIViewController {
     
     /*TEL-75*/
     let passwordForgetButton: CustomButton = {
-        let passwordForgetButton = CustomButton()
+        let passwordForgetButton = CustomButton(type: .roundedRect)/*TEL-205*/
         passwordForgetButton.translatesAutoresizingMaskIntoConstraints = false
         passwordForgetButton.setTitle("Submit", for: .normal) /*TEL-104*/
         passwordForgetButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00) /*TEL-104*/
