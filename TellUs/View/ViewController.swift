@@ -36,6 +36,7 @@ class ViewController: UIViewController{
         /*TEL-171*/ /*TEL-206*/
           if UtilityFunction().isValidEmail(emailTextField.text ?? "") { /*TEL-182*/
             let successfulLoginVC = SuccessfulLogin()
+//              successfulLoginVC.modalPresentationStyle = .fullScreen
             present(successfulLoginVC, animated: true)
        } else {
             UtilityFunction().alertFunction(vc: self, title: "Error logging in", message: "Your email or password is incorrect.") /*TEL-178*/

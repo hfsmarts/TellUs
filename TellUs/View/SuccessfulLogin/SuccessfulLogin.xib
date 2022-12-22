@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KleeOne-SemiBold.ttf">
+            <string>KleeOne-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessfulLogin" customModule="TellUs" customModuleProvider="target">
             <connections>
@@ -31,13 +36,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgX-cs-er2">
+                    <rect key="frame" x="310" y="750" width="53" height="73"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="LgX-cs-er2" secondAttribute="bottom" constant="29" id="I0R-Xc-fWl"/>
                 <constraint firstItem="2dd-wt-jnp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.2" id="OSh-aW-p70"/>
                 <constraint firstItem="zRK-aq-uo3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PmS-XU-h1j"/>
                 <constraint firstItem="2dd-wt-jnp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yma-C7-V0B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LgX-cs-er2" secondAttribute="trailing" constant="30" id="ghK-2M-Ab6"/>
                 <constraint firstItem="zRK-aq-uo3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oit-ad-5GI"/>
             </constraints>
             <point key="canvasLocation" x="83" y="21"/>
