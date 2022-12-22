@@ -31,6 +31,7 @@ class SignUp: UIViewController {
             emailTextField.setPlaceHolder(text: "Email")
         } else {
             emailTextField.text = emailPassedValue
+            emailTextField.setPlaceHolder(text: "Email") /*TEL-202*/
         }
         
         SignUpButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
