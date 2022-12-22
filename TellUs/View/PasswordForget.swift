@@ -53,11 +53,16 @@ class PasswordForget: UIViewController {
         passwordForgetButton.translatesAutoresizingMaskIntoConstraints = false
         passwordForgetButton.setTitle("Submit", for: .normal) /*TEL-104*/
         passwordForgetButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00) /*TEL-104*/
+        passwordForgetButton.addTarget(nil, action: #selector(buttonAction), for: .touchUpInside) /*TEL-189*/
         return passwordForgetButton
     }()
     
+    /*TEL-189*/
+    @objc func buttonAction(sender: UIButton!) {
+        UtilityFunction().alertFunction(vc: self, title: "Action", message: "Button pressed")
+        }
+    
     override func viewDidLoad() {
-        
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1) /*TEL-94*/ /*TEL-106*/
         view.addSubview(passwordForgetBackground)
         view.addSubview(passwordForgetTitle)
@@ -65,7 +70,6 @@ class PasswordForget: UIViewController {
         view.addSubview(passwordForgetTextField)
         view.addSubview(passwordForgetButton)
         addConstraints()
-        
     }
     
     private func addConstraints(){
