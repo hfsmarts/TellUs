@@ -49,7 +49,6 @@ class SignUp: UIViewController {
         } else {
             UtilityFunction().alertFunction(vc: self, title: "Something is wrong", message: "Please enter proper email address!")
         }
-        
     }
     
 }

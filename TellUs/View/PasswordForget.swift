@@ -43,6 +43,7 @@ class PasswordForget: UIViewController {
         let passwordForgetTextField = CustomTextField()
         passwordForgetTextField.setPlaceHolder(text: "Email") /*TEL-200*/
         passwordForgetTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordForgetTextField.autocapitalizationType = .none /*TEL-199*/
         return passwordForgetTextField
     }()
     
