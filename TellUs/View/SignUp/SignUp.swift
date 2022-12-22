@@ -40,10 +40,11 @@ class SignUp: UIViewController {
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/
     
-        if emailTextField.text == ""{ /*TEL-184*/
-            UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your!")
-        } else if UtilityFunction().isValidEmail(emailTextField.text ?? "") && nameTextField.text != "" && surnameTextField.text != ""{
+        if emailTextField.text == "" || nameTextField.text == "" || surnameTextField.text == "" { /*TEL-184*/
+            UtilityFunction().alertFunction(vc: self, title: "Enter Crdentials", message: "Please enter your data!")
+        } else if UtilityFunction().isValidEmail(emailTextField.text ?? "") /*Validations for name and surname to be passed*/ {
             //backend part, if name and password satisfied user should be saved to the database. Think of implementing email verification!
+            UtilityFunction().alertFunction(vc: self, title: "Success", message: "You entered proper data!")
         } else {
             UtilityFunction().alertFunction(vc: self, title: "Something is wrong", message: "Please enter proper email address!")
         }
