@@ -24,6 +24,7 @@ class SignUp: UIViewController {
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.0) /*TEL-124*/
         
         nameTextField.setPlaceHolder(text: "Name") /*TEL-129*/
+        nameTextField.autocapitalizationType = .sentences /*TEL-203*/
         surnameTextField.setPlaceHolder(text: "Surname") /*TEL-130*/
         
         /*TEL-131*/
