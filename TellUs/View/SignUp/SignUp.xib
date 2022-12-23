@@ -50,7 +50,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B36-ko-DfI" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
-                    <rect key="frame" x="39.333333333333343" y="530.33333333333337" width="314.33333333333326" height="51.333333333333371"/>
+                    <rect key="frame" x="39.333333333333343" y="600.33333333333337" width="314.33333333333326" height="51.333333333333371"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -66,12 +66,19 @@
                     <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70b-Ir-803" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="512.33333333333337" width="314.33333333333326" height="51.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="65k-IT-bz1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2oV-pQ-wWJ"/>
                 <constraint firstAttribute="bottom" secondItem="XF1-jC-Xir" secondAttribute="bottom" constant="29" id="4Rm-aB-k3S"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="7Er-h4-QmV"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="9PI-ZL-mWA"/>
                 <constraint firstItem="B36-ko-DfI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DoA-mQ-66V"/>
                 <constraint firstItem="c1m-rB-mFr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="F7r-ZY-H1g"/>
                 <constraint firstItem="08T-Ta-Glb" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="GDc-EK-Zcn"/>
@@ -89,7 +96,9 @@
                 <constraint firstItem="6vr-TK-zEt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="gwF-Kl-AtX"/>
                 <constraint firstItem="6vr-TK-zEt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lfe-XO-Xqp"/>
                 <constraint firstItem="08T-Ta-Glb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="o8V-Mp-5P6"/>
-                <constraint firstItem="B36-ko-DfI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="130" id="tZw-0g-EAl"/>
+                <constraint firstItem="B36-ko-DfI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="200" id="tZw-0g-EAl"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="112" id="usk-ee-FQg"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yhw-Gg-4cp"/>
             </constraints>
             <point key="canvasLocation" x="140" y="21"/>
         </view>

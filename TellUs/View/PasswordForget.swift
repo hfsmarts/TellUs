@@ -61,7 +61,7 @@ class PasswordForget: UIViewController {
     /*TEL-189*/ /*TEL-206*/
     @objc func buttonAction(sender: UIButton!) {
         /*TEL-197*/
-       if UtilityFunction().isValidEmail(passwordForgetTextField.text ?? ""){
+        if UtilityFunction().isValidEmail(passwordForgetTextField.text ?? ""){
             //backend part, if email satisfied user should recive new password on the email!
             UtilityFunction().alertFunction(vc: self, title: "Email sent", message: "New password is send to your email.")
         } else {
@@ -79,10 +79,8 @@ class PasswordForget: UIViewController {
         return threeDots
     }()
     
-    
-    
     override func viewDidLoad() {
-        view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 0.7) /*TEL-94*/ /*TEL-106*/
+        view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.0) /*TEL-94*/ /*TEL-106*/
         view.addSubview(passwordForgetBackground)
         view.addSubview(passwordForgetTitle)
         view.addSubview(passwordForgetMessage)
