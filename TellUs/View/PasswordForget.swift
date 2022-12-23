@@ -116,6 +116,9 @@ class PasswordForget: UIViewController {
         constraints.append(passwordForgetButton.heightAnchor.constraint(equalTo: passwordForgetBackground.heightAnchor, multiplier: 0.063))
         constraints.append(passwordForgetButton.centerYAnchor.constraint(equalTo: passwordForgetBackground.centerYAnchor,constant: 99))
         constraints.append(passwordForgetButton.centerXAnchor.constraint(equalTo: passwordForgetBackground.centerXAnchor))
+        /*TEL-212*/
+        constraints.append(threeDots.centerYAnchor.constraint(equalTo: passwordForgetBackground.centerYAnchor,constant: 344))
+        constraints.append(threeDots.centerXAnchor.constraint(equalTo: passwordForgetBackground.centerXAnchor,constant: 138))
         
         NSLayoutConstraint.activate(constraints)
     }
