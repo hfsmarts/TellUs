@@ -26,10 +26,13 @@ class UtilityFunction: NSObject {
         return emailPred.evaluate(with: email)
     }
     
-   
-   
+    /*TEL-219*/
+    func isValidPassword(_ password: String) -> Bool {
+        let passwordRexEx = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}$"
+        let passwordPred = NSPredicate(format: "SELF MATCHES %@", passwordRexEx)
+        return passwordPred.evaluate(with: password)
+    }
+
     
-    
-    
-    
+
 }

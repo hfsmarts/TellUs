@@ -45,7 +45,7 @@ class SignUp: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/ /*TEL-206*/
-        if UtilityFunction().isValidEmail(emailTextField.text ?? "") /*Validations for name and surname to be passed*/ {
+        if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? "") {
             //backend part, if name and password satisfied user should be saved to the database. Think of implementing email verification!
             UtilityFunction().alertFunction(vc: self, title: "Success", message: "Welcome to Tell us.")
         } else {
