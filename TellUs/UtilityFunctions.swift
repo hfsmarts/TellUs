@@ -9,7 +9,7 @@
 
 import UIKit
 
-class UtilityFunction: NSObject {
+class UtilityFunction {
     
     /*TEL-177*/
     func alertFunction(vc: UIViewController, title: String, message: String){
@@ -33,6 +33,6 @@ class UtilityFunction: NSObject {
         return passwordPred.evaluate(with: password)
     }
 
-    
+    let message = "Something went wrong. \n Password must be at least 8 character long. Password should contain capital case letters and numbers."
 
 }

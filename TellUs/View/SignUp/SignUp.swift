@@ -44,12 +44,12 @@ class SignUp: UIViewController {
 
     }
     
-    @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/ /*TEL-206*/
+    @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/ /*TEL-206*/ /*TEL-218*/
         if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? "") {
-            //backend part, if name and password satisfied user should be saved to the database. Think of implementing email verification!
+            //user should be saved to the database
             UtilityFunction().alertFunction(vc: self, title: "Success", message: "Welcome to Tell us.")
         } else {
-            UtilityFunction().alertFunction(vc: self, title: "Error signing up", message: "Something went wrong.") /*TEL-178*/
+            UtilityFunction().alertFunction(vc: self, title: "Error signing up", message: UtilityFunction().message) /*TEL-178*/
         }
     }
     
