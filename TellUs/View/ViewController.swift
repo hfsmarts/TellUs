@@ -20,7 +20,7 @@ class ViewController: UIViewController{
         let newEmailTextField = emailTextField as? CustomTextField
         newEmailTextField?.setPlaceHolder(text: "Email")
         /*TEL-78*/ /*TEL-89*/
-        let newPasswordTextField = passwordTextField as? CustomTextField;
+        let newPasswordTextField = passwordTextField as? CustomTextField
         newPasswordTextField?.setPlaceHolder(text: "Password")
     }
     
@@ -34,7 +34,8 @@ class ViewController: UIViewController{
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
         /*TEL-171*/ /*TEL-206*/
-          if UtilityFunction().isValidEmail(emailTextField.text ?? "") { /*TEL-182*/
+        if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? ""){ /*TEL-182*/ /*TEL-191*/
+            //if user is in database login will be successful
             let successfulLoginVC = SuccessfulLogin()
 //              successfulLoginVC.modalPresentationStyle = .fullScreen
             present(successfulLoginVC, animated: true)
