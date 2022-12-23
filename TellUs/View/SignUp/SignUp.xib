@@ -19,6 +19,7 @@
                 <outlet property="SignUpButton" destination="B36-ko-DfI" id="M9C-r4-2BZ"/>
                 <outlet property="emailTextField" destination="6vr-TK-zEt" id="wAd-G6-HzI"/>
                 <outlet property="nameTextField" destination="08T-Ta-Glb" id="Cay-dZ-JC5"/>
+                <outlet property="passwordTextField" destination="70b-Ir-803" id="5uW-jh-AfY"/>
                 <outlet property="surnameTextField" destination="c1m-rB-mFr" id="q26-yD-TDy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

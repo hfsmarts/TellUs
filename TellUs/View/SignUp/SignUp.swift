@@ -17,6 +17,7 @@ class SignUp: UIViewController {
     @IBOutlet var surnameTextField: CustomTextField!
     @IBOutlet var emailTextField: CustomTextField!
     @IBOutlet var SignUpButton: CustomButton! /*TEL-128*/
+    @IBOutlet var passwordTextField: CustomTextField! /*TEL-215*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
