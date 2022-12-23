@@ -69,6 +69,18 @@ class PasswordForget: UIViewController {
         }
     }
     
+    /*TEL-211*/
+    let threeDots: UILabel = {
+        let threeDots = UILabel()
+        threeDots.translatesAutoresizingMaskIntoConstraints = false
+        threeDots.text = "..."
+        threeDots.textColor = .black
+        threeDots.font = UIFont(name: "KleeOne-SemiBold", size: 50)
+        return threeDots
+    }()
+    
+    
+    
     override func viewDidLoad() {
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 0.7) /*TEL-94*/ /*TEL-106*/
         view.addSubview(passwordForgetBackground)
@@ -76,6 +88,7 @@ class PasswordForget: UIViewController {
         view.addSubview(passwordForgetMessage)
         view.addSubview(passwordForgetTextField)
         view.addSubview(passwordForgetButton)
+        view.addSubview(threeDots)
         addConstraints()
     }
     
