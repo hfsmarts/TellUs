@@ -18,4 +18,9 @@ class SuccessfulLogin: UIViewController {
 
         successfulLoginPostText.text = "Idu dva balona ulicom i sretnu kaktussssssssssssssssssss"
     }
+    
+    override func viewDidLayoutSubviews() {
+        successfulLoginPostText.centerVertically() /*TEL-228*/
+    }
+    
 }
