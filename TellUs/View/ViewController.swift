@@ -64,10 +64,6 @@ class ViewController: UIViewController{
         }
         present(passwordForgetVC, animated: true)
     }
-    
-    @IBAction func aboutButton(_ sender: UIButton) { /*TEL-59*/
-        UtilityFunction().alertFunction(vc: self, title: "HFSS", message: "copyright © 2022 all rights reserved") /*TEL-58*/ /*TEL-179*/
-    }
 }
 
 
