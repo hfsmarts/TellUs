@@ -46,7 +46,9 @@ class SignUp: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/ /*TEL-206*/ /*TEL-218*/
-     if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? ""){
+    // if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? ""){
+        
+        if UtilityFunction().isFirstLetterCapital(word: nameTextField.text ?? "") {
        
             //user should be saved to the database
             UtilityFunction().alertFunction(vc: self, title: "Success", message: "Welcome to Tell us.")
