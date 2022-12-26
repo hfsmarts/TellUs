@@ -44,23 +44,43 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangleUp" translatesAutoresizingMaskIntoConstraints="NO" id="lc1-MJ-hXH">
+                    <rect key="frame" x="293" y="220" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EdQ-WJ-iSw"/>
+                        <constraint firstAttribute="width" constant="60" id="y04-8O-Y9x"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangleDown" translatesAutoresizingMaskIntoConstraints="NO" id="7cW-V5-jPH">
+                    <rect key="frame" x="293" y="572" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0NH-bU-t8o"/>
+                        <constraint firstAttribute="width" constant="60" id="Fg6-Jd-wRw"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0IB-qU-vFH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lc1-MJ-hXH" secondAttribute="trailing" constant="40" id="2RH-N7-hfD"/>
+                <constraint firstItem="lc1-MJ-hXH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="161" id="8wR-dX-vM4"/>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="EeA-eq-buK"/>
                 <constraint firstAttribute="bottom" secondItem="LgX-cs-er2" secondAttribute="bottom" constant="29" id="I0R-Xc-fWl"/>
                 <constraint firstItem="2dd-wt-jnp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.2" id="OSh-aW-p70"/>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="UTq-rf-z7T"/>
                 <constraint firstItem="2dd-wt-jnp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yma-C7-V0B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LgX-cs-er2" secondAttribute="trailing" constant="30" id="ghK-2M-Ab6"/>
+                <constraint firstItem="LgX-cs-er2" firstAttribute="top" secondItem="7cW-V5-jPH" secondAttribute="bottom" constant="118" id="pyk-cP-CtK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7cW-V5-jPH" secondAttribute="trailing" constant="40" id="umK-aT-Ps3"/>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wVM-Dz-qc5"/>
             </constraints>
             <point key="canvasLocation" x="81.679389312977094" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>
+        <image name="triangleDown" width="434" height="375"/>
+        <image name="triangleUp" width="434" height="375"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

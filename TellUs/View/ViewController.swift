@@ -45,7 +45,7 @@ class ViewController: UIViewController{
         if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? ""){ /*TEL-182*/ /*TEL-191*/
             //if user is in database login will be successful
             let successfulLoginVC = SuccessfulLogin()
-//              successfulLoginVC.modalPresentationStyle = .fullScreen
+              successfulLoginVC.modalPresentationStyle = .fullScreen
             present(successfulLoginVC, animated: true)
        } else {
             UtilityFunction().alertFunction(vc: self, title: "Error logging in", message: "Your email or password is incorrect.") /*TEL-178*/
