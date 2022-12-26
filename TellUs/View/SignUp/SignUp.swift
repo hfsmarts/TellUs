@@ -11,7 +11,7 @@ import UIKit
 class SignUp: UIViewController {
     
     var emailPassedValue = "" /*TEL-131*/
-
+    
     /*TEL-127*/
     @IBOutlet var nameTextField: CustomTextField!
     @IBOutlet var surnameTextField: CustomTextField!
@@ -30,7 +30,6 @@ class SignUp: UIViewController {
         surnameTextField.autocapitalizationType = .sentences /*TEL-204*/
         passwordTextField.setPlaceHolder(text: "Password") /*TEL-216*/
         passwordTextField.isSecureTextEntry = true /*TEL-217*/
-    
         
         /*TEL-131*/
         if emailPassedValue == ""{
@@ -42,14 +41,15 @@ class SignUp: UIViewController {
         
         SignUpButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00)
         SignUpButton.setTitle("Sign Up", for: .normal)
-
+        
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) { /*TEL-127*/ /*TEL-206*/ /*TEL-218*/
-    // if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? ""){
-        
-        if UtilityFunction().isFirstLetterCapital(word: nameTextField.text ?? "") {
-       
+        if  UtilityFunction().isValidEmail(emailTextField.text ?? "") &&
+            UtilityFunction().isValidPassword(passwordTextField.text ?? "") &&
+            UtilityFunction().isFirstLetterCapital(word: nameTextField.text ?? "") && /*TEL-188*/
+            UtilityFunction().isFirstLetterCapital(word: surnameTextField.text ?? "")
+        {
             //user should be saved to the database
             UtilityFunction().alertFunction(vc: self, title: "Success", message: "Welcome to Tell us.")
         } else {
