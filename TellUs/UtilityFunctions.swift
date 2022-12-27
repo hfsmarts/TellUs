@@ -39,8 +39,6 @@ class UtilityFunction {
         let wordPred = NSPredicate(format: "SELF MATCHES %@", wordRegEx)
         return wordPred.evaluate(with: word)
     }
-    let message = "Something went wrong. \n Password must be at least 8 character long. Password should contain capital case letters and numbers."
-
 }
 
 
