@@ -36,7 +36,7 @@ class ViewController: UIViewController{
         
         /*TEL-108*/
         let skipLoginVC = SkipLogin()
-//        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
+        //        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         present(skipLoginVC, animated: true)
     }
     
@@ -44,10 +44,12 @@ class ViewController: UIViewController{
         /*TEL-171*/ /*TEL-206*/
         if UtilityFunction().isValidEmail(emailTextField.text ?? "") && UtilityFunction().isValidPassword(passwordTextField.text ?? ""){ /*TEL-182*/ /*TEL-191*/
             //if user is in database login will be successful
+            
             let successfulLoginVC = SuccessfulLogin()
-              successfulLoginVC.modalPresentationStyle = .fullScreen
+            successfulLoginVC.modalPresentationStyle = .fullScreen
             present(successfulLoginVC, animated: true)
-       } else {
+            
+        } else {
             UtilityFunction().alertFunction(vc: self, title: "Error logging in", message: "Your email or password is incorrect.") /*TEL-178*/
         }
     }

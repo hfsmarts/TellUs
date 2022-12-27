@@ -9,9 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="KleeOne-Regular.ttf">
-            <string>KleeOne-Regular</string>
-        </array>
         <array key="KleeOne-SemiBold.ttf">
             <string>KleeOne-SemiBold</string>
         </array>
@@ -61,15 +58,15 @@
                         <constraint firstAttribute="width" constant="60" id="Fg6-Jd-wRw"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="399" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q64-nz-Zyg">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q64-nz-Zyg">
                     <rect key="frame" x="310" y="253" width="27" height="21"/>
-                    <fontDescription key="fontDescription" name="KleeOne-Regular" family="Klee One" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="15"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="299" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-C8-MhI">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-C8-MhI">
                     <rect key="frame" x="310" y="581" width="27" height="21"/>
-                    <fontDescription key="fontDescription" name="KleeOne-Regular" family="Klee One" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="15"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
