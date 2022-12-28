@@ -23,4 +23,11 @@ class SuccessfulLogin: UIViewController {
         successfulLoginPostText.centerVertically() /*TEL-228*/
     }
     
+    
+    
+    
+    
+    @IBAction func backButton(_ sender: UIButton) { /*TEL-239*/
+        print("Yes")
+    }
 }
