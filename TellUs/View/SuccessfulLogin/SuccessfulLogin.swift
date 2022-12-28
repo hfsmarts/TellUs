@@ -28,6 +28,6 @@ class SuccessfulLogin: UIViewController {
     
     
     @IBAction func backButton(_ sender: UIButton) { /*TEL-239*/
-        print("Yes")
+        dismiss(animated: true, completion: nil) /*TEL-240*/
     }
 }
