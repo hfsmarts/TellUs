@@ -17,6 +17,7 @@
 		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
 		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
 		5946BBA9295AB8FF00511187 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946BBA8295AB8FF00511187 /* Constants.swift */; };
+		5946BBD3295D654D00511187 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5946BBD2295D654D00511187 /* Colors.xcassets */; };
 		59677D19295041B600CE80BF /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59677D18295041B600CE80BF /* CustomTextView.swift */; };
 		59702E09291A12C500821CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59702E08291A12C500821CFD /* AppDelegate.swift */; };
 		59702E0B291A12C500821CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59702E0A291A12C500821CFD /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
 		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
 		5946BBA8295AB8FF00511187 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5946BBD2295D654D00511187 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		59677D18295041B600CE80BF /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		59702E05291A12C500821CFD /* TellUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59702E08291A12C500821CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				59F188AC29337BD100677518 /* Model */,
 				59702E0E291A12C500821CFD /* Main.storyboard */,
 				59702E11291A12C700821CFD /* Assets.xcassets */,
+				5946BBD2295D654D00511187 /* Colors.xcassets */,
 				59702E13291A12C700821CFD /* LaunchScreen.storyboard */,
 				590C985B291FE31B002A5FB7 /* fonts */,
 				59702E16291A12C700821CFD /* Info.plist */,
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5946BBD3295D654D00511187 /* Colors.xcassets in Resources */,
 				590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */,
 				59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */,
 				592899B0293C9B31003D104B /* SkipLogin.xib in Resources */,
