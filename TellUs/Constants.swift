@@ -10,4 +10,11 @@ import UIKit
 /*TEL-221*/
 class K {
     let message = "Something went wrong. \n Password must be at least 8 character long. Password should contain capital case letters and numbers." /*TEL-222*/
+    
+    
+    
+    
+    
+    let appRedColor = UIColor(named: "AppRed") /*TEL-256*/
+
 }
