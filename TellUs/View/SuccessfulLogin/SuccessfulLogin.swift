@@ -19,6 +19,10 @@ class SuccessfulLogin: UIViewController {
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.0) /*TEL-173*/
 
         successfulLoginPostText.text = "Idu dva balona ulicom i sretnu kaktussssssssssssssssssss"
+        
+        //Colors to be defined here
+        dislikeCounter.textColor = .red
+
     }
     
     override func viewDidLayoutSubviews() {
@@ -26,10 +30,12 @@ class SuccessfulLogin: UIViewController {
     }
     
     
-    
-    
   /*TEL-237*/
     @IBAction func backButton(_ sender: UIButton) { /*TEL-239*/
         dismiss(animated: true, completion: nil) /*TEL-240*/
     }
 }
+
+
+
+

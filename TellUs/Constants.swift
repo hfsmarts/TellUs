@@ -12,9 +12,10 @@ class K {
     let message = "Something went wrong. \n Password must be at least 8 character long. Password should contain capital case letters and numbers." /*TEL-222*/
     
     
+    /*TEL-258*/
+    struct AppColors{
+        
+    }
     
-    
-    
-    let appRedColor = UIColor(named: "AppRed") /*TEL-256*/
 
 }
