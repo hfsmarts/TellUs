@@ -13,7 +13,6 @@ class SuccessfulLogin: UIViewController {
     @IBOutlet var successfulLoginPostText: CustomTextView! /*TEL-227*/
     @IBOutlet var dislikeCounter: UILabel! /*TEL-255*/
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.0) /*TEL-173*/
