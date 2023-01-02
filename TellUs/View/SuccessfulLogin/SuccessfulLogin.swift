@@ -20,7 +20,7 @@ class SuccessfulLogin: UIViewController {
         successfulLoginPostText.text = "Idu dva balona ulicom i sretnu kaktussssssssssssssssssss"
         
         //Colors to be defined here
-        dislikeCounter.textColor = .red
+       // dislikeCounter.textColor = UIColor(named: K.AppColors.red)
 
     }
     

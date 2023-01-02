@@ -14,6 +14,9 @@ struct K { /*TEL-259*/
     
     /*TEL-258*/
     struct AppColors{
+        //Issue color is not loading
+       static let red = "AppRed"
+        
         
     }
     
