@@ -80,6 +80,7 @@ class PasswordForget: UIViewController {
     }()
     
     override func viewDidLoad() {
+        super.viewDidLoad() /*TEL-242*/
         view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.0) /*TEL-94*/ /*TEL-106*/
         view.addSubview(passwordForgetBackground)
         view.addSubview(passwordForgetTitle)

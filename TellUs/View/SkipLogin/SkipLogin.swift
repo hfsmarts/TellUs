@@ -20,6 +20,8 @@ class SkipLogin: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews() /*TEL-242*/
+
         skipLoginPostText.centerVertically() /*TEL-163*/
     }
     

@@ -25,6 +25,7 @@ class SuccessfulLogin: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews() /*TEL-242*/
         successfulLoginPostText.centerVertically() /*TEL-228*/
     }
     
