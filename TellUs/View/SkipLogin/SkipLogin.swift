@@ -8,21 +8,24 @@
 import UIKit
 
 class SkipLogin: UIViewController {
-
-    @IBOutlet var skipLoginPostText: CustomTextView!
     
+    @IBOutlet var skipLoginPostText: CustomTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-271*/ /*TEL-140*/
-
-        
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews() /*TEL-242*/
-
         skipLoginPostText.centerVertically() /*TEL-163*/
     }
+    
+    
+    /*TEL-277*/
+    @IBAction func backButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 }

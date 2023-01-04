@@ -35,7 +35,7 @@ class ViewController: UIViewController{
         
         /*TEL-108*/
         let skipLoginVC = SkipLogin()
-        //        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
+        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         present(skipLoginVC, animated: true)
     }
     

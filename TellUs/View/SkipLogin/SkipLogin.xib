@@ -38,12 +38,24 @@
                     <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y45-Nm-jSc">
+                    <rect key="frame" x="16" y="79" width="61" height="35"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="back"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="NEQ-Hs-lP1"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4U8-sy-29g" secondAttribute="trailing" constant="30" id="98f-wR-A9W"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FaL-tf-13p"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="TD9-Ua-5Qy"/>
+                <constraint firstItem="Y45-Nm-jSc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="WIe-bp-tND"/>
+                <constraint firstItem="Y45-Nm-jSc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Xd2-Pk-DbJ"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="Xg5-WV-6yy"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kAU-J6-bfh"/>
                 <constraint firstAttribute="bottom" secondItem="4U8-sy-29g" secondAttribute="bottom" constant="29" id="u5K-Eh-nAX"/>
