@@ -18,8 +18,8 @@ class SuccessfulLogin: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.0) /*TEL-173*/
                 
-        //Colors to be defined here
         dislikeCounter.textColor = UIColor(named: K.AppColors.red) /*TEL-257*/
+        likeCounter.textColor = UIColor(named: K.AppColors.green) /*TEL-264*/
         
         
         successfulLoginPostText.text = "Idu dva balona ulicom i sretnu kaktussssssssssssssssssss"
