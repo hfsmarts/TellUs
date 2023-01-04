@@ -12,6 +12,7 @@ class SuccessfulLogin: UIViewController {
 
     @IBOutlet var successfulLoginPostText: CustomTextView! /*TEL-227*/
     @IBOutlet var dislikeCounter: UILabel! /*TEL-255*/
+    @IBOutlet var likeCounter: UILabel! /*TEL-265*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

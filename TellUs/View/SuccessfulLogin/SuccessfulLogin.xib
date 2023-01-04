@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessfulLogin" customModule="TellUs" customModuleProvider="target">
             <connections>
                 <outlet property="dislikeCounter" destination="QL2-C8-MhI" id="G1t-AD-sjM"/>
+                <outlet property="likeCounter" destination="q64-nz-Zyg" id="IvF-b2-Sa1"/>
                 <outlet property="successfulLoginPostText" destination="XZj-AW-tPc" id="HGU-RQ-Qah"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
