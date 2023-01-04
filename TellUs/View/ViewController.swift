@@ -14,7 +14,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "BackgroundBlue") /*TEL-271*/
+        view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-271*/
         
         /*TEL-77*/ /*TEL-89*/
         let newEmailTextField = emailTextField as? CustomTextField

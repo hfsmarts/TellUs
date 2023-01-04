@@ -16,7 +16,7 @@ class SuccessfulLogin: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "BackgroundBlue") /*TEL-173*/ /*TEL-268*/
+        view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-173*/ /*TEL-268*/
         
         dislikeCounter.textColor = UIColor(named: K.AppColors.red) /*TEL-257*/
         likeCounter.textColor = UIColor(named: K.AppColors.green) /*TEL-264*/

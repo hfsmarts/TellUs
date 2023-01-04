@@ -14,7 +14,7 @@ class SkipLogin: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "BackgroundBlue") /*TEL-271*/ /*TEL-140*/
+        view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-271*/ /*TEL-140*/
 
         
     }
