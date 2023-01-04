@@ -19,17 +19,16 @@ class ViewController: UIViewController{
         /*TEL-77*/ /*TEL-89*/
         let newEmailTextField = emailTextField as? CustomTextField
         newEmailTextField?.setPlaceHolder(text: "Email")
+    
+        /*TEL-78*/ /*TEL-89*/
+        let newPasswordTextField = passwordTextField as? CustomTextField
+        newPasswordTextField?.setPlaceHolder(text: "Password")
         
         //DELETE
         emailTextField.text = "hfsmarts@aol.com" /*TEL-234*/
         passwordTextField.text = "Hamo78new4444!"
         //DELETE
         
-        
-        
-        /*TEL-78*/ /*TEL-89*/
-        let newPasswordTextField = passwordTextField as? CustomTextField
-        newPasswordTextField?.setPlaceHolder(text: "Password")
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/

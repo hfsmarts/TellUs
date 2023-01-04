@@ -53,7 +53,7 @@ class PasswordForget: UIViewController {
         passwordForgetButton.translatesAutoresizingMaskIntoConstraints = false
         passwordForgetButton.setTitle("Submit", for: .normal) /*TEL-104*/
         passwordForgetButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 18) /*TEL-207*/
-        passwordForgetButton.backgroundColor = UIColor(red: 0.15, green: 0.53, blue: 0.90, alpha: 1.00) /*TEL-104*/
+        passwordForgetButton.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-104*/
         passwordForgetButton.addTarget(nil, action: #selector(buttonAction), for: .touchUpInside) /*TEL-189*/
         return passwordForgetButton
     }()
