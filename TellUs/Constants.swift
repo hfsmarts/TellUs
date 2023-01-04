@@ -16,6 +16,7 @@ struct K { /*TEL-259*/ /*TEL-222*/
     struct AppColors{
         static let red = "AppRed" /*TEL-256*/
         static let green = "AppGreen" /*TEL-263*/
+        static let blueBackround = "BackgroundBlue" /*TEL-267*/
     }
     
     
