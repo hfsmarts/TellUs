@@ -22,8 +22,7 @@ class SignUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red: 0.99, green: 0.50, blue: 0.14, alpha: 1.0) /*TEL-124*/
-        
+        view.backgroundColor = UIColor(named: K.AppColors.orangeBackground) /*TEL-124*/ /*TEL-272*/
         nameTextField.setPlaceHolder(text: "Name") /*TEL-129*/
         nameTextField.autocapitalizationType = .sentences /*TEL-203*/
         surnameTextField.setPlaceHolder(text: "Surname") /*TEL-130*/
