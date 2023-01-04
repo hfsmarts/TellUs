@@ -53,7 +53,7 @@ class SignUp: UIViewController {
             //user should be saved to the database
             UtilityFunction().alertFunction(vc: self, title: "Success", message: "Welcome to Tell us.")
         } else {
-            UtilityFunction().alertFunction(vc: self, title: "Error signing up", message: K().signUpErrorMessage) /*TEL-178*/ /*TEL-260*/
+            UtilityFunction().alertFunction(vc: self, title: "Error signing up", message: K.signUpErrorMessage) /*TEL-178*/ /*TEL-260*/
         }
     }
     
