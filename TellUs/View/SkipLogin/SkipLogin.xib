@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SkipLogin" customModule="TellUs" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="Y45-Nm-jSc" id="VAg-4u-IVi"/>
                 <outlet property="skipLoginPostText" destination="7jl-4G-q25" id="LYb-pu-mma"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -38,11 +39,12 @@
                     <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y45-Nm-jSc">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y45-Nm-jSc" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                     <rect key="frame" x="16" y="79" width="61" height="35"/>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="back"/>
+                    <buttonConfiguration key="configuration" style="plain" title="back" cornerStyle="capsule" titleAlignment="center"/>
                     <connections>
                         <action selector="backButton:" destination="-1" eventType="touchUpInside" id="NEQ-Hs-lP1"/>
                     </connections>
