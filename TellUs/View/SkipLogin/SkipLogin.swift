@@ -17,7 +17,7 @@ class SkipLogin: UIViewController {
         
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-271*/ /*TEL-140*/
         backButton.backgroundColor = .clear /*TEL-280*/
-     
+        backButton.setTitle("back", for: .normal) /*TEL-281*/
 
         
 
