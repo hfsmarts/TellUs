@@ -18,9 +18,8 @@ class SkipLogin: UIViewController {
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-271*/ /*TEL-140*/
         backButton.backgroundColor = .clear /*TEL-280*/
         backButton.setTitle("back", for: .normal) /*TEL-281*/
-
+        backButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-282*/
         
-
     }
     
     override func viewDidLayoutSubviews() {
