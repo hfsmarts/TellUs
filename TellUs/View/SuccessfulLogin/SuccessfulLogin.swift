@@ -21,7 +21,8 @@ class SuccessfulLogin: UIViewController {
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-173*/ /*TEL-268*/
         
         backButton.backgroundColor = .clear /*TEL-284*/
-        
+        backButton.setTitle("back", for: .normal) /*TEL-285*/
+
         dislikeCounter.textColor = UIColor(named: K.AppColors.red) /*TEL-257*/
         likeCounter.textColor = UIColor(named: K.AppColors.green) /*TEL-264*/
         
