@@ -10,6 +10,8 @@ import UIKit
 /*TEL-172*/
 class SuccessfulLogin: UIViewController {
     
+    
+    @IBOutlet var backButton: CustomButton! /*TEL-283*/
     @IBOutlet var successfulLoginPostText: CustomTextView! /*TEL-227*/
     @IBOutlet var dislikeCounter: UILabel! /*TEL-255*/
     @IBOutlet var likeCounter: UILabel! /*TEL-265*/
