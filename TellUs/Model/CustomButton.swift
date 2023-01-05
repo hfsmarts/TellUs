@@ -13,7 +13,6 @@ class CustomButton: UIButton{
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUPButton()
-        
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -28,5 +27,6 @@ class CustomButton: UIButton{
         layer.cornerRadius = 12
         clipsToBounds = true
     }
+    
 }
 

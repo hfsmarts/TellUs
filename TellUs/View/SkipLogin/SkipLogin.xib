@@ -40,11 +40,12 @@
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y45-Nm-jSc" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
-                    <rect key="frame" x="16" y="79" width="61" height="35"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="back" cornerStyle="capsule" titleAlignment="center"/>
+                    <rect key="frame" x="30" y="60" width="39" height="34"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="back">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="backButton:" destination="-1" eventType="touchUpInside" id="NEQ-Hs-lP1"/>
                     </connections>
@@ -53,11 +54,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4U8-sy-29g" secondAttribute="trailing" constant="30" id="98f-wR-A9W"/>
+                <constraint firstAttribute="trailing" secondItem="4U8-sy-29g" secondAttribute="trailing" constant="30" id="98f-wR-A9W"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FaL-tf-13p"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="TD9-Ua-5Qy"/>
-                <constraint firstItem="Y45-Nm-jSc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="WIe-bp-tND"/>
-                <constraint firstItem="Y45-Nm-jSc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Xd2-Pk-DbJ"/>
+                <constraint firstItem="Y45-Nm-jSc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="WIe-bp-tND"/>
+                <constraint firstAttribute="leading" secondItem="Y45-Nm-jSc" secondAttribute="leading" constant="-30" id="Xd2-Pk-DbJ"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="Xg5-WV-6yy"/>
                 <constraint firstItem="7jl-4G-q25" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kAU-J6-bfh"/>
                 <constraint firstAttribute="bottom" secondItem="4U8-sy-29g" secondAttribute="bottom" constant="29" id="u5K-Eh-nAX"/>
