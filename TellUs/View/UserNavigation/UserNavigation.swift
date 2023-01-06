@@ -21,6 +21,9 @@ class UserNavigation: UIViewController {
         logOutButton.backgroundColor = UIColor(named: "BackgroundBlue")
     }
     
+    @IBAction func logOutTapped(_ sender: UIButton) { /*TEL-310*/
+        
+    }
     
     
 }
