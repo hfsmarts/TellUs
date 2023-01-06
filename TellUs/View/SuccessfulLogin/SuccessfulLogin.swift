@@ -10,7 +10,6 @@ import UIKit
 /*TEL-172*/
 class SuccessfulLogin: UIViewController {
     
-    @IBOutlet var backButton: BackButton! /*TEL-283*/
     @IBOutlet var locationLabel: UILabel! /*TEL-294*/
     @IBOutlet var successfulLoginPostText: CustomTextView! /*TEL-227*/
     @IBOutlet var dislikeCounter: UILabel! /*TEL-255*/
@@ -33,10 +32,7 @@ class SuccessfulLogin: UIViewController {
         successfulLoginPostText.centerVertically() /*TEL-228*/
     }
     
-    /*TEL-237*/
-    @IBAction func backButton(_ sender: UIButton) { /*TEL-239*/
-        dismiss(animated: true, completion: nil) /*TEL-240*/
-    }
+
     
     /*TEL-299*/
     @IBAction func threeDotsButton(_ sender: UIButton) {
