@@ -74,12 +74,6 @@
                         <constraint firstAttribute="width" constant="60" id="Fg6-Jd-wRw"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-C8-MhI">
-                    <rect key="frame" x="310" y="581" width="27" height="21"/>
-                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff2-rL-7ww">
                     <rect key="frame" x="310" y="738" width="53" height="85"/>
                     <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
@@ -88,26 +82,32 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-C8-MhI">
+                    <rect key="frame" x="310" y="602" width="27" height="21"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0IB-qU-vFH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lc1-MJ-hXH" secondAttribute="trailing" constant="40" id="2RH-N7-hfD"/>
-                <constraint firstItem="QL2-C8-MhI" firstAttribute="width" secondItem="7cW-V5-jPH" secondAttribute="width" multiplier="0.45" id="2fT-ej-cCH"/>
                 <constraint firstItem="ByE-7L-Yw7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="4CU-DQ-8TW"/>
                 <constraint firstItem="7cW-V5-jPH" firstAttribute="top" secondItem="XZj-AW-tPc" secondAttribute="bottom" constant="8" id="57Q-gV-i3P"/>
                 <constraint firstItem="q64-nz-Zyg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="194" id="83y-EC-wEP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QL2-C8-MhI" secondAttribute="trailing" constant="56" id="8ey-N1-zMc"/>
                 <constraint firstItem="lc1-MJ-hXH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="161" id="8wR-dX-vM4"/>
                 <constraint firstItem="QL2-C8-MhI" firstAttribute="height" secondItem="7cW-V5-jPH" secondAttribute="height" multiplier="0.35" id="BVr-6S-H3r"/>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="EeA-eq-buK"/>
                 <constraint firstAttribute="leading" secondItem="ByE-7L-Yw7" secondAttribute="leading" constant="-30" id="FGx-10-hfA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QL2-C8-MhI" secondAttribute="trailing" constant="56" id="Ijj-ib-UGy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QL2-C8-MhI" secondAttribute="bottom" constant="195" id="KeN-QV-OFv"/>
+                <constraint firstItem="QL2-C8-MhI" firstAttribute="width" secondItem="7cW-V5-jPH" secondAttribute="width" multiplier="0.45" id="Nkt-Op-7hU"/>
                 <constraint firstAttribute="bottom" secondItem="Ff2-rL-7ww" secondAttribute="bottom" constant="29" id="OCd-dT-MvR"/>
                 <constraint firstItem="2dd-wt-jnp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.2" id="OSh-aW-p70"/>
                 <constraint firstItem="q64-nz-Zyg" firstAttribute="height" secondItem="lc1-MJ-hXH" secondAttribute="height" multiplier="0.35" id="ShV-Al-itl"/>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="UTq-rf-z7T"/>
-                <constraint firstItem="QL2-C8-MhI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="522" id="WaR-QM-ZpO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q64-nz-Zyg" secondAttribute="trailing" constant="56" id="WoV-av-f9c"/>
                 <constraint firstItem="2dd-wt-jnp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yma-C7-V0B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ff2-rL-7ww" secondAttribute="trailing" constant="30" id="lh1-r8-Zel"/>
