@@ -9,9 +9,9 @@ import UIKit
 
 /*TEL-296*/
 class UserNavigation: UIViewController {
-    @IBOutlet var newPostButton: CustomButton!
-    @IBOutlet var myPostsButton: CustomButton!
-    @IBOutlet var logOutButton: CustomButton!
+    @IBOutlet var newPostButton: CustomButton! /*TEL-303*/
+    @IBOutlet var myPostsButton: CustomButton! /*TEL-304*/
+    @IBOutlet var logOutButton: CustomButton! /*TEL-305*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
