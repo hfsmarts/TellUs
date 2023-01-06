@@ -16,6 +16,8 @@
 		591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591996822952C2700009DA9F /* UtilityFunctions.swift */; };
 		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
 		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
+		592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BF35B296852A400A630A9 /* UserNavigation.swift */; };
+		592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592BF35C296852A400A630A9 /* UserNavigation.xib */; };
 		5946BBA9295AB8FF00511187 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946BBA8295AB8FF00511187 /* Constants.swift */; };
 		5946BBD3295D654D00511187 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5946BBD2295D654D00511187 /* Colors.xcassets */; };
 		59677D19295041B600CE80BF /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59677D18295041B600CE80BF /* CustomTextView.swift */; };
@@ -41,6 +43,8 @@
 		591996822952C2700009DA9F /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
 		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
+		592BF35B296852A400A630A9 /* UserNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigation.swift; sourceTree = "<group>"; };
+		592BF35C296852A400A630A9 /* UserNavigation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNavigation.xib; sourceTree = "<group>"; };
 		5946BBA8295AB8FF00511187 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5946BBD2295D654D00511187 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		59677D18295041B600CE80BF /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 			path = SuccessfulLogin;
 			sourceTree = "<group>";
 		};
+		592BF35F296852B400A630A9 /* UserNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				592BF35B296852A400A630A9 /* UserNavigation.swift */,
+				592BF35C296852A400A630A9 /* UserNavigation.xib */,
+			);
+			path = UserNavigation;
+			sourceTree = "<group>";
+		};
 		59702DFC291A12C500821CFD = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +172,7 @@
 				5915915429483C58004EEF6D /* SignUp */,
 				5915914A29483B6C004EEF6D /* SkipLogin */,
 				59199681295230BC0009DA9F /* SuccessfulLogin */,
+				592BF35F296852B400A630A9 /* UserNavigation */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +239,7 @@
 				590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */,
 				59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */,
 				592899B0293C9B31003D104B /* SkipLogin.xib in Resources */,
+				592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */,
 				590C9859291FE30C002A5FB7 /* KleeOne-Regular.ttf in Resources */,
 				5915915329483C48004EEF6D /* SignUp.xib in Resources */,
 				59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */,
@@ -250,6 +265,7 @@
 				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
 				592899AF293C9B31003D104B /* SkipLogin.swift in Sources */,
 				591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */,
+				592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */,
 				5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */,
 				59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */,
 				5946BBA9295AB8FF00511187 /* Constants.swift in Sources */,

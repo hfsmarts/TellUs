@@ -20,12 +20,9 @@ class SuccessfulLogin: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-173*/ /*TEL-268*/
-        
         locationLabel.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-295*/
-        
         dislikeCounter.textColor = UIColor(named: K.AppColors.red) /*TEL-257*/
         likeCounter.textColor = UIColor(named: K.AppColors.green) /*TEL-264*/
-        
         
         //Text below should be loaded from database
         successfulLoginPostText.text = "Three dots below are your navigation, yes lower right corner..."
