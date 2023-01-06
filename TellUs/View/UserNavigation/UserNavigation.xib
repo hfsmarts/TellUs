@@ -42,6 +42,9 @@
                     <state key="normal" title="New Post">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="newPostTapped:" destination="-1" eventType="touchUpInside" id="Tz3-VZ-FsZ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qC-cq-4uD" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                     <rect key="frame" x="39.333333333333343" y="405.33333333333331" width="314.33333333333326" height="51.333333333333314"/>

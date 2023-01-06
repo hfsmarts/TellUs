@@ -21,12 +21,18 @@ class UserNavigation: UIViewController {
         logOutButton.backgroundColor = UIColor(named: "BackgroundBlue")
     }
     
+    @IBAction func newPostTapped(_ sender: UIButton) { /*TEL-321*/
+        
+    }
+    
+    
+    
+    
+    
+    
     @IBAction func logOutTapped(_ sender: UIButton) { /*TEL-310*/
         /*TEL-311*/
-        
-        //User is no longer loged in the app, consider this in backend
         self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
-        
     }
     
     
