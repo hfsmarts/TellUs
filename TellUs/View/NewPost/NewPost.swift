@@ -12,7 +12,8 @@ class NewPost: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.
+        view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-316*/
+
     }
 
 
