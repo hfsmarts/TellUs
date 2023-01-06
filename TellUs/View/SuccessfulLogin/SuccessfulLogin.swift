@@ -17,17 +17,12 @@ class SuccessfulLogin: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-173*/ /*TEL-268*/
         
-//        backButton.backgroundColor = .clear /*TEL-284*/
-//        backButton.setTitle("back", for: .normal) /*TEL-285*/
-//        backButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-286*/
-
-
+        view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-173*/ /*TEL-268*/
         dislikeCounter.textColor = UIColor(named: K.AppColors.red) /*TEL-257*/
         likeCounter.textColor = UIColor(named: K.AppColors.green) /*TEL-264*/
         
-        
+        //Text below should be loaded from database
         successfulLoginPostText.text = "Idu dva balona ulicom i sretnu kaktussssssssssssssssssss"
     }
     
@@ -36,11 +31,11 @@ class SuccessfulLogin: UIViewController {
         successfulLoginPostText.centerVertically() /*TEL-228*/
     }
     
-    
     /*TEL-237*/
     @IBAction func backButton(_ sender: UIButton) { /*TEL-239*/
         dismiss(animated: true, completion: nil) /*TEL-240*/
     }
+    
 }
 
 

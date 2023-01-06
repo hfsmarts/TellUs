@@ -17,11 +17,12 @@ class BackButton: UIButton {
     }
     
     func setUPButton(){
-        setTitleColor(.black, for: .normal)
-        backgroundColor = .clear /*TEL-284*/
-        titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-286*/
+        setTitleColor(.black, for: .normal) /*TEL-281*/
+        backgroundColor = .clear /*TEL-284*/ /*TEL-280*/
+        titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-286*/ /*TEL-282*/
         setTitle("back", for: .normal) /*TEL-285*/
     }
-    
+
+
     
 }
