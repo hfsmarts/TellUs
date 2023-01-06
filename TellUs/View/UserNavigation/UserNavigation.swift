@@ -10,11 +10,13 @@ import UIKit
 /*TEL-296*/
 class UserNavigation: UIViewController {
     @IBOutlet var newPostButton: CustomButton!
+    @IBOutlet var myPostsButton: CustomButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "BackgroundOrange") /*TEL-297*/
         newPostButton.backgroundColor = UIColor(named: "BackgroundBlue")
+        myPostsButton.backgroundColor = UIColor(named: "BackgroundBlue")
     }
     
     

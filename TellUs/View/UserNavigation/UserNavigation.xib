@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserNavigation" customModule="TellUs" customModuleProvider="target">
             <connections>
+                <outlet property="myPostsButton" destination="8qC-cq-4uD" id="6Vc-cD-dbd"/>
                 <outlet property="newPostButton" destination="JXs-RK-UMd" id="S2z-0q-FPP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -39,12 +40,23 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qC-cq-4uD" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="405.33333333333331" width="314.33333333333326" height="51.333333333333314"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="My Posts">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="8qC-cq-4uD" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="Hek-jJ-IPe"/>
+                <constraint firstItem="8qC-cq-4uD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IYS-W6-EMt"/>
                 <constraint firstItem="JXs-RK-UMd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-53" id="O3C-Wd-IFN"/>
                 <constraint firstItem="dUH-NI-3qF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-175" id="VLD-Ya-FuZ"/>
+                <constraint firstItem="8qC-cq-4uD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="5" id="g1n-xv-RYz"/>
+                <constraint firstItem="8qC-cq-4uD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="pag-Ck-bBb"/>
                 <constraint firstItem="dUH-NI-3qF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u8l-wU-whD"/>
                 <constraint firstItem="JXs-RK-UMd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="y2F-yk-IXx"/>
                 <constraint firstItem="JXs-RK-UMd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yBH-Os-BpI"/>
