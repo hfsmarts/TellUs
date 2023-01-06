@@ -9,13 +9,12 @@ import UIKit
 
 /*TEL-296*/
 class UserNavigation: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor(named: "BackgroundOrange") /*TEL-297*/
     }
-
-
-
+    
+    
+    
 }
