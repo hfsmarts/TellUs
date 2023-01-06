@@ -14,6 +14,8 @@
 		5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919967D295230B30009DA9F /* SuccessfulLogin.swift */; };
 		59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5919967E295230B30009DA9F /* SuccessfulLogin.xib */; };
 		591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591996822952C2700009DA9F /* UtilityFunctions.swift */; };
+		592327C329687D1A00BBD461 /* MyPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592327C129687D1A00BBD461 /* MyPosts.swift */; };
+		592327C429687D1A00BBD461 /* MyPosts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592327C229687D1A00BBD461 /* MyPosts.xib */; };
 		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
 		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
 		592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BF35B296852A400A630A9 /* UserNavigation.swift */; };
@@ -41,6 +43,8 @@
 		5919967D295230B30009DA9F /* SuccessfulLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulLogin.swift; sourceTree = "<group>"; };
 		5919967E295230B30009DA9F /* SuccessfulLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulLogin.xib; sourceTree = "<group>"; };
 		591996822952C2700009DA9F /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		592327C129687D1A00BBD461 /* MyPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPosts.swift; sourceTree = "<group>"; };
+		592327C229687D1A00BBD461 /* MyPosts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPosts.xib; sourceTree = "<group>"; };
 		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
 		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
 		592BF35B296852A400A630A9 /* UserNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigation.swift; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 			path = SuccessfulLogin;
 			sourceTree = "<group>";
 		};
+		592327C529687D2500BBD461 /* MyPosts */ = {
+			isa = PBXGroup;
+			children = (
+				592327C129687D1A00BBD461 /* MyPosts.swift */,
+				592327C229687D1A00BBD461 /* MyPosts.xib */,
+			);
+			path = MyPosts;
+			sourceTree = "<group>";
+		};
 		592BF35F296852B400A630A9 /* UserNavigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +182,11 @@
 			children = (
 				59702E0C291A12C500821CFD /* ViewController.swift */,
 				59F188AD29347AC200677518 /* PasswordForget.swift */,
-				5915915429483C58004EEF6D /* SignUp */,
 				5915914A29483B6C004EEF6D /* SkipLogin */,
+				5915915429483C58004EEF6D /* SignUp */,
 				59199681295230BC0009DA9F /* SuccessfulLogin */,
 				592BF35F296852B400A630A9 /* UserNavigation */,
+				592327C529687D2500BBD461 /* MyPosts */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5946BBD3295D654D00511187 /* Colors.xcassets in Resources */,
+				592327C429687D1A00BBD461 /* MyPosts.xib in Resources */,
 				590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */,
 				59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */,
 				592899B0293C9B31003D104B /* SkipLogin.xib in Resources */,
@@ -255,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592327C329687D1A00BBD461 /* MyPosts.swift in Sources */,
 				59702E0D291A12C500821CFD /* ViewController.swift in Sources */,
 				59702E09291A12C500821CFD /* AppDelegate.swift in Sources */,
 				59677D19295041B600CE80BF /* CustomTextView.swift in Sources */,
