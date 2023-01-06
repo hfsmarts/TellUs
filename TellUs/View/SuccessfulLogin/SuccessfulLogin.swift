@@ -10,7 +10,7 @@ import UIKit
 /*TEL-172*/
 class SuccessfulLogin: UIViewController {
     
-    @IBOutlet var backButton: CustomButton! /*TEL-283*/
+    @IBOutlet var backButton: BackButton! /*TEL-283*/
     @IBOutlet var successfulLoginPostText: CustomTextView! /*TEL-227*/
     @IBOutlet var dislikeCounter: UILabel! /*TEL-255*/
     @IBOutlet var likeCounter: UILabel! /*TEL-265*/
@@ -19,9 +19,9 @@ class SuccessfulLogin: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-173*/ /*TEL-268*/
         
-        backButton.backgroundColor = .clear /*TEL-284*/
-        backButton.setTitle("back", for: .normal) /*TEL-285*/
-        backButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-286*/
+//        backButton.backgroundColor = .clear /*TEL-284*/
+//        backButton.setTitle("back", for: .normal) /*TEL-285*/
+//        backButton.titleLabel?.font = UIFont(name: "KleeOne-SemiBold", size: 25) /*TEL-286*/
 
 
         dislikeCounter.textColor = UIColor(named: K.AppColors.red) /*TEL-257*/
