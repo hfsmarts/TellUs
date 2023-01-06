@@ -25,6 +25,7 @@
 		59702E10291A12C500821CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59702E0E291A12C500821CFD /* Main.storyboard */; };
 		59702E12291A12C700821CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59702E11291A12C700821CFD /* Assets.xcassets */; };
 		59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59702E13291A12C700821CFD /* LaunchScreen.storyboard */; };
+		59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BDFB622967F8BC00956A7C /* BackButton.swift */; };
 		59D01F912932156F00AA6505 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D01F902932156F00AA6505 /* CustomButton.swift */; };
 		59D01F952933716000AA6505 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D01F942933716000AA6505 /* CustomTextField.swift */; };
 		59F188AE29347AC200677518 /* PasswordForget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F188AD29347AC200677518 /* PasswordForget.swift */; };
@@ -51,6 +52,7 @@
 		59702E11291A12C700821CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59702E14291A12C700821CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59702E16291A12C700821CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BDFB622967F8BC00956A7C /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		59D01F902932156F00AA6505 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		59D01F942933716000AA6505 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		59F188AD29347AC200677518 /* PasswordForget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordForget.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				59D01F902932156F00AA6505 /* CustomButton.swift */,
+				59BDFB622967F8BC00956A7C /* BackButton.swift */,
 				59D01F942933716000AA6505 /* CustomTextField.swift */,
 				59677D18295041B600CE80BF /* CustomTextView.swift */,
 			);
@@ -248,6 +251,7 @@
 				592899AF293C9B31003D104B /* SkipLogin.swift in Sources */,
 				591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */,
 				5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */,
+				59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */,
 				5946BBA9295AB8FF00511187 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
