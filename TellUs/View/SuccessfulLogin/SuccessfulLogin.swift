@@ -41,6 +41,9 @@ class SuccessfulLogin: UIViewController {
     /*TEL-299*/
     @IBAction func threeDotsButton(_ sender: UIButton) {
         
+        let userNavigationVC = UserNavigation() /*TEL-298*/
+        present(userNavigationVC, animated: true)
+        
     }
     
     
