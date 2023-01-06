@@ -30,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarajevo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dd-wt-jnp">
-                    <rect key="frame" x="164" y="117.33333333333333" width="65.333333333333314" height="20.999999999999986"/>
+                    <rect key="frame" x="164" y="74.666666666666671" width="65.333333333333314" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="EeA-eq-buK"/>
                 <constraint firstAttribute="leading" secondItem="ByE-7L-Yw7" secondAttribute="leading" constant="-30" id="FGx-10-hfA"/>
                 <constraint firstAttribute="bottom" secondItem="LgX-cs-er2" secondAttribute="bottom" constant="29" id="I0R-Xc-fWl"/>
-                <constraint firstItem="2dd-wt-jnp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.3" id="OSh-aW-p70"/>
+                <constraint firstItem="2dd-wt-jnp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.2" id="OSh-aW-p70"/>
                 <constraint firstItem="q64-nz-Zyg" firstAttribute="height" secondItem="lc1-MJ-hXH" secondAttribute="height" multiplier="0.35" id="ShV-Al-itl"/>
                 <constraint firstItem="XZj-AW-tPc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="UTq-rf-z7T"/>
                 <constraint firstItem="QL2-C8-MhI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="522" id="WaR-QM-ZpO"/>
