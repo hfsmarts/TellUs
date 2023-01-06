@@ -1,5 +1,5 @@
 //
-//  MyPosts.swift
+//  NewPost.swift
 //  TellUs
 //
 //  Created by Harun Fazlic on 6. 1. 2023..
@@ -7,9 +7,9 @@
 
 import UIKit
 
-/*TEL-313*/
-class MyPosts: UIViewController {
-    
+/*TEL-315*/
+class NewPost: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
