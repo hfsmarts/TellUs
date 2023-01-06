@@ -21,8 +21,9 @@ class UserNavigation: UIViewController {
         logOutButton.backgroundColor = UIColor(named: "BackgroundBlue")
     }
     
-    @IBAction func newPostTapped(_ sender: UIButton) { /*TEL-321*/
-        
+    @IBAction func newPostTapped(_ sender: UIButton) { /*TEL-321*/ /*TEL-323*/
+        let newPostVC = NewPost()
+        present(newPostVC, animated: true)
     }
     
     @IBAction func myPostsTapped(_ sender: UIButton) { /*TEL-322*/
