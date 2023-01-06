@@ -38,6 +38,11 @@ class SuccessfulLogin: UIViewController {
         dismiss(animated: true, completion: nil) /*TEL-240*/
     }
     
+    /*TEL-299*/
+    @IBAction func threeDotsButton(_ sender: UIButton) {
+        
+    }
+    
     
     
     
