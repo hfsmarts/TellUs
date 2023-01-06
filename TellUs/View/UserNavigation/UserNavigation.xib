@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserNavigation" customModule="TellUs" customModuleProvider="target">
             <connections>
+                <outlet property="newPostButton" destination="JXs-RK-UMd" id="S2z-0q-FPP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,12 +32,23 @@
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXs-RK-UMd" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="347.33333333333331" width="314.33333333333326" height="51.333333333333314"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="New Post">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="JXs-RK-UMd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-53" id="O3C-Wd-IFN"/>
                 <constraint firstItem="dUH-NI-3qF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-175" id="VLD-Ya-FuZ"/>
                 <constraint firstItem="dUH-NI-3qF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u8l-wU-whD"/>
+                <constraint firstItem="JXs-RK-UMd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="y2F-yk-IXx"/>
+                <constraint firstItem="JXs-RK-UMd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yBH-Os-BpI"/>
+                <constraint firstItem="JXs-RK-UMd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="zZm-e6-xUf"/>
             </constraints>
             <point key="canvasLocation" x="83" y="21"/>
         </view>
