@@ -59,6 +59,12 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIO-zI-vym">
+                    <rect key="frame" x="310" y="750" width="53" height="73"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,8 +74,10 @@
                 <constraint firstItem="8qC-cq-4uD" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="Hek-jJ-IPe"/>
                 <constraint firstItem="8qC-cq-4uD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IYS-W6-EMt"/>
                 <constraint firstItem="JXs-RK-UMd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-53" id="O3C-Wd-IFN"/>
+                <constraint firstAttribute="bottom" secondItem="eIO-zI-vym" secondAttribute="bottom" constant="29" id="Sot-4H-9TD"/>
                 <constraint firstItem="dUH-NI-3qF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-175" id="VLD-Ya-FuZ"/>
                 <constraint firstItem="Alw-Dw-zac" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="ckk-5Z-aeb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eIO-zI-vym" secondAttribute="trailing" constant="30" id="ecM-1M-nVX"/>
                 <constraint firstItem="8qC-cq-4uD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="5" id="g1n-xv-RYz"/>
                 <constraint firstItem="8qC-cq-4uD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="pag-Ck-bBb"/>
                 <constraint firstItem="Alw-Dw-zac" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="s2M-84-KLj"/>
