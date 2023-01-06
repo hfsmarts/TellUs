@@ -26,8 +26,9 @@ class UserNavigation: UIViewController {
         present(newPostVC, animated: true)
     }
     
-    @IBAction func myPostsTapped(_ sender: UIButton) { /*TEL-322*/
-        
+    @IBAction func myPostsTapped(_ sender: UIButton) { /*TEL-322*/ /*TEL-324*/
+        let myPostsVC = MyPosts()
+        present(myPostsVC, animated: true)
     }
     
     
