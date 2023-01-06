@@ -19,6 +19,7 @@
                 <outlet property="backButton" destination="ByE-7L-Yw7" id="iaf-2Z-cCS"/>
                 <outlet property="dislikeCounter" destination="QL2-C8-MhI" id="G1t-AD-sjM"/>
                 <outlet property="likeCounter" destination="q64-nz-Zyg" id="IvF-b2-Sa1"/>
+                <outlet property="locationLabel" destination="2dd-wt-jnp" id="Fe7-in-w42"/>
                 <outlet property="successfulLoginPostText" destination="XZj-AW-tPc" id="HGU-RQ-Qah"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

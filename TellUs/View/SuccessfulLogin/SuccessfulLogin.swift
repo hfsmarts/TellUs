@@ -11,6 +11,7 @@ import UIKit
 class SuccessfulLogin: UIViewController {
     
     @IBOutlet var backButton: BackButton! /*TEL-283*/
+    @IBOutlet var locationLabel: UILabel! /*TEL-294*/
     @IBOutlet var successfulLoginPostText: CustomTextView! /*TEL-227*/
     @IBOutlet var dislikeCounter: UILabel! /*TEL-255*/
     @IBOutlet var likeCounter: UILabel! /*TEL-265*/
