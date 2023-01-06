@@ -53,6 +53,9 @@
                     <state key="normal" title="My Posts">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="myPostsTapped:" destination="-1" eventType="touchUpInside" id="Cgd-gb-xHW"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alw-Dw-zac" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
                     <rect key="frame" x="39.333333333333343" y="463.33333333333331" width="314.33333333333326" height="51.333333333333314"/>

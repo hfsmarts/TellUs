@@ -25,6 +25,9 @@ class UserNavigation: UIViewController {
         
     }
     
+    @IBAction func myPostsTapped(_ sender: UIButton) { /*TEL-322*/
+        
+    }
     
     
     
