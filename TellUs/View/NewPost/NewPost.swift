@@ -16,6 +16,9 @@ class NewPost: UIViewController {
 
     }
 
-
+    @IBAction func backButtonTapped(_ sender: UIButton) { /*TEL-327*/
+        
+    }
+    
 
 }
