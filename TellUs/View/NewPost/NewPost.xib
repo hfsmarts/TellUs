@@ -19,18 +19,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSi-m5-TfY">
-                    <rect key="frame" x="126.33333333333331" y="315.66666666666669" width="122.66666666666669" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vag-s9-hBo" customClass="BackButton" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="30" y="60" width="54" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="LSi-m5-TfY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Wa-8A-9Wy"/>
-                <constraint firstItem="LSi-m5-TfY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ce8-UN-vGb"/>
+                <constraint firstItem="vag-s9-hBo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="R7Y-kI-Qfe"/>
+                <constraint firstAttribute="leading" secondItem="vag-s9-hBo" secondAttribute="leading" constant="-30" id="obN-fb-YO3"/>
             </constraints>
             <point key="canvasLocation" x="37" y="21"/>
         </view>
