@@ -9,7 +9,7 @@ import UIKit
 
 /*TEL-315*/
 class NewPost: UIViewController {
-    @IBOutlet var locationLabel: CustomLocationLabel!
+    @IBOutlet var locationLabel: CustomLocationLabel! /*TEL-333*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
