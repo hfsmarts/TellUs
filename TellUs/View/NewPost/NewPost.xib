@@ -36,19 +36,34 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ENJ-2J-BZC" customClass="CustomTextView" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="40" y="288" width="295" height="91"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0h1-YI-Fab"/>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Ar-Rb-iWk"/>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="170" id="9nn-Gm-79W"/>
                 <constraint firstItem="p77-Ru-LoM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.3" id="IfH-uU-JWe"/>
                 <constraint firstItem="p77-Ru-LoM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JZq-iy-XFf"/>
                 <constraint firstItem="vag-s9-hBo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="R7Y-kI-Qfe"/>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="bBw-Yl-3xr"/>
                 <constraint firstAttribute="leading" secondItem="vag-s9-hBo" secondAttribute="leading" constant="-30" id="obN-fb-YO3"/>
             </constraints>
             <point key="canvasLocation" x="37" y="21"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
