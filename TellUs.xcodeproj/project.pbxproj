@@ -31,6 +31,7 @@
 		59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59702E13291A12C700821CFD /* LaunchScreen.storyboard */; };
 		59A728E229687FA1005E5BA6 /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A728E029687FA1005E5BA6 /* NewPost.swift */; };
 		59A728E329687FA1005E5BA6 /* NewPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A728E129687FA1005E5BA6 /* NewPost.xib */; };
+		59A728E529695CA8005E5BA6 /* CustomLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */; };
 		59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BDFB622967F8BC00956A7C /* BackButton.swift */; };
 		59D01F912932156F00AA6505 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D01F902932156F00AA6505 /* CustomButton.swift */; };
 		59D01F952933716000AA6505 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D01F942933716000AA6505 /* CustomTextField.swift */; };
@@ -64,6 +65,7 @@
 		59702E16291A12C700821CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A728E029687FA1005E5BA6 /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		59A728E129687FA1005E5BA6 /* NewPost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPost.xib; sourceTree = "<group>"; };
+		59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationLabel.swift; sourceTree = "<group>"; };
 		59BDFB622967F8BC00956A7C /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		59D01F902932156F00AA6505 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		59D01F942933716000AA6505 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				59BDFB622967F8BC00956A7C /* BackButton.swift */,
 				59D01F942933716000AA6505 /* CustomTextField.swift */,
 				59677D18295041B600CE80BF /* CustomTextView.swift */,
+				59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				59D01F952933716000AA6505 /* CustomTextField.swift in Sources */,
 				59F188AE29347AC200677518 /* PasswordForget.swift in Sources */,
 				59702E0B291A12C500821CFD /* SceneDelegate.swift in Sources */,
+				59A728E529695CA8005E5BA6 /* CustomLocationLabel.swift in Sources */,
 				5915915229483C48004EEF6D /* SignUp.swift in Sources */,
 				59A728E229687FA1005E5BA6 /* NewPost.swift in Sources */,
 				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
