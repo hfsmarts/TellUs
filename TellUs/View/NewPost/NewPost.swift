@@ -10,6 +10,7 @@ import UIKit
 /*TEL-315*/
 class NewPost: UIViewController {
     @IBOutlet var locationLabel: CustomLocationLabel! /*TEL-333*/
+    @IBOutlet var userPost: CustomTextView! /*TEL-336*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPost" customModule="TellUs" customModuleProvider="target">
             <connections>
                 <outlet property="locationLabel" destination="p77-Ru-LoM" id="Gy2-xb-dbi"/>
+                <outlet property="userPost" destination="ENJ-2J-BZC" id="h14-Te-LBd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
