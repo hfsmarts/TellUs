@@ -24,6 +24,7 @@ class UserNavigation: UIViewController {
     
     @IBAction func newPostTapped(_ sender: UIButton) { /*TEL-321*/ /*TEL-323*/
         let newPostVC = NewPost()
+        newPostVC.modalPresentationStyle = .fullScreen /*TEL-326*/
         present(newPostVC, animated: true)
     }
     
