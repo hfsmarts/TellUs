@@ -37,6 +37,7 @@ class ViewController: UIViewController{
         let skipLoginVC = SkipLogin()
         skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         present(skipLoginVC, animated: true)
+        
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/

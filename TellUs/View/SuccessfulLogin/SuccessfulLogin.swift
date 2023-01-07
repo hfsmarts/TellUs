@@ -32,8 +32,6 @@ class SuccessfulLogin: UIViewController {
         successfulLoginPostText.centerVertically() /*TEL-228*/
     }
     
-
-    
     /*TEL-299*/
     @IBAction func threeDotsButton(_ sender: UIButton) {
         

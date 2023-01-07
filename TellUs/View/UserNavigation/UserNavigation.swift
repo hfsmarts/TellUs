@@ -15,10 +15,11 @@ class UserNavigation: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "BackgroundOrange") /*TEL-297*/
-        newPostButton.backgroundColor = UIColor(named: "BackgroundBlue")
-        myPostsButton.backgroundColor = UIColor(named: "BackgroundBlue")
-        logOutButton.backgroundColor = UIColor(named: "BackgroundBlue")
+        
+        view.backgroundColor = UIColor(named: K.AppColors.orangeBackground) /*TEL-297*/
+        newPostButton.backgroundColor = UIColor(named: K.AppColors.blueBackground)
+        myPostsButton.backgroundColor = UIColor(named: K.AppColors.blueBackground)
+        logOutButton.backgroundColor = UIColor(named:  K.AppColors.blueBackground)
     }
     
     @IBAction func newPostTapped(_ sender: UIButton) { /*TEL-321*/ /*TEL-323*/
@@ -30,10 +31,6 @@ class UserNavigation: UIViewController {
         let myPostsVC = MyPosts()
         present(myPostsVC, animated: true)
     }
-    
-    
-    
-    
     
     @IBAction func logOutTapped(_ sender: UIButton) { /*TEL-310*/
         /*TEL-311*/
