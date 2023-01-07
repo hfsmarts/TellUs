@@ -15,6 +15,7 @@ class NewPost: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-316*/
+        userPost.text = "Type here..."/*TEL-337*/
 
     }
 
