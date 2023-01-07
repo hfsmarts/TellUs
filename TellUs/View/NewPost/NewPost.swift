@@ -9,7 +9,8 @@ import UIKit
 
 /*TEL-315*/
 class NewPost: UIViewController {
-
+    @IBOutlet var locationLabel: CustomLocationLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-316*/

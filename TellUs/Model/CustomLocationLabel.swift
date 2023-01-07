@@ -12,8 +12,7 @@ class CustomLocationLabel: UILabel{
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
-
+        setUpLabel()
     }
     
     func setUpLabel(){
