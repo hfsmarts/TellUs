@@ -56,6 +56,9 @@
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ErP-a2-7bY">
+                    <rect key="frame" x="40" y="770" width="53.666666666666657" height="42"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -69,12 +72,15 @@
                 <constraint firstItem="vag-s9-hBo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="R7Y-kI-Qfe"/>
                 <constraint firstAttribute="bottom" secondItem="Gxq-6S-pzN" secondAttribute="bottom" constant="29" id="VAg-su-vnQ"/>
                 <constraint firstItem="ENJ-2J-BZC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="bBw-Yl-3xr"/>
+                <constraint firstAttribute="bottom" secondItem="ErP-a2-7bY" secondAttribute="bottom" constant="40" id="gwO-OW-LPe"/>
+                <constraint firstItem="ErP-a2-7bY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="mci-Bo-zBA"/>
                 <constraint firstAttribute="leading" secondItem="vag-s9-hBo" secondAttribute="leading" constant="-30" id="obN-fb-YO3"/>
             </constraints>
             <point key="canvasLocation" x="37" y="21"/>
         </view>
     </objects>
     <resources>
+        <image name="Image" width="53.5" height="42"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
