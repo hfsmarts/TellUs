@@ -21,6 +21,7 @@ class UserNavigation: UIViewController {
         view.backgroundColor = UIColor(named: K.AppColors.orangeBackground) /*TEL-297*/
         newPostButton.backgroundColor = UIColor(named: K.AppColors.blueBackground)
         myPostsButton.backgroundColor = UIColor(named: K.AppColors.blueBackground)
+        passwordChangeButton.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-350*/
         logOutButton.backgroundColor = UIColor(named:  K.AppColors.blueBackground)
     }
     
@@ -34,6 +35,9 @@ class UserNavigation: UIViewController {
         let myPostsVC = MyPosts()
         present(myPostsVC, animated: true)
     }
+    
+    
+    
     
     @IBAction func logOutTapped(_ sender: UIButton) { /*TEL-310*/
         /*TEL-311*/
