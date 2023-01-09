@@ -20,6 +20,7 @@
                 <outlet property="logOutButton" destination="Alw-Dw-zac" id="MSs-PB-UcT"/>
                 <outlet property="myPostsButton" destination="8qC-cq-4uD" id="6Vc-cD-dbd"/>
                 <outlet property="newPostButton" destination="JXs-RK-UMd" id="S2z-0q-FPP"/>
+                <outlet property="passwordChangeButton" destination="Jqr-hv-L8E" id="B4L-jA-b3i"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

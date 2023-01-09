@@ -11,7 +11,9 @@ import UIKit
 class UserNavigation: UIViewController {
     @IBOutlet var newPostButton: CustomButton! /*TEL-303*/
     @IBOutlet var myPostsButton: CustomButton! /*TEL-304*/
+    @IBOutlet var passwordChangeButton: CustomButton! /*TEL-349*/
     @IBOutlet var logOutButton: CustomButton! /*TEL-305*/
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
