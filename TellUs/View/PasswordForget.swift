@@ -70,12 +70,8 @@ class PasswordForget: UIViewController {
     }
     
     /*TEL-211*/
-    let threeDots: UILabel = {
-        let threeDots = UILabel()
-        threeDots.translatesAutoresizingMaskIntoConstraints = false
-        threeDots.text = "..."
-        threeDots.textColor = .black
-        threeDots.font = UIFont(name: "KleeOne-SemiBold", size: 50)
+    let threeDots: CustomThreeDots = {
+        let threeDots = CustomThreeDots()
         return threeDots
     }()
     

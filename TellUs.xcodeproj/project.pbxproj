@@ -31,6 +31,7 @@
 		59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59702E13291A12C700821CFD /* LaunchScreen.storyboard */; };
 		598FA95F296BD8B1005FDB53 /* PasswordChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598FA95D296BD8B1005FDB53 /* PasswordChange.swift */; };
 		598FA960296BD8B1005FDB53 /* PasswordChange.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598FA95E296BD8B1005FDB53 /* PasswordChange.xib */; };
+		598FA963296BDF38005FDB53 /* CustomThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598FA962296BDF38005FDB53 /* CustomThreeDots.swift */; };
 		59A728E229687FA1005E5BA6 /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A728E029687FA1005E5BA6 /* NewPost.swift */; };
 		59A728E329687FA1005E5BA6 /* NewPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A728E129687FA1005E5BA6 /* NewPost.xib */; };
 		59A728E529695CA8005E5BA6 /* CustomLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */; };
@@ -67,6 +68,7 @@
 		59702E16291A12C700821CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		598FA95D296BD8B1005FDB53 /* PasswordChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChange.swift; sourceTree = "<group>"; };
 		598FA95E296BD8B1005FDB53 /* PasswordChange.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordChange.xib; sourceTree = "<group>"; };
+		598FA962296BDF38005FDB53 /* CustomThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThreeDots.swift; sourceTree = "<group>"; };
 		59A728E029687FA1005E5BA6 /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		59A728E129687FA1005E5BA6 /* NewPost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPost.xib; sourceTree = "<group>"; };
 		59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationLabel.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				59D01F942933716000AA6505 /* CustomTextField.swift */,
 				59677D18295041B600CE80BF /* CustomTextView.swift */,
 				59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */,
+				598FA962296BDF38005FDB53 /* CustomThreeDots.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				5915915229483C48004EEF6D /* SignUp.swift in Sources */,
 				59A728E229687FA1005E5BA6 /* NewPost.swift in Sources */,
 				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
+				598FA963296BDF38005FDB53 /* CustomThreeDots.swift in Sources */,
 				592899AF293C9B31003D104B /* SkipLogin.swift in Sources */,
 				591996832952C2700009DA9F /* UtilityFunctions.swift in Sources */,
 				592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */,

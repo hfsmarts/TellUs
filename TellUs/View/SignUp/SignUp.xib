@@ -62,8 +62,8 @@
                         <action selector="signUpButtonPressed:" destination="-1" eventType="touchUpInside" id="fSe-9Z-Saj"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-jC-Xir">
-                    <rect key="frame" x="310" y="750" width="53" height="73"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-jC-Xir" customClass="CustomThreeDots" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="310.33333333333331" y="750.33333333333337" width="52.666666666666686" height="72.666666666666629"/>
                     <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>

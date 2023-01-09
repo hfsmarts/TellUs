@@ -8,7 +8,7 @@
 import UIKit
 
 /*TEL-352*/
-class PasswordChange: PasswordForget {
+class PasswordChange: PasswordForget { /*TEL-356*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,7 @@ class PasswordChange: PasswordForget {
         passwordForgetMessage.text = "Please enter your password"
         passwordForgetTextField.setPlaceHolder(text: "Password")
 
-   
-
+    
     }
 
 

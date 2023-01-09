@@ -19,7 +19,6 @@ class CustomLocationLabel: UILabel{
         self.text = "Sarajevo"
         self.font = UIFont(name: "KleeOne-SemiBold", size: 25)
         self.textColor = .white
-
     }
     
 }
