@@ -36,6 +36,9 @@ class UserNavigation: UIViewController {
         present(myPostsVC, animated: true)
     }
     
+    @IBAction func passwordChangeTapped(_ sender: UIButton) { /*TEL-351*/
+        
+    }
     
     
     

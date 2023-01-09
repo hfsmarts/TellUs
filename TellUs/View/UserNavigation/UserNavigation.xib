@@ -82,6 +82,9 @@
                     <state key="normal" title="Change a password">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="passwordChangeTapped:" destination="-1" eventType="touchUpInside" id="upT-gu-hOy"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
