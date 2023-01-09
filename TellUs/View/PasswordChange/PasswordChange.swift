@@ -8,11 +8,15 @@
 import UIKit
 
 /*TEL-352*/
-class PasswordChange: UIViewController {
+class PasswordChange: PasswordForget {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: K.AppColors.orangeBackground) /*TEL-353*/
+        
+        passwordForgetMessage.text = "Please enter your password"
+        passwordForgetTextField.setPlaceHolder(text: "Password")
+
+   
 
     }
 

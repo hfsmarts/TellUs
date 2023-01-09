@@ -65,7 +65,7 @@ class PasswordForget: UIViewController {
             //backend part, if email satisfied user should recive new password on the email!
             UtilityFunction().alertFunction(vc: self, title: "Email sent", message: "New password is send to your email.")
         } else {
-            UtilityFunction().alertFunction(vc: self, title: "Error", message: "Your email is incorrect.")
+            UtilityFunction().alertFunction(vc: self, title: "Error", message: "Your data is incorrect.")
         }
     }
     
