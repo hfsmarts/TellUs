@@ -15,6 +15,9 @@ class PasswordChange: PasswordForget { /*TEL-356*/
         
         passwordForgetMessage.text = "Please enter your password"
         passwordForgetTextField.setPlaceHolder(text: "Password")
+        passwordForgetTextField.isSecureTextEntry = true /*TEL-357*/
+        
+        //If current logged in user has email in the base entered textFieldData matches theat email and enterpassword matches the password in database. New password should be generated and send to the email adress.
 
     
     }
