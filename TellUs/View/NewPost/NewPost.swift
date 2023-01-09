@@ -16,6 +16,7 @@ class NewPost: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-316*/
         userPost.text = "Type here..."/*TEL-337*/
+        userPost.isUserInteractionEnabled = true /*TEL-346*/
 
     }
 

@@ -40,3 +40,12 @@ extension CustomTextView {
         contentOffset.y = -positiveTopOffset
     }
 }
+
+
+
+//extension CustomTextView: UITextViewDelegate{
+//    func textFieldShouldReturn(_ textView: UITextView) -> Bool{
+//        textView.resignFirstResponder()
+//        return true
+//    }
+//}
