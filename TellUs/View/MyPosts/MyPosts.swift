@@ -14,6 +14,10 @@ class MyPosts: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: K.AppColors.blueBackground) /*TEL-317*/
     }
+    
+    @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
+    }
+    
 
 
 

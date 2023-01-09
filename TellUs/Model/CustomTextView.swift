@@ -26,6 +26,7 @@ class CustomTextView: UITextView{
         self.spellCheckingType = UITextSpellCheckingType.no   /*TEL-151*/
         self.autocapitalizationType = UITextAutocapitalizationType.none /*TEL-151*/
         self.isUserInteractionEnabled = false /*TEL-168*/ /*TEL-167*/ /*includes isEditable, isSelectable*/
+
               
     }
 }
@@ -43,9 +44,8 @@ extension CustomTextView {
 
 
 
-//extension CustomTextView: UITextViewDelegate{
-//    func textFieldShouldReturn(_ textView: UITextView) -> Bool{
-//        textView.resignFirstResponder()
-//        return true
-//    }
-//}
+
+
+
+
+

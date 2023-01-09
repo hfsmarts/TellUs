@@ -19,26 +19,30 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-So-4dI">
-                    <rect key="frame" x="137.33333333333334" y="408" width="118.33333333333334" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc5-yQ-fks" customClass="CustomThreeDots" customModule="TellUs" customModuleProvider="target">
                     <rect key="frame" x="349" y="802" width="14" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObW-XK-R3H" customClass="BackButton" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="30" y="60" width="54" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="1ew-0V-cFQ"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Bc5-yQ-fks" secondAttribute="bottom" constant="29" id="9Af-Ts-aHe"/>
-                <constraint firstItem="0e1-So-4dI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Pkv-ed-4ut"/>
+                <constraint firstAttribute="leading" secondItem="ObW-XK-R3H" secondAttribute="leading" constant="-30" id="R3H-ko-gV4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bc5-yQ-fks" secondAttribute="trailing" constant="30" id="l7k-Oa-LqA"/>
-                <constraint firstItem="0e1-So-4dI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wRX-nQ-FqU"/>
+                <constraint firstItem="ObW-XK-R3H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="x8e-0z-ZoT"/>
             </constraints>
             <point key="canvasLocation" x="140" y="21"/>
         </view>
