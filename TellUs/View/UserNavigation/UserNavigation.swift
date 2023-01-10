@@ -41,8 +41,6 @@ class UserNavigation: UIViewController {
         present(passwordChangeVC, animated: true) /*TEL-354*/
     }
     
-    
-    
     @IBAction func logOutTapped(_ sender: UIButton) { /*TEL-310*/
         /*TEL-311*/
         self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)

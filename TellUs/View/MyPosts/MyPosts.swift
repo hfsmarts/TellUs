@@ -16,6 +16,7 @@ class MyPosts: UIViewController {
     }
     
     @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
+        dismiss(animated: true, completion: nil) /*TEL-362*/
     }
     
 
