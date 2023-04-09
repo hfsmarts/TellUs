@@ -5,8 +5,6 @@
 //  Created by Harun Fazlic on 9. 4. 2023..
 //
 
-//This is the comment
-
 import UIKit
 
 /*TEL-597*/
