@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KleeOne-SemiBold.ttf">
+            <string>KleeOne-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUp" customModule="TellUs" customModuleProvider="target">
+            <connections>
+                <outlet property="SignUpButton" destination="B36-ko-DfI" id="M9C-r4-2BZ"/>
+                <outlet property="emailTextField" destination="6vr-TK-zEt" id="wAd-G6-HzI"/>
+                <outlet property="nameTextField" destination="08T-Ta-Glb" id="Cay-dZ-JC5"/>
+                <outlet property="passwordTextField" destination="70b-Ir-803" id="5uW-jh-AfY"/>
+                <outlet property="surnameTextField" destination="c1m-rB-mFr" id="q26-yD-TDy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TELL US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65k-IT-bz1">
+                    <rect key="frame" x="77.000000000000014" y="207.66666666666666" width="239.33333333333337" height="86.999999999999972"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="60"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08T-Ta-Glb" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="347.33333333333331" width="314.33333333333326" height="51.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Surname" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c1m-rB-mFr" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="402.33333333333331" width="314.33333333333326" height="51.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vr-TK-zEt" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="457.33333333333331" width="314.33333333333326" height="51.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B36-ko-DfI" customClass="CustomButton" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="600.33333333333337" width="314.33333333333326" height="51.333333333333371"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpButtonPressed:" destination="-1" eventType="touchUpInside" id="fSe-9Z-Saj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-jC-Xir" customClass="CustomThreeDotsLabel" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="310.33333333333331" y="750.33333333333337" width="52.666666666666686" height="72.666666666666629"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70b-Ir-803" customClass="CustomTextField" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="39.333333333333343" y="512.33333333333337" width="314.33333333333326" height="51.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="65k-IT-bz1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2oV-pQ-wWJ"/>
+                <constraint firstAttribute="bottom" secondItem="XF1-jC-Xir" secondAttribute="bottom" constant="29" id="4Rm-aB-k3S"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="7Er-h4-QmV"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="9PI-ZL-mWA"/>
+                <constraint firstItem="B36-ko-DfI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DoA-mQ-66V"/>
+                <constraint firstItem="c1m-rB-mFr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="F7r-ZY-H1g"/>
+                <constraint firstItem="08T-Ta-Glb" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="GDc-EK-Zcn"/>
+                <constraint firstItem="B36-ko-DfI" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="Lgr-vA-HzX"/>
+                <constraint firstItem="c1m-rB-mFr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="2" id="QOS-yg-NXz"/>
+                <constraint firstItem="c1m-rB-mFr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="RAA-Kc-mmP"/>
+                <constraint firstItem="65k-IT-bz1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-175" id="URj-IE-VHN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XF1-jC-Xir" secondAttribute="trailing" constant="30" id="YXJ-Aa-1gp"/>
+                <constraint firstItem="08T-Ta-Glb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZCy-NG-mfX"/>
+                <constraint firstItem="B36-ko-DfI" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="Zny-B2-1dd"/>
+                <constraint firstItem="6vr-TK-zEt" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="alN-Q8-MUL"/>
+                <constraint firstItem="c1m-rB-mFr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cJk-U5-Sdt"/>
+                <constraint firstItem="6vr-TK-zEt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="57" id="dgK-bs-lgS"/>
+                <constraint firstItem="08T-Ta-Glb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-53" id="gTq-3c-wse"/>
+                <constraint firstItem="6vr-TK-zEt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="gwF-Kl-AtX"/>
+                <constraint firstItem="6vr-TK-zEt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lfe-XO-Xqp"/>
+                <constraint firstItem="08T-Ta-Glb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="o8V-Mp-5P6"/>
+                <constraint firstItem="B36-ko-DfI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="200" id="tZw-0g-EAl"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="112" id="usk-ee-FQg"/>
+                <constraint firstItem="70b-Ir-803" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yhw-Gg-4cp"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

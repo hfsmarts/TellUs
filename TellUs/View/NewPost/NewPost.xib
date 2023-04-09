@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KleeOne-SemiBold.ttf">
+            <string>KleeOne-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPost" customModule="TellUs" customModuleProvider="target">
+            <connections>
+                <outlet property="locationLabel" destination="p77-Ru-LoM" id="Gy2-xb-dbi"/>
+                <outlet property="userPost" destination="ENJ-2J-BZC" id="h14-Te-LBd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vag-s9-hBo" customClass="BackButton" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="30" y="60" width="54" height="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="fG2-wy-Mfl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarajevo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p77-Ru-LoM" customClass="CustomLocationLabel" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="164" y="138.66666666666666" width="65.333333333333314" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ENJ-2J-BZC" customClass="CustomTextView" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="40" y="318" width="313" height="216"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxq-6S-pzN" customClass="CustomThreeDotsLabel" customModule="TellUs" customModuleProvider="target">
+                    <rect key="frame" x="310.33333333333331" y="750.33333333333337" width="52.666666666666686" height="72.666666666666629"/>
+                    <fontDescription key="fontDescription" name="KleeOne-SemiBold" family="Klee One" pointSize="50"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moW-LH-bsU">
+                    <rect key="frame" x="40" y="772" width="53.666666666666657" height="42"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Correct"/>
+                    <connections>
+                        <action selector="correctButtonTapped:" destination="-1" eventType="touchUpInside" id="wrl-RN-7Ew"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0h1-YI-Fab"/>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Ar-Rb-iWk"/>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="2" constant="200" id="9nn-Gm-79W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gxq-6S-pzN" secondAttribute="trailing" constant="30" id="APC-6L-5U7"/>
+                <constraint firstItem="p77-Ru-LoM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.35" id="IfH-uU-JWe"/>
+                <constraint firstItem="p77-Ru-LoM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JZq-iy-XFf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="moW-LH-bsU" secondAttribute="bottom" constant="4" id="MOB-Ay-VX5"/>
+                <constraint firstItem="vag-s9-hBo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="R7Y-kI-Qfe"/>
+                <constraint firstAttribute="bottom" secondItem="Gxq-6S-pzN" secondAttribute="bottom" constant="29" id="VAg-su-vnQ"/>
+                <constraint firstItem="ENJ-2J-BZC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" multiplier="0.2" constant="40" id="bBw-Yl-3xr"/>
+                <constraint firstItem="moW-LH-bsU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="jCX-lM-RnH"/>
+                <constraint firstAttribute="leading" secondItem="vag-s9-hBo" secondAttribute="leading" constant="-30" id="obN-fb-YO3"/>
+            </constraints>
+            <point key="canvasLocation" x="37" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Correct" width="53.5" height="42"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
