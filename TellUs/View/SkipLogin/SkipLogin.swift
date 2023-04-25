@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SkipLogin: UIViewController, UICollectionViewDataSource, SkipCollectionViewCellDelegate {
+class SkipLogin: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -29,9 +29,6 @@ class SkipLogin: UIViewController, UICollectionViewDataSource, SkipCollectionVie
         return cell
     }
     
-    func didTapButton(in cell: SkipCollectionViewCell) {
-        dismiss(animated: true, completion: nil)
-    }
     
 }
 
