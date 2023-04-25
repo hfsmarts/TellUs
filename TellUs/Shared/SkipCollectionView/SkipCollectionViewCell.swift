@@ -15,8 +15,19 @@ class SkipCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
+    
+    
     @IBAction func backButton(_ sender: UIButton) {
+        delegate?.didTapButton(in: self)
 
     }
     
+    weak var delegate: SkipCollectionViewCellDelegate?
+
+    
+}
+
+
+protocol SkipCollectionViewCellDelegate: AnyObject {
+    func didTapButton(in cell: SkipCollectionViewCell)
 }

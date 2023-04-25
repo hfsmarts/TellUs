@@ -7,8 +7,7 @@
 
 import UIKit
 
-class SkipLogin: UIViewController, UICollectionViewDataSource {
-    
+class SkipLogin: UIViewController, UICollectionViewDataSource, SkipCollectionViewCellDelegate {
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -28,6 +27,10 @@ class SkipLogin: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionViewCell.skipCellIdentifier, for: indexPath) as! SkipCollectionViewCell
         return cell
+    }
+    
+    func didTapButton(in cell: SkipCollectionViewCell) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
