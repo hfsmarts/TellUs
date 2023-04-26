@@ -15,14 +15,6 @@ class SkipCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    
-    
-    @IBAction func backButton(_ sender: UIButton) {
-
-    }
-    
-
-    
 }
 
 
