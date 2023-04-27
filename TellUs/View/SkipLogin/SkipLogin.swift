@@ -10,6 +10,7 @@ import UIKit
 class SkipLogin: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,11 @@ class SkipLogin: UIViewController, UICollectionViewDataSource {
         collectionView.dataSource = self
         collectionView.isPagingEnabled = true
         
+    
+
         }
+    
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         20

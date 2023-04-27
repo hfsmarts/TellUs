@@ -40,9 +40,14 @@ class ViewController: UIViewController{
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
         /*TEL-108*/
-        let skipLoginVC = SkipLogin()
-        skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
-        present(skipLoginVC, animated: true)
+        
+        /*TEL-608*/
+        let viewController = UIViewController(nibName: "SkipLogin", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+        //let skipLoginVC = SkipLogin()
+        //skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
+        //present(skipLoginVC, animated: true)
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
