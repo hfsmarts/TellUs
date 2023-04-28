@@ -42,12 +42,18 @@ class ViewController: UIViewController{
         /*TEL-108*/
         
         /*TEL-608*/
-        let viewController = UIViewController(nibName: "SkipLogin", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
+       // let viewController = UIViewController(nibName: "SkipLogin", bundle: nil)
+        //self.navigationController?.pushViewController(viewController, animated: true)
         
         //let skipLoginVC = SkipLogin()
         //skipLoginVC.modalPresentationStyle = .fullScreen /*TEL-109*/
         //present(skipLoginVC, animated: true)
+        
+        /*TEL-609*/
+        let skipLoginVC = SkipLogin()
+        self.navigationController?.pushViewController(skipLoginVC, animated: true)
+        
+        
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/

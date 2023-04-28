@@ -11,19 +11,14 @@ class SkipLogin: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: Constants.AppColors.blueBackground)
         collectionView.dataSource = self
         collectionView.isPagingEnabled = true
-        
-    
 
         }
-    
-
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         20
