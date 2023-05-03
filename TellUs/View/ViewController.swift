@@ -35,15 +35,12 @@ class ViewController: UIViewController{
         /*TEL-386*/
         signInButton.backgroundColor = UIColor(named: Constants.AppColors.orangeBackground)
         signUpButton.backgroundColor = UIColor(named: Constants.AppColors.orangeBackground)
-        
     }
     
     @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
-        
         /*TEL-609*/
         let skipLoginVC = SkipLogin()
         self.navigationController?.pushViewController(skipLoginVC, animated: true)
-    
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
