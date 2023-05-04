@@ -18,6 +18,22 @@ class SkipLogin: UIViewController, UICollectionViewDataSource {
         collectionView.isPagingEnabled = true
     }
     
+    /*TEL-613*/
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           navigationController?.navigationBar.prefersLargeTitles = false
+
+           let appearance = UINavigationBarAppearance()
+           appearance.backgroundColor = UIColor(named: Constants.AppColors.blueBackground)
+           appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+           appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+           navigationController?.navigationBar.tintColor = .white
+           navigationController?.navigationBar.standardAppearance = appearance
+           navigationController?.navigationBar.compactAppearance = appearance
+           navigationController?.navigationBar.scrollEdgeAppearance = appearance
+   }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         20
     }
