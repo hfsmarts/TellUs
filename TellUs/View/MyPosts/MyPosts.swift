@@ -1,4 +1,3 @@
-
 //
 //  MyPosts.swift
 //  TellUs
@@ -20,17 +19,10 @@ class MyPosts: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         myPostText.centerVertically()/*TEL-380*/
-        
     }
-    
-    
-    
     
     @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
-    
-    
-    
     
 }

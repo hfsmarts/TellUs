@@ -21,7 +21,6 @@ class SkipLogin: UIViewController, UICollectionViewDataSource {
     /*TEL-613*/ /*TEL-614*/
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(named: Constants.AppColors.blueBackground)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -38,7 +37,6 @@ class SkipLogin: UIViewController, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionViewCell.skipCellIdentifier, for: indexPath) as! SkipCollectionViewCell
         return cell
     }
-    
     
 }
 
