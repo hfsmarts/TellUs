@@ -17,10 +17,6 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*TEL-616*/
-        let navigationController = UINavigationController()
-        navigationController.setViewControllers([self], animated: false)
-
         view.backgroundColor = UIColor(named: Constants.AppColors.blueBackground) /*TEL-271*/
         initializeHideKeyboard()/*TEL-388*/
         
