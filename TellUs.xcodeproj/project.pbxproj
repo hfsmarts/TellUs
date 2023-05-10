@@ -16,8 +16,6 @@
 		59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5919967E295230B30009DA9F /* SuccessfulLogin.xib */; };
 		592327C329687D1A00BBD461 /* MyPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592327C129687D1A00BBD461 /* MyPosts.swift */; };
 		592327C429687D1A00BBD461 /* MyPosts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592327C229687D1A00BBD461 /* MyPosts.xib */; };
-		592899AF293C9B31003D104B /* SkipLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592899AD293C9B31003D104B /* SkipLogin.swift */; };
-		592899B0293C9B31003D104B /* SkipLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592899AE293C9B31003D104B /* SkipLogin.xib */; };
 		592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BF35B296852A400A630A9 /* UserNavigation.swift */; };
 		592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592BF35C296852A400A630A9 /* UserNavigation.xib */; };
 		592FE2B029E29A0A0092084F /* SkipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FE2AE29E29A0A0092084F /* SkipCollectionViewCell.swift */; };
@@ -61,8 +59,6 @@
 		5919967E295230B30009DA9F /* SuccessfulLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulLogin.xib; sourceTree = "<group>"; };
 		592327C129687D1A00BBD461 /* MyPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPosts.swift; sourceTree = "<group>"; };
 		592327C229687D1A00BBD461 /* MyPosts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPosts.xib; sourceTree = "<group>"; };
-		592899AD293C9B31003D104B /* SkipLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipLogin.swift; sourceTree = "<group>"; };
-		592899AE293C9B31003D104B /* SkipLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipLogin.xib; sourceTree = "<group>"; };
 		592BF35B296852A400A630A9 /* UserNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigation.swift; sourceTree = "<group>"; };
 		592BF35C296852A400A630A9 /* UserNavigation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNavigation.xib; sourceTree = "<group>"; };
 		592FE2AE29E29A0A0092084F /* SkipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,15 +120,6 @@
 				59F188AD29347AC200677518 /* PasswordForget.swift */,
 			);
 			path = PasswordForget;
-			sourceTree = "<group>";
-		};
-		5915914A29483B6C004EEF6D /* SkipLogin */ = {
-			isa = PBXGroup;
-			children = (
-				592899AD293C9B31003D104B /* SkipLogin.swift */,
-				592899AE293C9B31003D104B /* SkipLogin.xib */,
-			);
-			path = SkipLogin;
 			sourceTree = "<group>";
 		};
 		5915915429483C58004EEF6D /* SignUp */ = {
@@ -300,7 +287,6 @@
 				59702E0C291A12C500821CFD /* ViewController.swift */,
 				59702E0E291A12C500821CFD /* Main.storyboard */,
 				5911423F2978FA8E005B1CA0 /* PasswordForget */,
-				5915914A29483B6C004EEF6D /* SkipLogin */,
 				5915915429483C58004EEF6D /* SignUp */,
 				59199681295230BC0009DA9F /* SuccessfulLogin */,
 				592BF35F296852B400A630A9 /* UserNavigation */,
@@ -374,7 +360,6 @@
 				590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */,
 				59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */,
 				59A728E329687FA1005E5BA6 /* NewPost.xib in Resources */,
-				592899B0293C9B31003D104B /* SkipLogin.xib in Resources */,
 				598FA960296BD8B1005FDB53 /* PasswordChange.xib in Resources */,
 				592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */,
 				592FE2B129E29A0A0092084F /* SkipCollectionViewCell.xib in Resources */,
@@ -412,7 +397,6 @@
 				59D01F912932156F00AA6505 /* CustomButton.swift in Sources */,
 				598FA963296BDF38005FDB53 /* CustomThreeDotsLabel.swift in Sources */,
 				59114243297E577F005B1CA0 /* CustomTitleLabel.swift in Sources */,
-				592899AF293C9B31003D104B /* SkipLogin.swift in Sources */,
 				598BE22B29C827B70077421C /* DataCollectionFile.swift in Sources */,
 				592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */,
 				59F7C1AF2998188F0024B15A /* SuccessCollectionViewCell.swift in Sources */,

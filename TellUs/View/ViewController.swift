@@ -38,12 +38,6 @@ class ViewController: UIViewController{
         signUpButton.backgroundColor = UIColor(named: Constants.AppColors.orangeBackground)
     }
     
-    @IBAction func skipButtonLabel(_ sender: UIButton) { /*TEL-54*/
-        /*TEL-609*/
-        let skipLoginVC = SkipLogin()
-        self.navigationController?.pushViewController(skipLoginVC, animated: true)
-    }
-    
     @IBAction func signInButtonTapped(_ sender: UIButton) {/*TEL-51*/
         /*TEL-171*/ /*TEL-206*/
         if isValidEmail(emailTextField.text ?? "") && isValidPassword(passwordTextField.text ?? ""){ /*TEL-182*/ /*TEL-191*/
