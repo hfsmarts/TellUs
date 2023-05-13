@@ -18,9 +18,6 @@
 		592327C429687D1A00BBD461 /* MyPosts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592327C229687D1A00BBD461 /* MyPosts.xib */; };
 		592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BF35B296852A400A630A9 /* UserNavigation.swift */; };
 		592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592BF35C296852A400A630A9 /* UserNavigation.xib */; };
-		592FE2B029E29A0A0092084F /* SkipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FE2AE29E29A0A0092084F /* SkipCollectionViewCell.swift */; };
-		592FE2B129E29A0A0092084F /* SkipCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592FE2AF29E29A0A0092084F /* SkipCollectionViewCell.xib */; };
-		592FE2B329E29AE10092084F /* SkipCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FE2B229E29AE10092084F /* SkipCollectionView.swift */; };
 		5946BBA9295AB8FF00511187 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946BBA8295AB8FF00511187 /* Constants.swift */; };
 		5946BBD3295D654D00511187 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5946BBD2295D654D00511187 /* Colors.xcassets */; };
 		594E253C298A34A200D5FFFC /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594E253B298A34A200D5FFFC /* PostModel.swift */; };
@@ -61,9 +58,6 @@
 		592327C229687D1A00BBD461 /* MyPosts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPosts.xib; sourceTree = "<group>"; };
 		592BF35B296852A400A630A9 /* UserNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigation.swift; sourceTree = "<group>"; };
 		592BF35C296852A400A630A9 /* UserNavigation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNavigation.xib; sourceTree = "<group>"; };
-		592FE2AE29E29A0A0092084F /* SkipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipCollectionViewCell.swift; sourceTree = "<group>"; };
-		592FE2AF29E29A0A0092084F /* SkipCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkipCollectionViewCell.xib; sourceTree = "<group>"; };
-		592FE2B229E29AE10092084F /* SkipCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipCollectionView.swift; sourceTree = "<group>"; };
 		5946BBA8295AB8FF00511187 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5946BBD2295D654D00511187 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		594E253B298A34A200D5FFFC /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -207,16 +201,6 @@
 			path = PasswordChange;
 			sourceTree = "<group>";
 		};
-		599BBE3929D0304C00ECC259 /* SkipCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				592FE2B229E29AE10092084F /* SkipCollectionView.swift */,
-				592FE2AE29E29A0A0092084F /* SkipCollectionViewCell.swift */,
-				592FE2AF29E29A0A0092084F /* SkipCollectionViewCell.xib */,
-			);
-			path = SkipCollectionView;
-			sourceTree = "<group>";
-		};
 		599F39CD299F501600152E5B /* SuccessCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +223,6 @@
 		59CFA21329963BE0005A17FD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				599BBE3929D0304C00ECC259 /* SkipCollectionView */,
 				599F39CD299F501600152E5B /* SuccessCollectionView */,
 				59D01F902932156F00AA6505 /* CustomButton.swift */,
 				59BDFB622967F8BC00956A7C /* BackButton.swift */,
@@ -362,7 +345,6 @@
 				59A728E329687FA1005E5BA6 /* NewPost.xib in Resources */,
 				598FA960296BD8B1005FDB53 /* PasswordChange.xib in Resources */,
 				592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */,
-				592FE2B129E29A0A0092084F /* SkipCollectionViewCell.xib in Resources */,
 				590C9859291FE30C002A5FB7 /* KleeOne-Regular.ttf in Resources */,
 				5915915329483C48004EEF6D /* SignUp.xib in Resources */,
 				59199680295230B30009DA9F /* SuccessfulLogin.xib in Resources */,
@@ -382,7 +364,6 @@
 				594E253C298A34A200D5FFFC /* PostModel.swift in Sources */,
 				592327C329687D1A00BBD461 /* MyPosts.swift in Sources */,
 				59702E0D291A12C500821CFD /* ViewController.swift in Sources */,
-				592FE2B329E29AE10092084F /* SkipCollectionView.swift in Sources */,
 				59702E09291A12C500821CFD /* AppDelegate.swift in Sources */,
 				59F7C1AC2998184B0024B15A /* SuccessCollectionView.swift in Sources */,
 				59677D19295041B600CE80BF /* CustomTextView.swift in Sources */,
@@ -404,7 +385,6 @@
 				5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */,
 				59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */,
 				5946BBA9295AB8FF00511187 /* Constants.swift in Sources */,
-				592FE2B029E29A0A0092084F /* SkipCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
