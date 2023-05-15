@@ -10,12 +10,18 @@ import Foundation
 
 /*TEL-471*/
 /*TEL-486*/
+/*TEL-622*/
 
-struct PostModel {
+class PostModel {
+    var location: String
+    var likeCount: Int
+    var text: String
+    var dislikeCount: Int
     
-    let locatioLabel: String
-    let likeCounter: String
-    let postText: String
-    let dislikeCounter: String
-    
+    init(location: String, likeCount: Int, text: String, dislikeCount: Int) {
+        self.location = location
+        self.likeCount = likeCount
+        self.text = text
+        self.dislikeCount = dislikeCount
+    }
 }
