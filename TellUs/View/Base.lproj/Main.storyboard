@@ -148,10 +148,22 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRk-Dy-Kd8">
+                                                <rect key="frame" x="138" y="0.0" width="114" height="37"/>
+                                                <fontDescription key="fontDescription" name="KleeOne-Regular" family="Klee One" pointSize="17"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="How it works?">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="rRk-Dy-Kd8" firstAttribute="centerX" secondItem="9Ju-Je-zae" secondAttribute="centerX" id="5r4-3d-IMZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="rRk-Dy-Kd8" secondAttribute="trailing" constant="138" id="Df7-4y-1CM"/>
                                             <constraint firstAttribute="trailing" secondItem="rcs-9F-7VK" secondAttribute="trailing" constant="30" id="MUM-VQ-Xpe"/>
                                             <constraint firstAttribute="bottom" secondItem="rcs-9F-7VK" secondAttribute="bottom" constant="10" id="RpL-Wd-WCF"/>
+                                            <constraint firstItem="rRk-Dy-Kd8" firstAttribute="top" secondItem="9Ju-Je-zae" secondAttribute="top" id="S4R-CP-XcF"/>
+                                            <constraint firstItem="rRk-Dy-Kd8" firstAttribute="top" secondItem="9Ju-Je-zae" secondAttribute="top" id="Ve4-My-mOd"/>
                                             <constraint firstItem="rcs-9F-7VK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Ju-Je-zae" secondAttribute="leading" constant="20" symbolic="YES" id="fDe-TH-DZK"/>
                                         </constraints>
                                     </view>
@@ -187,7 +199,6 @@
         <!--Navigation Controller-->
         <scene sceneID="sAu-RN-bmg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ELR-bh-uGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xzx-nC-Yur" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cec-wX-blL">
@@ -199,6 +210,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Hb-Ge-0sn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELR-bh-uGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.46153846153845" y="-2.1327014218009479"/>
         </scene>
