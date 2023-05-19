@@ -11,7 +11,7 @@ import UIKit
 class SuccessfulLogin: UIViewController, UICollectionViewDataSource {
    
     @IBOutlet var successCollectionView: SuccessCollectionView!
-    var objects: [PostModel] = [] /*TEL-623*/
+    var posts: [PostModel] = [] /*TEL-623*/ /*TEL-625*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +29,16 @@ class SuccessfulLogin: UIViewController, UICollectionViewDataSource {
         let object4 = PostModel(location: "Location 4", likeCount: 3, text: "Text 4", dislikeCount: 1)
         let object5 = PostModel(location: "Location 5", likeCount: 7, text: "Text 5", dislikeCount: 4)
         
-        objects.append(object1)
-        objects.append(object2)
-        objects.append(object3)
-        objects.append(object4)
-        objects.append(object5)
+        posts.append(object1)
+        posts.append(object2)
+        posts.append(object3)
+        posts.append(object4)
+        posts.append(object5)
         
     }
         
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return objects.count
+        return posts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -46,7 +46,7 @@ class SuccessfulLogin: UIViewController, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
 
-        let object = objects[indexPath.row]
+        let object = posts[indexPath.row]
         cell.locationLabel.text = object.location
         cell.likeCounterLabel.text = "\(object.likeCount)"
         cell.textViewText.text = object.text
