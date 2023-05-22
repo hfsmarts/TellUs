@@ -224,6 +224,15 @@
 			path = NewPost;
 			sourceTree = "<group>";
 		};
+		59B9EF092A1B27B600C26EDE /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				59B9EF052A1B261600C26EDE /* IntoViewController.swift */,
+				59B9EF062A1B261600C26EDE /* IntoView.xib */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		59CFA21329963BE0005A17FD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,8 +289,7 @@
 				59A728DF29687F69005E5BA6 /* NewPost */,
 				592327C529687D2500BBD461 /* MyPosts */,
 				598FA961296BD8C6005FDB53 /* PasswordChange */,
-				59B9EF052A1B261600C26EDE /* IntoViewController.swift */,
-				59B9EF062A1B261600C26EDE /* IntoView.xib */,
+				59B9EF092A1B27B600C26EDE /* Intro */,
 			);
 			path = View;
 			sourceTree = "<group>";
