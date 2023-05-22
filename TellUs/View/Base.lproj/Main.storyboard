@@ -155,6 +155,9 @@
                                                 <state key="normal" title="How it works?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="howItWorksButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rB2-ef-4yn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

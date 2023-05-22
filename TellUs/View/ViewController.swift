@@ -70,6 +70,10 @@ class ViewController: UIViewController{
         }
         present(passwordForgetVC, animated: true)
     }
+    
+    @IBAction func howItWorksButton(_ sender: UIButton) { /*TEL-630*/
+    }
+    
 }
 
 
