@@ -72,6 +72,8 @@ class ViewController: UIViewController{
     }
     
     @IBAction func howItWorksButton(_ sender: UIButton) { /*TEL-630*/
+        let introVC = IntoViewController()
+        present(introVC, animated: true) /*TEL-628*/
     }
     
 }
