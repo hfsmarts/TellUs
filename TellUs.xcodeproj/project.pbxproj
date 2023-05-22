@@ -35,6 +35,8 @@
 		59A728E229687FA1005E5BA6 /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A728E029687FA1005E5BA6 /* NewPost.swift */; };
 		59A728E329687FA1005E5BA6 /* NewPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A728E129687FA1005E5BA6 /* NewPost.xib */; };
 		59A728E529695CA8005E5BA6 /* CustomLocationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */; };
+		59B9EF072A1B261600C26EDE /* IntoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EF052A1B261600C26EDE /* IntoViewController.swift */; };
+		59B9EF082A1B261600C26EDE /* IntoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B9EF062A1B261600C26EDE /* IntoView.xib */; };
 		59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BDFB622967F8BC00956A7C /* BackButton.swift */; };
 		59CFA21729963CD7005A17FD /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFA21629963CD7005A17FD /* UIViewController+Extensions.swift */; };
 		59CFA21929963DD6005A17FD /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFA21829963DD6005A17FD /* UITextView+Extensions.swift */; };
@@ -77,6 +79,8 @@
 		59A728E029687FA1005E5BA6 /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		59A728E129687FA1005E5BA6 /* NewPost.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPost.xib; sourceTree = "<group>"; };
 		59A728E429695CA7005E5BA6 /* CustomLocationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationLabel.swift; sourceTree = "<group>"; };
+		59B9EF052A1B261600C26EDE /* IntoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntoViewController.swift; sourceTree = "<group>"; };
+		59B9EF062A1B261600C26EDE /* IntoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntoView.xib; sourceTree = "<group>"; };
 		59BDFB622967F8BC00956A7C /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		59CFA21629963CD7005A17FD /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		59CFA21829963DD6005A17FD /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 				59A728DF29687F69005E5BA6 /* NewPost */,
 				592327C529687D2500BBD461 /* MyPosts */,
 				598FA961296BD8C6005FDB53 /* PasswordChange */,
+				59B9EF052A1B261600C26EDE /* IntoViewController.swift */,
+				59B9EF062A1B261600C26EDE /* IntoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 			files = (
 				5946BBD3295D654D00511187 /* Colors.xcassets in Resources */,
 				592327C429687D1A00BBD461 /* MyPosts.xib in Resources */,
+				59B9EF082A1B261600C26EDE /* IntoView.xib in Resources */,
 				590C985A291FE30C002A5FB7 /* KleeOne-SemiBold.ttf in Resources */,
 				59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */,
 				59A728E329687FA1005E5BA6 /* NewPost.xib in Resources */,
@@ -381,6 +388,7 @@
 				598BE22B29C827B70077421C /* DataCollectionFile.swift in Sources */,
 				592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */,
 				59F7C1AF2998188F0024B15A /* SuccessCollectionViewCell.swift in Sources */,
+				59B9EF072A1B261600C26EDE /* IntoViewController.swift in Sources */,
 				598FA95F296BD8B1005FDB53 /* PasswordChange.swift in Sources */,
 				5919967F295230B30009DA9F /* SuccessfulLogin.swift in Sources */,
 				59BDFB632967F8BC00956A7C /* BackButton.swift in Sources */,
