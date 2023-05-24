@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -66,16 +66,17 @@
             <color key="tintColor" name="BackgroundBlue"/>
             <constraints>
                 <constraint firstItem="1lg-Pg-FuJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0wA-Gm-pOL"/>
-                <constraint firstItem="i6H-IQ-znl" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5Ym-En-C2Y"/>
+                <constraint firstItem="i6H-IQ-znl" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="3wl-BR-Ael"/>
+                <constraint firstItem="i6H-IQ-znl" firstAttribute="height" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="6n2-5N-HVj"/>
                 <constraint firstItem="k1j-NM-9Kc" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.5" id="BL6-t6-7Kq"/>
                 <constraint firstItem="egi-E4-fia" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.53" id="My4-c3-yer"/>
                 <constraint firstItem="1lg-Pg-FuJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.2" id="Nil-bA-Tsg"/>
                 <constraint firstItem="i6H-IQ-znl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="O67-RD-a9y"/>
-                <constraint firstItem="i6H-IQ-znl" firstAttribute="top" secondItem="1lg-Pg-FuJ" secondAttribute="bottom" constant="200" id="QWb-61-gqX"/>
-                <constraint firstItem="i6H-IQ-znl" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="XR1-IP-2BX"/>
+                <constraint firstItem="i6H-IQ-znl" firstAttribute="centerX" secondItem="1lg-Pg-FuJ" secondAttribute="centerX" id="TyZ-8z-jee"/>
                 <constraint firstItem="qpq-pg-L1r" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1.7" id="Zbb-fG-HKf"/>
                 <constraint firstItem="qpq-pg-L1r" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.5" id="hO5-bQ-NGi"/>
                 <constraint firstItem="rKk-TQ-Wvr" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.47" id="hZQ-YH-hxq"/>
+                <constraint firstItem="i6H-IQ-znl" firstAttribute="top" secondItem="qpq-pg-L1r" secondAttribute="bottom" constant="66.666666666666714" id="juX-8q-ZZH"/>
                 <constraint firstItem="egi-E4-fia" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1.7" id="rbM-D6-2wv"/>
                 <constraint firstItem="rKk-TQ-Wvr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1.7" id="vIt-gc-MAP"/>
                 <constraint firstItem="k1j-NM-9Kc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1.7" id="xbS-wT-hwF"/>
