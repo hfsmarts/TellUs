@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="pagesDots" destination="xaP-hu-cf8" id="7Ot-5R-yxd"/>
                 <outlet property="stepsImages" destination="dYn-YK-6cr" id="pC6-ZR-sXC"/>
+                <outlet property="swipeUp" destination="Kbf-bU-QRd" id="D1v-0E-OnL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
