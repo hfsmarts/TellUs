@@ -24,7 +24,7 @@ class SuccessfulLogin: UIViewController, UICollectionViewDataSource {
         //successfulLoginPostText.text = Constants.successfulLoginPostText /*TEL-435*/
         
         /*TEL-626*/
-        let object1 = PostModel(location: "New York", likeCount: 10, text: "Hi from Manhattan, just finished morning Central Park run.", dislikeCount: 5)
+        let object1 = PostModel(location: "New York", likeCount: 10, text: "Just finished morning Central Park run...", dislikeCount: 0)
         let object2 = PostModel(location: "Sarajevo", likeCount: 5, text: "Zna se gdje su nabolji cevapi.", dislikeCount: 2)
         let object3 = PostModel(location: "London", likeCount: 15, text: "Getting ready for new rain interval...", dislikeCount: 8)
         let object4 = PostModel(location: "Dubai", likeCount: 3, text: "Habibi, come to Dubai...", dislikeCount: 1)

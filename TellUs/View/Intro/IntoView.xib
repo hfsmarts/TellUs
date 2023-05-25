@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntoViewController" customModule="TellUs" customModuleProvider="target">
             <connections>
+                <outlet property="pagesDots" destination="xaP-hu-cf8" id="7Ot-5R-yxd"/>
+                <outlet property="stepsImages" destination="dYn-YK-6cr" id="pC6-ZR-sXC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,14 +20,40 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="dYn-YK-6cr">
+                    <rect key="frame" x="0.0" y="59" width="393" height="692"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Kbf-bU-QRd" appends="YES" id="Ui7-pl-mSw"/>
+                    </connections>
+                </imageView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-hu-cf8">
+                    <rect key="frame" x="138" y="783" width="117" height="26"/>
+                </pageControl>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="BackgroundOrange"/>
-            <point key="canvasLocation" x="138" y="20"/>
+            <color key="backgroundColor" name="BackgroundBlue"/>
+            <constraints>
+                <constraint firstItem="dYn-YK-6cr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4be-0M-k5d"/>
+                <constraint firstItem="dYn-YK-6cr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5T4-tx-iqQ"/>
+                <constraint firstItem="xaP-hu-cf8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="88B-ro-C6R"/>
+                <constraint firstItem="xaP-hu-cf8" firstAttribute="top" secondItem="dYn-YK-6cr" secondAttribute="bottom" constant="32" id="LrE-E2-2U5"/>
+                <constraint firstItem="xaP-hu-cf8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="138" id="NSX-UI-apI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xaP-hu-cf8" secondAttribute="bottom" constant="9" id="fUc-jN-u7r"/>
+                <constraint firstItem="dYn-YK-6cr" firstAttribute="centerX" secondItem="xaP-hu-cf8" secondAttribute="centerX" id="ldI-je-HXJ"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
+        <swipeGestureRecognizer direction="up" id="Kbf-bU-QRd">
+            <connections>
+                <action selector="swipeUp:" destination="-1" id="mRp-4x-ceE"/>
+            </connections>
+        </swipeGestureRecognizer>
     </objects>
     <resources>
-        <namedColor name="BackgroundOrange">
-            <color red="0.98799997568130493" green="0.49799999594688416" blue="0.14100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="img1" width="1179" height="2200"/>
+        <namedColor name="BackgroundBlue">
+            <color red="0.14900000393390656" green="0.52899998426437378" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

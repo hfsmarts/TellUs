@@ -73,6 +73,8 @@ class ViewController: UIViewController{
     
     @IBAction func howItWorksButton(_ sender: UIButton) { /*TEL-630*/
         let introVC = IntoViewController()
+        introVC.modalPresentationStyle = .fullScreen
+
         present(introVC, animated: true) /*TEL-628*/
     }
     

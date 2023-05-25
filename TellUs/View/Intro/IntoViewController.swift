@@ -7,23 +7,30 @@
 
 import UIKit
 
+/*TEL-631*/
 class IntoViewController: UIViewController {
-
+    
+    @IBOutlet var stepsImages: UIImageView!
+    @IBOutlet var pagesDots: UIPageControl!
+    var numOfPages = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func swipeUp(_ sender: UISwipeGestureRecognizer) {
+        numOfPages += 1
+        if numOfPages == 4 {
+            dismiss(animated: true)
+        } else {
+            stepsImages.image = UIImage(named: "img\(numOfPages)")
+            pagesDots.currentPage = numOfPages-1
+        }
+        
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+
 
 }
