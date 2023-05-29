@@ -66,6 +66,9 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
     
+    @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/
+        print("Current post deleted!")
+    }
     
     
 }
