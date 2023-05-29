@@ -11,7 +11,8 @@ import UIKit
 class MyPosts: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var myPostsCollectionView: SuccessCollectionView!
-    var posts: [PostModel] = [] 
+    var posts: [PostModel] = []
+    var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         }
         
         let object = posts[indexPath.row]
+        currentIndex = indexPath.row
         cell.locationLabel.text = object.location
         cell.likeCounterLabel.text = "\(object.likeCount)"
         cell.textViewText.text = object.text
@@ -66,9 +68,16 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
     
-    @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/
-        print("Current post deleted!")
+    @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
+        print("Current number of posts elements is \(posts.count)")
+        print("Current index is \(currentIndex)")
+        posts.remove(at: currentIndex)
+        updateUI()
+        print("Current number of posts elements is \(posts.count)")
     }
     
+    func updateUI(){
+        myPostsCollectionView.reloadData()
+    }
     
 }
