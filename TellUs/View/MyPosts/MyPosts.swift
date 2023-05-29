@@ -19,6 +19,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         myPostsCollectionView.dataSource = self
         myPostsCollectionView.isPagingEnabled = true
         
+        /*TEL-636*/
         let object1 = PostModel(location: "New York", likeCount: 10, text: "My first post...", dislikeCount: 0)
         let object2 = PostModel(location: "Sarajevo", likeCount: 5, text: "This is the second one", dislikeCount: 2)
         let object3 = PostModel(location: "London", likeCount: 15, text: "And the third one...", dislikeCount: 8)
