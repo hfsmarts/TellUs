@@ -36,9 +36,6 @@
                         <action selector="backButton:" destination="-1" eventType="touchUpInside" id="1ew-0V-cFQ"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotCorrect" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-2Q-3R2">
-                    <rect key="frame" x="40" y="770" width="42" height="42"/>
-                </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FiX-ng-yGa" customClass="SuccessCollectionView" customModule="TellUs" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="130" width="393" height="638"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,15 +46,20 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afr-E1-cfd">
+                    <rect key="frame" x="40" y="781" width="42" height="42"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="NotCorrect"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="f2h-2Q-3R2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="24J-Px-Lu7"/>
+                <constraint firstAttribute="bottom" secondItem="Afr-E1-cfd" secondAttribute="bottom" constant="29" id="0oC-jX-uHt"/>
                 <constraint firstAttribute="bottom" secondItem="Bc5-yQ-fks" secondAttribute="bottom" constant="29" id="9Af-Ts-aHe"/>
-                <constraint firstAttribute="bottom" secondItem="f2h-2Q-3R2" secondAttribute="bottom" constant="40" id="DHO-RE-slt"/>
                 <constraint firstAttribute="leading" secondItem="ObW-XK-R3H" secondAttribute="leading" constant="-30" id="R3H-ko-gV4"/>
                 <constraint firstItem="FiX-ng-yGa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SfI-Oc-i2U"/>
+                <constraint firstItem="Afr-E1-cfd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Yvv-hj-92B"/>
                 <constraint firstItem="FiX-ng-yGa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="kri-1r-Q8m"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bc5-yQ-fks" secondAttribute="trailing" constant="30" id="l7k-Oa-LqA"/>
                 <constraint firstItem="FiX-ng-yGa" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-50" id="m95-9f-Oyb"/>
