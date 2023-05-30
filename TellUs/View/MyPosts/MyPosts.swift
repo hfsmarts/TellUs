@@ -69,15 +69,17 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
     }
     
     @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
-        print("Current number of posts elements is \(posts.count)")
-        print("Current index is \(currentIndex)")
-        posts.remove(at: currentIndex)
-        updateUI()
-        print("Current number of posts elements is \(posts.count)")
+        if posts.count == 0 {
+            print("no more items") /*TEL-644*/
+        } else {
+            posts.remove(at: currentIndex)
+            updateUI()
+        }
     }
     
     func updateUI(){
         myPostsCollectionView.reloadData()
+    
     }
     
 }
