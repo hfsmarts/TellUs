@@ -71,6 +71,9 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
     @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
         if posts.count == 0 {
             print("no more items") /*TEL-644*/
+            posts.append(PostModel(location: "Test", likeCount: 1, text: "test text...", dislikeCount: 0))
+            updateUI()
+
         } else {
             posts.remove(at: currentIndex)
             updateUI()
