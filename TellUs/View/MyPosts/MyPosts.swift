@@ -21,16 +21,16 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         myPostsCollectionView.isPagingEnabled = true
         
         /*TEL-636*/
-        let object1 = PostModel(location: "New York", likeCount: 10, text: "My first post...", dislikeCount: 0)
-        let object2 = PostModel(location: "Sarajevo", likeCount: 5, text: "This is the second one", dislikeCount: 2)
-        let object3 = PostModel(location: "London", likeCount: 15, text: "And the third one...", dislikeCount: 8)
-        let object4 = PostModel(location: "Dubai", likeCount: 3, text: "All about fourth post can be found here", dislikeCount: 1)
-        let object5 = PostModel(location: "Kiev", likeCount: 7, text: "What to say...", dislikeCount: 4)
-        let object6 = PostModel(location: "Lisabon", likeCount: 15, text: "And this will be sixth post", dislikeCount: 8)
-        let object7 = PostModel(location: "Tokyo", likeCount: 15, text: "Seventh post", dislikeCount: 8)
-        let object8 = PostModel(location: "Barcelona", likeCount: 15, text: "My eighth post on TellUs network", dislikeCount: 8)
-        let object9 = PostModel(location: "Zagreb", likeCount: 15, text: "One to go, so this is 9/10", dislikeCount: 8)
-        let object10 = PostModel(location: "Sidney", likeCount: 15, text: "And that would be it, this is 10th and final post", dislikeCount: 8)
+        let object1 = PostModel(location: "1", likeCount: 10, text: "My first post...", dislikeCount: 0)
+        let object2 = PostModel(location: "2", likeCount: 5, text: "This is the second one", dislikeCount: 2)
+        let object3 = PostModel(location: "3", likeCount: 15, text: "And the third one...", dislikeCount: 8)
+        let object4 = PostModel(location: "4", likeCount: 3, text: "All about fourth post can be found here", dislikeCount: 1)
+        let object5 = PostModel(location: "5", likeCount: 7, text: "What to say...", dislikeCount: 4)
+        let object6 = PostModel(location: "6", likeCount: 15, text: "And this will be sixth post", dislikeCount: 8)
+        let object7 = PostModel(location: "7", likeCount: 15, text: "Seventh post", dislikeCount: 8)
+        let object8 = PostModel(location: "8", likeCount: 15, text: "My eighth post on TellUs network", dislikeCount: 8)
+        let object9 = PostModel(location: "9", likeCount: 15, text: "One to go, so this is 9/10", dislikeCount: 8)
+        let object10 = PostModel(location: "10", likeCount: 15, text: "And that would be it, this is 10th and final post", dislikeCount: 8)
         
         posts.append(object1)
         posts.append(object2)
@@ -63,18 +63,18 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
-    
     @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
     
     @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
-        if posts.count == 0 {
-            print("no more items") /*TEL-644*/
-            posts.append(PostModel(location: "Test", likeCount: 1, text: "test text...", dislikeCount: 0))
+        
+        if posts.count == 1{ /*TEL-643*/
+            posts.remove(at: currentIndex)
+            posts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
             updateUI()
-
-        } else {
+        
+        } else if posts.count != 0 {
             posts.remove(at: currentIndex)
             updateUI()
         }
@@ -82,7 +82,6 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
     
     func updateUI(){
         myPostsCollectionView.reloadData()
-    
     }
     
 }
