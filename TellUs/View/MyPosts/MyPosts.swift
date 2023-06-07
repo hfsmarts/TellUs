@@ -69,15 +69,27 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
     
     @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
         
-        if posts.count == 1{ /*TEL-643*/
+        if currentIndex == 0 && posts.count == 10{ /*TEL-657*/
+            posts.remove(at: currentIndex)
+            print(" if Posts count is \(posts.count), current index is \(currentIndex)")
+            updateUI()
+        }
+        
+        else if posts.count == 1{ /*TEL-643*/
+            print(" first else if Posts count is \(posts.count), current index is \(currentIndex)")
             posts.remove(at: currentIndex)
             posts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
             updateUI()
         
         } else if posts.count != 0 {
+            print(" second else if Posts count is \(posts.count), current index is \(currentIndex)")
             posts.remove(at: currentIndex)
             updateUI()
         }
+        
+        
+        
+        
     }
     
     func updateUI(){
@@ -85,3 +97,9 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
     }
     
 }
+
+
+
+
+
+
