@@ -63,6 +63,15 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
+    
+    /*TEL-658*/
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("before index \(currentIndex)")
+            currentIndex = indexPath.row
+            print("after index \(currentIndex)")
+    }
+    
+    
     @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
@@ -80,7 +89,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
             posts.remove(at: currentIndex)
             posts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
             updateUI()
-        
+            
         } else if posts.count != 0 {
             print(" second else if Posts count is \(posts.count), current index is \(currentIndex)")
             posts.remove(at: currentIndex)
