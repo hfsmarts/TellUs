@@ -63,15 +63,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
-    
-    /*TEL-658*/
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("before index \(currentIndex)")
-            currentIndex = indexPath.row
-            print("after index \(currentIndex)")
-    }
-    
-    
+
     @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
