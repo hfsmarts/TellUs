@@ -63,44 +63,56 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         return cell
     }
     
-
+    
     @IBAction func backButton(_ sender: UIButton) { /*TEL-360*/
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
     
+    /*TEL-642*/
     @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
-        
-        if currentIndex == 0 && posts.count == 10{ /*TEL-657*/
-            posts.remove(at: currentIndex)
-            print(" if Posts count is \(posts.count), current index is \(currentIndex)")
-            updateUI()
-        }
-        
-        else if posts.count == 1{ /*TEL-643*/
-            print(" first else if Posts count is \(posts.count), current index is \(currentIndex)")
+
+        if posts.count == 1{ /*TEL-643*/
+            print("case 0, print \(currentIndex) print \(posts.count)") //last delete all from 1, last delede all from 10
             posts.remove(at: currentIndex)
             posts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
             updateUI()
-            
-        } else if posts.count != 0 {
-            print(" second else if Posts count is \(posts.count), current index is \(currentIndex)")
+        }
+
+        else if currentIndex == 0 { /*TEL-657*/
+            print("case 1, print \(currentIndex) print \(posts.count)")
             posts.remove(at: currentIndex)
             updateUI()
         }
         
+        else if currentIndex == posts.count - 1  { /*Code snipset to be deleted TEL-660*/
+            print("case 2, print \(currentIndex) print \(posts.count)") //last with even numbers delete all
+            posts.remove(at: currentIndex)
+            updateUI()
+        }
+
+        else if posts.count - currentIndex == 1 {
+            print("case 3, print \(currentIndex) print \(posts.count)") //last with even numbers delete all
+            posts.remove(at: currentIndex-1)
+            updateUI()
+        }
         
-        
-        
+   
+
+        else if posts.count != 0 {
+            print("case 4, print \(currentIndex) print \(posts.count)")
+            posts.remove(at: currentIndex-1)
+            updateUI()
+        }
     }
     
     func updateUI(){
         myPostsCollectionView.reloadData()
     }
-    
 }
 
 
-
-
-
+//Test all evwen numbers
+//Test deleting all from 1
+//Test deleting all from 10
+//Tets all odd numbers          works
 
