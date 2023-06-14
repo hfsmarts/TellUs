@@ -13,6 +13,7 @@ import Foundation
 /*TEL-622*/
 
 class PostModel {
+    
     var location: String
     var likeCount: Int
     var text: String

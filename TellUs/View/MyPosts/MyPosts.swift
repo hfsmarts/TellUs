@@ -84,18 +84,21 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
             updateUI()
         }
         
-        else if currentIndex == posts.count - 1  { /*Code snipset to be deleted TEL-660*/
-            print("case 2, print \(currentIndex) print \(posts.count)") //last with even numbers delete all
+//1,3,5,7
+        else if posts.count - currentIndex == 1 && isLastElement(posts, currentIndex: currentIndex) {
+            print("case 3, print \(currentIndex) print \(posts.count) is last index \(isLastElement(posts, currentIndex: currentIndex))") //last with even numbers delete all
             posts.remove(at: currentIndex)
             updateUI()
         }
-
-        else if posts.count - currentIndex == 1 {
-            print("case 3, print \(currentIndex) print \(posts.count)") //last with even numbers delete all
+        
+        //2,4,6,8,10
+        else if currentIndex == posts.count - 1  { /*Code snipset to be deleted TEL-660*/
+            print("case 2, print \(currentIndex) print \(posts.count)") //last with even numbers delete all
             posts.remove(at: currentIndex-1)
             updateUI()
         }
-        
+            
+    
    
 
         else if posts.count != 0 {
@@ -108,11 +111,15 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
     func updateUI(){
         myPostsCollectionView.reloadData()
     }
+/*TEL-661*/
+    func isLastElement<T>(_ array: [T], currentIndex: Int) -> Bool {
+        return currentIndex == array.count - 1 && array.count > 0
+    }
 }
 
 
 //Test all evwen numbers
 //Test deleting all from 1
 //Test deleting all from 10
-//Tets all odd numbers          works
+//Tets all odd numbers
 
