@@ -42,6 +42,9 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         posts.append(object8)
         posts.append(object9)
         posts.append(object10)
+        
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -68,58 +71,34 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         dismiss(animated: true, completion: nil) /*TEL-362*/
     }
     
-    /*TEL-642*/
+    
+    /*TEL-642*/ /*TEL-662*/
     @IBAction func deletePostButton(_ sender: UIButton) { /*TEL-640*/ /*TEL-641*/
-
-        if posts.count == 1{ /*TEL-643*/
-            print("case 0, print \(currentIndex) print \(posts.count)") //last delete all from 1, last delede all from 10
-            posts.remove(at: currentIndex)
+        
+        guard let indexPath = getCurrentIndexPath() else {
+            return
+        }
+        posts.remove(at: indexPath.item)
+        myPostsCollectionView.deleteItems(at: [indexPath])
+        showCurrentItem()
+        
+        if posts.isEmpty {
             posts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
-            updateUI()
-        }
-
-        else if currentIndex == 0 { /*TEL-657*/
-            print("case 1, print \(currentIndex) print \(posts.count)")
-            posts.remove(at: currentIndex)
-            updateUI()
-        }
-        
-//1,3,5,7
-        else if posts.count - currentIndex == 1 && isLastElement(posts, currentIndex: currentIndex) {
-            print("case 3, print \(currentIndex) print \(posts.count) is last index \(isLastElement(posts, currentIndex: currentIndex))") //last with even numbers delete all
-            posts.remove(at: currentIndex)
-            updateUI()
-        }
-        
-        //2,4,6,8,10
-        else if currentIndex == posts.count - 1  { /*Code snipset to be deleted TEL-660*/
-            print("case 2, print \(currentIndex) print \(posts.count)") //last with even numbers delete all
-            posts.remove(at: currentIndex-1)
-            updateUI()
-        }
-            
-    
-   
-
-        else if posts.count != 0 {
-            print("case 4, print \(currentIndex) print \(posts.count)")
-            posts.remove(at: currentIndex-1)
-            updateUI()
+            myPostsCollectionView.reloadData()
         }
     }
     
-    func updateUI(){
-        myPostsCollectionView.reloadData()
+    func getCurrentIndexPath() -> IndexPath? {
+        let center = CGPoint(x: myPostsCollectionView.contentOffset.x + myPostsCollectionView.bounds.size.width / 2,
+                             y: myPostsCollectionView.contentOffset.y + myPostsCollectionView.bounds.size.height / 2)
+        return myPostsCollectionView.indexPathForItem(at: center)
     }
-/*TEL-661*/
-    func isLastElement<T>(_ array: [T], currentIndex: Int) -> Bool {
-        return currentIndex == array.count - 1 && array.count > 0
+    
+    func showCurrentItem() {
+        guard getCurrentIndexPath() != nil else {
+            return
+        }
     }
+    
+    
 }
-
-
-//Test all evwen numbers
-//Test deleting all from 1
-//Test deleting all from 10
-//Tets all odd numbers
-
