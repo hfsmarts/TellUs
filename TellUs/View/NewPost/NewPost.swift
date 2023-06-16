@@ -8,7 +8,7 @@
 import UIKit
 
 /*TEL-315*/
-class NewPost: UIViewController {
+class NewPost: UIViewController, UITextViewDelegate {
     
     @IBOutlet var locationLabel: CustomLocationLabel! /*TEL-333*/
     @IBOutlet var userPost: CustomTextView! /*TEL-336*/
@@ -23,6 +23,8 @@ class NewPost: UIViewController {
         userPost.text = Constants.newPostText /*TEL-337*/ /*TEL-436*/
         userPost.isUserInteractionEnabled = true /*TEL-346*/
         userPost.addDoneButton(title: Constants.doneButtonTitle, target: self, selector: #selector(tapDone(sender:))) /*TEL-358*/ /*TEL-436*/
+        userPost.delegate = self
+
     }
     
     @objc func tapDone(sender: Any) { /*TEL-358*/
@@ -36,6 +38,13 @@ class NewPost: UIViewController {
     
     @IBAction func backButtonTapped(_ sender: UIButton) { /*TEL-327*/
         dismiss(animated: true, completion: nil) /*TEL-328*/
+    }
+    
+    /*TEL-663*/
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "Type here..." {
+            textView.text = ""
+        }
     }
     
     @IBAction func correctButtonTapped(_ sender: UIButton) { /*TEL-557*/
