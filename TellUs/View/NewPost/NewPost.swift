@@ -24,12 +24,18 @@ class NewPost: UIViewController, UITextViewDelegate {
         userPost.isUserInteractionEnabled = true /*TEL-346*/
         userPost.addDoneButton(title: Constants.doneButtonTitle, target: self, selector: #selector(tapDone(sender:))) /*TEL-358*/ /*TEL-436*/
         userPost.delegate = self
-
+        userPost.autocapitalizationType = .sentences /*TEL-664*/
+    }
+    
+    func textViewDidChange(_ textView: UITextView) { /*TEL-664*/
+        guard let text = textView.text, !text.isEmpty else { return }
+        let capitalizedText = text.prefix(1).uppercased() + text.dropFirst()
+        textView.text = capitalizedText
     }
     
     @objc func tapDone(sender: Any) { /*TEL-358*/
         self.view.endEditing(true)
-    }  
+    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -57,11 +63,6 @@ class NewPost: UIViewController, UITextViewDelegate {
             }
         }
     }
-    
-    
-    
-    
-    
 }
 
 
