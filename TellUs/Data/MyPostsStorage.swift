@@ -8,7 +8,16 @@
 import Foundation
 
 /*TEL-665*/
-class DataModel {
-    static var shared = DataModel()
-    var dataArray = [Int]() // The array to which elements will be appended
+class MyPostsStorage {
+    static let shared = MyPostsStorage()
+    private var privatePostsArray = [PostModel]() // Private array to store the posts
+    
+    var myPosts: [PostModel] {
+        get {
+            return privatePostsArray
+        }
+        set {
+            privatePostsArray = newValue
+        }
+    }
 }

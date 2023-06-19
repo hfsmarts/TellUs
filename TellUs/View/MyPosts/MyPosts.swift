@@ -11,7 +11,7 @@ import UIKit
 class MyPosts: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var myPostsCollectionView: SuccessCollectionView!
-    public var myPosts: [PostModel] = []
+    var myPosts: [PostModel] = []
     var currentIndex = 0
     
     override func viewDidLoad() {
@@ -20,6 +20,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         myPostsCollectionView.dataSource = self
         myPostsCollectionView.isPagingEnabled = true
         
+        /*TEL-667*/
         /*TEL-636*/
         let object1 = PostModel(location: "1", likeCount: 10, text: "My first post...", dislikeCount: 0)
         let object2 = PostModel(location: "2", likeCount: 5, text: "This is the second one", dislikeCount: 2)
@@ -42,8 +43,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         myPosts.append(object8)
         myPosts.append(object9)
         myPosts.append(object10)
-        
-        
+     
         
     }
     
