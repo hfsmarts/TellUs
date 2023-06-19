@@ -11,7 +11,7 @@ import UIKit
 class MyPosts: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var myPostsCollectionView: SuccessCollectionView!
-    var posts: [PostModel] = []
+    public var myPosts: [PostModel] = []
     var currentIndex = 0
     
     override func viewDidLoad() {
@@ -32,23 +32,23 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         let object9 = PostModel(location: "9", likeCount: 15, text: "One to go, so this is 9/10", dislikeCount: 8)
         let object10 = PostModel(location: "10", likeCount: 15, text: "And that would be it, this is 10th and final post", dislikeCount: 8)
         
-        posts.append(object1)
-        posts.append(object2)
-        posts.append(object3)
-        posts.append(object4)
-        posts.append(object5)
-        posts.append(object6)
-        posts.append(object7)
-        posts.append(object8)
-        posts.append(object9)
-        posts.append(object10)
+        myPosts.append(object1)
+        myPosts.append(object2)
+        myPosts.append(object3)
+        myPosts.append(object4)
+        myPosts.append(object5)
+        myPosts.append(object6)
+        myPosts.append(object7)
+        myPosts.append(object8)
+        myPosts.append(object9)
+        myPosts.append(object10)
         
         
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return posts.count
+        return myPosts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -56,7 +56,7 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        let object = posts[indexPath.row]
+        let object = myPosts[indexPath.row]
         currentIndex = indexPath.row
         cell.locationLabel.text = object.location
         cell.likeCounterLabel.text = "\(object.likeCount)"
@@ -78,12 +78,12 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         guard let indexPath = getCurrentIndexPath() else {
             return
         }
-        posts.remove(at: indexPath.item)
+        myPosts.remove(at: indexPath.item)
         myPostsCollectionView.deleteItems(at: [indexPath])
         showCurrentItem()
         
-        if posts.isEmpty {
-            posts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
+        if myPosts.isEmpty {
+            myPosts.append(PostModel(location: "No location", likeCount: 0, text: "No more posts", dislikeCount: 0))
             myPostsCollectionView.reloadData()
         }
     }

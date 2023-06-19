@@ -18,6 +18,7 @@
 		592327C429687D1A00BBD461 /* MyPosts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592327C229687D1A00BBD461 /* MyPosts.xib */; };
 		592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592BF35B296852A400A630A9 /* UserNavigation.swift */; };
 		592BF35E296852A400A630A9 /* UserNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592BF35C296852A400A630A9 /* UserNavigation.xib */; };
+		59364D5E2A400ED900FA74BB /* MyPostsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59364D5D2A400ED900FA74BB /* MyPostsStorage.swift */; };
 		5946BBA9295AB8FF00511187 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946BBA8295AB8FF00511187 /* Constants.swift */; };
 		5946BBD3295D654D00511187 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5946BBD2295D654D00511187 /* Colors.xcassets */; };
 		594E253C298A34A200D5FFFC /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594E253B298A34A200D5FFFC /* PostModel.swift */; };
@@ -60,6 +61,7 @@
 		592327C229687D1A00BBD461 /* MyPosts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPosts.xib; sourceTree = "<group>"; };
 		592BF35B296852A400A630A9 /* UserNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigation.swift; sourceTree = "<group>"; };
 		592BF35C296852A400A630A9 /* UserNavigation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNavigation.xib; sourceTree = "<group>"; };
+		59364D5D2A400ED900FA74BB /* MyPostsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsStorage.swift; sourceTree = "<group>"; };
 		5946BBA8295AB8FF00511187 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5946BBD2295D654D00511187 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		594E253B298A34A200D5FFFC /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				598BE22A29C827B70077421C /* DataCollectionFile.swift */,
+				59364D5D2A400ED900FA74BB /* MyPostsStorage.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				59114243297E577F005B1CA0 /* CustomTitleLabel.swift in Sources */,
 				598BE22B29C827B70077421C /* DataCollectionFile.swift in Sources */,
 				592BF35D296852A400A630A9 /* UserNavigation.swift in Sources */,
+				59364D5E2A400ED900FA74BB /* MyPostsStorage.swift in Sources */,
 				59F7C1AF2998188F0024B15A /* SuccessCollectionViewCell.swift in Sources */,
 				59B9EF072A1B261600C26EDE /* IntoViewController.swift in Sources */,
 				598FA95F296BD8B1005FDB53 /* PasswordChange.swift in Sources */,

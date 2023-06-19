@@ -12,9 +12,8 @@ class NewPost: UIViewController, UITextViewDelegate {
     
     @IBOutlet var locationLabel: CustomLocationLabel! /*TEL-333*/
     @IBOutlet var userPost: CustomTextView! /*TEL-336*/
-    var newPosts = [newPostItem]()
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: Constants.AppColors.blueBackground) /*TEL-316*/
@@ -54,15 +53,23 @@ class NewPost: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func correctButtonTapped(_ sender: UIButton) { /*TEL-557*/
-        if let currentPost = userPost.text {
-            if currentPost != "Type here..." {
-                let newPost = newPostItem(itemId: 0, itemText: "\(currentPost)") /*TEL-561*/
-                newPosts.append(newPost)
-            } else {
-                print("nothing changed")
+            if let currentPost = userPost.text {
+                if currentPost != "Type here..." {
+                    //let newPost = newPostItem(itemId: 0, itemText: "\(currentPost)") /*TEL-561*/
+                    
+                    let nextObject = PostModel(location: "User current location", likeCount: 0, text: "\(currentPost)", dislikeCount: 0)
+                    
+               //     MyPosts.myPosts.append(nextObject)
+                    
+                } else {
+                    print("nothing changed")
+                
             }
         }
     }
+    
+    
+ 
 }
 
 
