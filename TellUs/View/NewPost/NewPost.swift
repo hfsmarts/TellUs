@@ -52,11 +52,10 @@ class NewPost: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func correctButtonTapped(_ sender: UIButton) { /*TEL-557*/
-            if let currentPost = userPost.text {
+        if let currentPost = userPost.text, let locationLabel = locationLabel.text {
                 if currentPost != "Type here..." {
-                    //let newPost = newPostItem(itemId: 0, itemText: "\(currentPost)") /*TEL-561*/
                     
-                    let nextObject = PostModel(location: "User current location", likeCount: 0, text: "\(currentPost)", dislikeCount: 0)
+                    let nextObject = PostModel(location: "\(locationLabel)", likeCount: 0, text: "\(currentPost)", dislikeCount: 0) /*TEL-669*/
                     let mySingleton = MyPostsDB.shared
                     mySingleton.appendPost(nextObject)
                     

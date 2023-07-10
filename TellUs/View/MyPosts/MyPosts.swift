@@ -9,10 +9,7 @@ import UIKit
 
 /*TEL-313*//*TEL-246*//*TEL-637*/
 class MyPosts: UIViewController, UICollectionViewDataSource {
-  //  var myPosts: [PostModel] = []
     var currentIndex = 0
-    
-
     @IBOutlet var myPostsCollectionView: SuccessCollectionView!
 
     override func viewDidLoad() {
@@ -26,15 +23,9 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         let object1 = PostModel(location: "1", likeCount: 10, text: "My first post...", dislikeCount: 0)
         let object2 = PostModel(location: "2", likeCount: 5, text: "This is the second one", dislikeCount: 2)
       
-        
-        
         let mySingleton = MyPostsDB.shared
         mySingleton.appendPost(object1)
         mySingleton.appendPost(object2)
-        
-        
-
-     
         
     }
     
