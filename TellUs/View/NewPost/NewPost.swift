@@ -12,7 +12,6 @@ class NewPost: UIViewController, UITextViewDelegate {
     
     @IBOutlet var locationLabel: CustomLocationLabel! /*TEL-333*/
     @IBOutlet var userPost: CustomTextView! /*TEL-336*/
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,12 +57,11 @@ class NewPost: UIViewController, UITextViewDelegate {
                     //let newPost = newPostItem(itemId: 0, itemText: "\(currentPost)") /*TEL-561*/
                     
                     let nextObject = PostModel(location: "User current location", likeCount: 0, text: "\(currentPost)", dislikeCount: 0)
-                    
-               //     MyPosts.myPosts.append(nextObject)
+                    let mySingleton = MyPostsDB.shared
+                    mySingleton.appendPost(nextObject)
                     
                 } else {
                     print("nothing changed")
-                
             }
         }
     }
