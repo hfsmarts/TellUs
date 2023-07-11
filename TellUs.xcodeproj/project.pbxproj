@@ -30,6 +30,7 @@
 		59702E12291A12C700821CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59702E11291A12C700821CFD /* Assets.xcassets */; };
 		59702E15291A12C700821CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59702E13291A12C700821CFD /* LaunchScreen.storyboard */; };
 		598B63362A5AE3EF005B051A /* MyPostsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B63352A5AE3EF005B051A /* MyPostsDB.swift */; };
+		598B63392A5D0201005B051A /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598B63382A5D0201005B051A /* SharedFunctions.swift */; };
 		598BE22B29C827B70077421C /* DataCollectionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598BE22A29C827B70077421C /* DataCollectionFile.swift */; };
 		598FA95F296BD8B1005FDB53 /* PasswordChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598FA95D296BD8B1005FDB53 /* PasswordChange.swift */; };
 		598FA960296BD8B1005FDB53 /* PasswordChange.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598FA95E296BD8B1005FDB53 /* PasswordChange.xib */; };
@@ -76,6 +77,7 @@
 		59702E14291A12C700821CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59702E16291A12C700821CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		598B63352A5AE3EF005B051A /* MyPostsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsDB.swift; sourceTree = "<group>"; };
+		598B63382A5D0201005B051A /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
 		598BE22A29C827B70077421C /* DataCollectionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionFile.swift; sourceTree = "<group>"; };
 		598FA95D296BD8B1005FDB53 /* PasswordChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChange.swift; sourceTree = "<group>"; };
 		598FA95E296BD8B1005FDB53 /* PasswordChange.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordChange.xib; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		598B63372A5D01E1005B051A /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				598B63382A5D0201005B051A /* SharedFunctions.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		598BE22929C827550077421C /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +259,7 @@
 		59CFA21329963BE0005A17FD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				598B63372A5D01E1005B051A /* Functions */,
 				598B63342A5AE3DC005B051A /* Data */,
 				599F39CD299F501600152E5B /* SuccessCollectionView */,
 				59D01F902932156F00AA6505 /* CustomButton.swift */,
@@ -402,6 +413,7 @@
 				59702E0B291A12C500821CFD /* SceneDelegate.swift in Sources */,
 				59A728E529695CA8005E5BA6 /* CustomLocationLabel.swift in Sources */,
 				5915915229483C48004EEF6D /* SignUp.swift in Sources */,
+				598B63392A5D0201005B051A /* SharedFunctions.swift in Sources */,
 				59CFA21929963DD6005A17FD /* UITextView+Extensions.swift in Sources */,
 				59A728E229687FA1005E5BA6 /* NewPost.swift in Sources */,
 				59CFA21729963CD7005A17FD /* UIViewController+Extensions.swift in Sources */,

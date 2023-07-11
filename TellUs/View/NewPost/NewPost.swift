@@ -59,6 +59,7 @@ class NewPost: UIViewController, UITextViewDelegate {
                     let mySingleton = MyPostsDB.shared
                     mySingleton.appendPost(nextObject)
                     
+                    
                 } else {
                     print("nothing changed")
             }
