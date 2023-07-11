@@ -7,7 +7,24 @@
 
 import UIKit
 
-/*TEL-670*/
+/*TEL-670*/ /*TEL-671*/
 class ShareFunctions{
-    
+    func showAlert(vc: UIViewController,
+                   title: String,
+                   message: String,
+                   alertStyle: UIAlertController.Style,
+                   actionTitles: [String],
+                   actionStyles: [UIAlertAction.Style],
+                   completion: (() -> Void)? = nil) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: alertStyle)
+        
+        for (index, title) in actionTitles.enumerated() {
+            let style = actionStyles[index]
+            let action = UIAlertAction(title: title, style: style) { _ in
+                completion?()
+            }
+            alertController.addAction(action)
+        }
+        vc.present(alertController, animated: true, completion: nil)
+    }
 }

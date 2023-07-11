@@ -12,7 +12,7 @@ class NewPost: UIViewController, UITextViewDelegate {
     
     @IBOutlet var locationLabel: CustomLocationLabel! /*TEL-333*/
     @IBOutlet var userPost: CustomTextView! /*TEL-336*/
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: Constants.AppColors.blueBackground) /*TEL-316*/
@@ -53,21 +53,21 @@ class NewPost: UIViewController, UITextViewDelegate {
     
     @IBAction func correctButtonTapped(_ sender: UIButton) { /*TEL-557*/
         if let currentPost = userPost.text, let locationLabel = locationLabel.text {
-                if currentPost != "Type here..." {
-                    
-                    let nextObject = PostModel(location: "\(locationLabel)", likeCount: 0, text: "\(currentPost)", dislikeCount: 0) /*TEL-669*/
-                    let mySingleton = MyPostsDB.shared
-                    mySingleton.appendPost(nextObject)
-                    
-                    
-                } else {
-                    print("nothing changed")
+            if currentPost != "Type here..." {
+                
+                let nextObject = PostModel(location: "\(locationLabel)", likeCount: 0, text: "\(currentPost)", dislikeCount: 0) /*TEL-669*/
+                let mySingleton = MyPostsDB.shared
+                mySingleton.appendPost(nextObject)
+                ShareFunctions().showAlert(vc: self, title: "Success", message: "Post added!", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.cancel]) /*TEL-671*/
+                
+            } else {
+                print("nothing changed")
             }
         }
     }
     
     
- 
+    
 }
 
 
