@@ -58,13 +58,17 @@ class NewPost: UIViewController, UITextViewDelegate {
                 let nextObject = PostModel(location: "\(locationLabel)", likeCount: 0, text: "\(currentPost)", dislikeCount: 0) /*TEL-669*/
                 let mySingleton = MyPostsDB.shared
                 mySingleton.appendPost(nextObject)
-                ShareFunctions().showAlert(vc: self, title: "Success", message: "Post added!", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.cancel]) /*TEL-671*/
-                
+                let nextVC = SuccessfulLogin()
+                ShareFunctions().showAlert(vc: self, title: "Success", message: "Post added!", alertStyle: .alert, actionTitles: ["OK"], actionStyles: [.cancel], viewControllerToPresent: nextVC) /*TEL-671*/ /*TEL-672*/
             } else {
                 print("nothing changed")
             }
         }
     }
+    
+   
+
+
     
     
     
