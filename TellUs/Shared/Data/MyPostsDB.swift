@@ -13,7 +13,11 @@ class MyPostsDB {
     var myPosts: [PostModel] = [] 
     let queue = DispatchQueue(label: "com.example.MyPostsDB.queue")
     
+    /*TEL-667*/
+    /*TEL-636*/
     private init() {
+        let initialPost = PostModel(location: "No location", likeCount: 0, text: "No post added yet!", dislikeCount: 0) /*TEL-674*/
+               myPosts.append(initialPost)
     }
     
     func appendPost(_ newPost: PostModel) {
@@ -30,5 +34,7 @@ class MyPostsDB {
             self.myPosts.remove(at: index)
         }
     }
+    
+    
 }
 

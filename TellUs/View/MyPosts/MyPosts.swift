@@ -17,16 +17,6 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         view.backgroundColor = UIColor(named: Constants.AppColors.blueBackground) /*TEL-317*/
         myPostsCollectionView.dataSource = self
         myPostsCollectionView.isPagingEnabled = true
-        
-        /*TEL-667*/
-        /*TEL-636*/
-        let object1 = PostModel(location: "1", likeCount: 10, text: "My first post...", dislikeCount: 0)
-        let object2 = PostModel(location: "2", likeCount: 5, text: "This is the second one", dislikeCount: 2)
-      
-        let mySingleton = MyPostsDB.shared
-        mySingleton.appendPost(object1)
-        mySingleton.appendPost(object2)
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,7 +34,6 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
         cell.likeCounterLabel.text = "\(object.likeCount)"
         cell.textViewText.text = object.text
         cell.dislikeCounterLabel.text = "\(object.dislikeCount)"
-        
         return cell
     }
     
@@ -61,9 +50,6 @@ class MyPosts: UIViewController, UICollectionViewDataSource {
             return
         }
         MyPostsDB.shared.myPosts.remove(at: indexPath.item)
-        
-        
-    
         myPostsCollectionView.deleteItems(at: [indexPath])
         showCurrentItem()
         
